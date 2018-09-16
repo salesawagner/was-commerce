@@ -6,6 +6,7 @@ public func routes(_ router: Router) throws {
     // public routes
     let userController = UserController()
     router.post("users", use: userController.create)
+	router.get("users", use: userController.index)
     
     // basic / password auth protected routes
     let basic = router.grouped(User.basicAuthMiddleware(using: BCryptDigest()))
