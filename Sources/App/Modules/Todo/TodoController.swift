@@ -9,8 +9,7 @@ final class TodoController {
         let user = try req.requireAuthenticated(User.self)
         
         // query all todo's belonging to user
-        return try Todo.query(on: req)
-            .filter(\.userID == user.requireID()).all()
+        return try Todo.query(on: req).filter(\.userID == user.requireID()).all()
     }
 
     /// Creates a new todo for the auth'd user.
