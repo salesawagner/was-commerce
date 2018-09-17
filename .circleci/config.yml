@@ -22,13 +22,6 @@ jobs:
           name: Compile code with optimizations
           command: swift build -c release
 
-jobs:
-  build:
-    branches:
-      only:
-        - master
-		- development
-
 workflows:
   version: 2
   tests:
