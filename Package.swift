@@ -17,7 +17,7 @@ let package = Package(
 		.package(url: "https://github.com/SwiftyBeaver/SwiftyBeaver-Vapor.git", from: "1.1.0"))
     ],
     targets: [
-        .target(name: "App", dependencies: ["Authentication", "FluentSQLite", "Vapor", "SwiftyBeaver"]),
+        .target(name: "App", dependencies: ["Authentication", "FluentSQLite", "Vapor"]),
         .target(name: "Run", dependencies: ["App"]),
         .testTarget(name: "AppTests", dependencies: ["App"])
     ]
