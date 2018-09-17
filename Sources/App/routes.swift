@@ -3,19 +3,14 @@ import Vapor
 
 /// Register your application's routes here.
 public func routes(_ router: Router) throws {
-    // public routes
-    let userController = UserController()
-    router.post("users", use: userController.create)
-	router.get("users", use: userController.index)
-    
-    // basic / password auth protected routes
-    let basic = router.grouped(User.basicAuthMiddleware(using: BCryptDigest()))
-    basic.post("login", use: userController.login)
-    
-    // bearer / token auth protected routes
-    let bearer = router.grouped(User.tokenAuthMiddleware())
-    let todoController = TodoController()
-    bearer.get("todos", use: todoController.index)
-    bearer.post("todos", use: todoController.create)
-    bearer.delete("todos", Todo.parameter, use: todoController.delete)
+
+	let authController = AuthController()
+	try authController.boot(router: router)
+
+	let userController = UserController()
+	try userController.boot(router: router)
+	
+	router.post("api") { Request -> ResponseEncodable in
+		<#code#>
+	}
 }
