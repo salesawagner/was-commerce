@@ -7,45 +7,40 @@
 
 import Crypto
 import Vapor
+import FluentSQLite
 
-final class AuthController {
+final class AuthController: RouteCollection {
 
 	func boot(router: Router) throws {
 		let group = router.grouped("auth")
+		try self.get(group: group)
 		try self.post(group: group)
 	}
 
+	func get(group: Router) throws {
+		let bearer = group.grouped(User.tokenAuthMiddleware())
+		bearer.get("logout", use: logout)
+	}
+
 	func post(group: Router) throws {
-		group.post("login", use: login)
-		group.post("logout", use: logout)
+		let basic = group.grouped(User.basicAuthMiddleware(using: BCryptDigest()))
+		basic.post("login", use: login)
 	}
 
 	func login(_ req: Request) throws -> Future<UserToken> {
-		
-		try req.print()
 
-		// get user auth'd by basic auth middleware
 		let user = try req.requireAuthenticated(User.self)
-		
-		// create new token for this user
 		let token = try UserToken.create(userID: user.requireID())
-		
-		// save and return token
-		return token.save(on: req)
-	}
-	
-	func logout(_ req: Request) throws -> Future<UserToken> {
-		
-		// TODO: - Fazer logout
-		
-		// get user auth'd by basic auth middleware
-		let user = try req.requireAuthenticated(User.self)
-		
-		// create new token for this user
-		let token = try UserToken.create(userID: user.requireID())
-		
-		// save and return token
+
 		return token.save(on: req)
 	}
 
+	func logout(_ req: Request) throws -> Future<HTTPStatus> {
+
+		let user = try req.requireAuthenticated(User.self)
+		let userToken = try UserToken.query(on: req).filter(\.userID == user.requireID())
+
+		try req.unauthenticate(User.self)
+		return userToken.delete().transform(to: .ok)
+	}
 }

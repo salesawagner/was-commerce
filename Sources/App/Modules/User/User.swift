@@ -64,3 +64,9 @@ extension User: Content { }
 
 /// Allows `User` to be used as a dynamic parameter in route definitions.
 extension User: Parameter { }
+
+extension User {
+	func toUserResponse() -> UserResponse {
+		return UserResponse(id: self.id, name: self.name, email: self.email)
+	}
+}
