@@ -1,6 +1,9 @@
 import App
 
-try app(.detect()).run()
+let main = try app(.detect())
+
+try main.run()
+
 //
 //app.get("/") { request in
 //	log.verbose("not so important")
