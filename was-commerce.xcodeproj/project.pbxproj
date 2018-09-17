@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		A769AF55214F29C800BFE312 /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A769AF54214F29C800BFE312 /* AuthController.swift */; };
 		A7BF8496214ECFF3005633D4 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BF8495214ECFF3005633D4 /* UserResponse.swift */; };
 		A7BF8498214ED033005633D4 /* CreateUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BF8497214ED033005633D4 /* CreateUserRequest.swift */; };
 		OBJ_1068 /* AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* AppTests.swift */; };
@@ -5306,6 +5307,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A769AF54214F29C800BFE312 /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
 		A7BF8495214ECFF3005633D4 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
 		A7BF8497214ED033005633D4 /* CreateUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserRequest.swift; sourceTree = "<group>"; };
 		"Auth::Authentication::Product" /* Authentication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Authentication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -5369,7 +5371,7 @@
 		OBJ_146 /* QueryBuilder+Run.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QueryBuilder+Run.swift"; sourceTree = "<group>"; };
 		OBJ_147 /* QueryBuilder+Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QueryBuilder+Sort.swift"; sourceTree = "<group>"; };
 		OBJ_148 /* QueryBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryBuilder.swift; sourceTree = "<group>"; };
-		OBJ_15 /* UserToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserToken.swift; sourceTree = "<group>"; };
+		OBJ_15 /* UserToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserToken.swift; path = ../User/UserToken.swift; sourceTree = "<group>"; };
 		OBJ_150 /* Children.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Children.swift; sourceTree = "<group>"; };
 		OBJ_151 /* Parent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parent.swift; sourceTree = "<group>"; };
 		OBJ_152 /* Siblings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Siblings.swift; sourceTree = "<group>"; };
@@ -6935,9 +6937,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A769AF51214F298A00BFE312 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_15 /* UserToken.swift */,
+				A769AF54214F29C800BFE312 /* AuthController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		A7BF8493214ECFDA005633D4 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				A769AF51214F298A00BFE312 /* Auth */,
 				A7BF8499214ED305005633D4 /* Todo */,
 				A7BF8494214ECFE0005633D4 /* User */,
 			);
@@ -6948,7 +6960,6 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_14 /* User.swift */,
-				OBJ_15 /* UserToken.swift */,
 				A7BF8495214ECFF3005633D4 /* UserResponse.swift */,
 				A7BF8497214ED033005633D4 /* CreateUserRequest.swift */,
 				OBJ_11 /* UserController.swift */,
@@ -8036,7 +8047,7 @@
 			path = ".build/checkouts/database-kit.git--3872818599693266265/Sources/DatabaseKit";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -8045,7 +8056,6 @@
 				OBJ_25 /* Dependencies */,
 				OBJ_876 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_500 /* Connection */ = {
@@ -10830,7 +10840,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_876 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -12028,6 +12038,7 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_927 /* TodoController.swift in Sources */,
+				A769AF55214F29C800BFE312 /* AuthController.swift in Sources */,
 				OBJ_928 /* UserController.swift in Sources */,
 				OBJ_929 /* Todo.swift in Sources */,
 				OBJ_930 /* User.swift in Sources */,
