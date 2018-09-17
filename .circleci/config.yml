@@ -37,7 +37,7 @@ workflows:
             branches:
               only:
                 - master
-				- development
-				- feature/.*
+                - development
+                - feature/.*
     jobs:
       - linux
