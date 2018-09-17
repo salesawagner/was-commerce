@@ -35,5 +35,11 @@ public func configure(_ config: inout Config, _ env: inout Environment, _ servic
     migrations.add(model: UserToken.self, database: .sqlite)
     migrations.add(model: Todo.self, database: .sqlite)
     services.register(migrations)
+	
+//	/// Configure Logger
+//	let loggingDestination = ConsoleDestination()
+//	try services.register(SwiftyBeaverProvider(destinations: [loggingDestination]))
+//	
+//	config.prefer(SwiftyBeaverVapor.self, for: Logger.self)
 
 }

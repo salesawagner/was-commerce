@@ -22,6 +22,7 @@ final class AuthController {
 	}
 
 	func login(_ req: Request) throws -> Future<UserToken> {
+
 		// get user auth'd by basic auth middleware
 		let user = try req.requireAuthenticated(User.self)
 		
