@@ -120,7 +120,7 @@ final class UserController: RouteCollection {
 		let response = try req.content.decode(FavoriteProductRequest.self).flatMap { product -> Future<Response> in
 			
 			let json = UserMicroService.favoriteCreate(userID: try userLocal.requireID(), productID: product.id)
-			guard let productResponse = ProductResponse.make(json: json) else {
+			guard let productResponse = FavoriteProductResponse.make(json: json) else {
 				throw Abort(.badRequest, reason: "Parse error.")
 			}
 			

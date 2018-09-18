@@ -30,6 +30,10 @@
 		A7BCC3D921516EAE002BCE56 /* ProductResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BCC3D821516EAE002BCE56 /* ProductResponse.swift */; };
 		A7BCC3DB21517688002BCE56 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BCC3DA21517688002BCE56 /* Mock.swift */; };
 		A7BCC3DD21517C4C002BCE56 /* FavoriteListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BCC3DC21517C4C002BCE56 /* FavoriteListResponse.swift */; };
+		A7BCC3E02151836A002BCE56 /* ProductMicroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BCC3DF2151836A002BCE56 /* ProductMicroService.swift */; };
+		A7BCC3E2215183D1002BCE56 /* ProductController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BCC3E1215183D1002BCE56 /* ProductController.swift */; };
+		A7BCC3E421518609002BCE56 /* FavoriteProductResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BCC3E321518609002BCE56 /* FavoriteProductResponse.swift */; };
+		A7BCC3E62151873B002BCE56 /* ProductListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BCC3E52151873B002BCE56 /* ProductListResponse.swift */; };
 		OBJ_1074 /* AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* AppTests.swift */; };
 		OBJ_1076 /* App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "was-commerce::App::Product" /* App.framework */; };
 		OBJ_1077 /* FluentSQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "FluentSQLite::FluentSQLite::Product" /* FluentSQLite.framework */; };
@@ -5323,6 +5327,10 @@
 		A7BCC3D821516EAE002BCE56 /* ProductResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResponse.swift; sourceTree = "<group>"; };
 		A7BCC3DA21517688002BCE56 /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
 		A7BCC3DC21517C4C002BCE56 /* FavoriteListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListResponse.swift; sourceTree = "<group>"; };
+		A7BCC3DF2151836A002BCE56 /* ProductMicroService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductMicroService.swift; sourceTree = "<group>"; };
+		A7BCC3E1215183D1002BCE56 /* ProductController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductController.swift; sourceTree = "<group>"; };
+		A7BCC3E321518609002BCE56 /* FavoriteProductResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteProductResponse.swift; sourceTree = "<group>"; };
+		A7BCC3E52151873B002BCE56 /* ProductListResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListResponse.swift; sourceTree = "<group>"; };
 		"Auth::Authentication::Product" /* Authentication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Authentication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Console::Command::Product" /* Command.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Command.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Console::Console::Product" /* Console.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Console.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -6954,7 +6962,8 @@
 		A7530434215021B1004B465A /* MicroServices */ = {
 			isa = PBXGroup;
 			children = (
-				A753043C2150231A004B465A /* User */,
+				A7BCC3DF2151836A002BCE56 /* ProductMicroService.swift */,
+				A7530435215021C6004B465A /* UserMicroService.swift */,
 			);
 			path = MicroServices;
 			sourceTree = "<group>";
@@ -6968,14 +6977,6 @@
 			path = Extras;
 			sourceTree = "<group>";
 		};
-		A753043C2150231A004B465A /* User */ = {
-			isa = PBXGroup;
-			children = (
-				A7530435215021C6004B465A /* UserMicroService.swift */,
-			);
-			path = User;
-			sourceTree = "<group>";
-		};
 		A7BCC3CE215163ED002BCE56 /* Entensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -6987,7 +6988,9 @@
 		A7BCC3D721516EA1002BCE56 /* Product */ = {
 			isa = PBXGroup;
 			children = (
+				A7BCC3E1215183D1002BCE56 /* ProductController.swift */,
 				A7BCC3D821516EAE002BCE56 /* ProductResponse.swift */,
+				A7BCC3E52151873B002BCE56 /* ProductListResponse.swift */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -7142,6 +7145,7 @@
 				A7BCC3D121516852002BCE56 /* UpdateUserRequest.swift */,
 				A7BCC3D521516DA5002BCE56 /* FavoriteProductRequest.swift */,
 				A7BCC3DC21517C4C002BCE56 /* FavoriteListResponse.swift */,
+				A7BCC3E321518609002BCE56 /* FavoriteProductResponse.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -12103,6 +12107,7 @@
 				OBJ_933 /* CreateUserRequest.swift in Sources */,
 				OBJ_934 /* User.swift in Sources */,
 				OBJ_935 /* UserController.swift in Sources */,
+				A7BCC3E62151873B002BCE56 /* ProductListResponse.swift in Sources */,
 				A7BCC3DD21517C4C002BCE56 /* FavoriteListResponse.swift in Sources */,
 				A753043B215022A7004B465A /* Typealias.swift in Sources */,
 				OBJ_936 /* UserResponse.swift in Sources */,
@@ -12112,8 +12117,11 @@
 				A7BCC3D0215163FC002BCE56 /* RouteCollectionEctension.swift in Sources */,
 				OBJ_939 /* boot.swift in Sources */,
 				A7530436215021C6004B465A /* UserMicroService.swift in Sources */,
+				A7BCC3E421518609002BCE56 /* FavoriteProductResponse.swift in Sources */,
 				A7BCC3D921516EAE002BCE56 /* ProductResponse.swift in Sources */,
+				A7BCC3E2215183D1002BCE56 /* ProductController.swift in Sources */,
 				A7BCC3D221516852002BCE56 /* UpdateUserRequest.swift in Sources */,
+				A7BCC3E02151836A002BCE56 /* ProductMicroService.swift in Sources */,
 				OBJ_940 /* configure.swift in Sources */,
 				OBJ_941 /* routes.swift in Sources */,
 				A7BCC3D621516DA5002BCE56 /* FavoriteProductRequest.swift in Sources */,

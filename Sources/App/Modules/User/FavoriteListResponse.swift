@@ -8,7 +8,7 @@
 import Vapor
 
 struct FavoriteListResponse: Content {
-	var list: [ProductResponse]
+	var list: [FavoriteProductResponse]
 }
 
 extension FavoriteListResponse {
@@ -17,9 +17,9 @@ extension FavoriteListResponse {
 			return nil
 		}
 		
-		var list: [ProductResponse] = []
+		var list: [FavoriteProductResponse] = []
 		for product in products {
-			if let product = ProductResponse.make(json: product) {
+			if let product = FavoriteProductResponse.make(json: product) {
 				list.append(product)
 			}
 		}
