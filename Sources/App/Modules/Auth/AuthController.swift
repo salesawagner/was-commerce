@@ -12,35 +12,66 @@ import FluentSQLite
 final class AuthController: RouteCollection {
 
 	func boot(router: Router) throws {
+
 		let group = router.grouped("auth")
-		try self.get(group: group)
-		try self.post(group: group)
+
+		// Public
+		
+		group.post("login", use: login)
+		group.get("list", use: list) // FIXME: For debug, remove!
+		
+		// Auth
+		
+		let tokenAuthGroup = self.getTokenAuthGroup(router: group)
+		tokenAuthGroup.get("logout", use: logout)
 	}
 
-	func get(group: Router) throws {
-		let bearer = group.grouped(User.tokenAuthMiddleware())
-		bearer.get("logout", use: logout)
-	}
-
-	func post(group: Router) throws {
-		let basic = group.grouped(User.basicAuthMiddleware(using: BCryptDigest()))
-		basic.post("login", use: login)
-	}
+	// MARK: - Public
 
 	func login(_ req: Request) throws -> Future<UserToken> {
 
-		let user = try req.requireAuthenticated(User.self)
-		let token = try UserToken.create(userID: user.requireID())
+		let user = try req.content.decode(LoginRequest.self).flatMap { login -> Future<User> in
 
-		return token.save(on: req)
+			let hash = try BCrypt.hash(login.password)
+			let json = UserMicroService.login(username: login.username, password: login.password)
+
+			guard let user = User.make(json: json, passwordHash: hash) else {
+				throw Abort(.badRequest, reason: "Parse error.")
+			}
+
+			return User.query(on: req).filter(\.email == user.email).first().flatMap({ optionalUser -> Future<User> in
+				guard let localUser = optionalUser else {
+					return user.save(on: req)
+				}
+
+				return localUser.update(on: req)
+			})
+
+		}
+
+		let token = user.flatMap { user -> Future<UserToken> in
+			let token = try UserToken.create(userID: user.requireID())
+			return token.save(on: req)
+		}
+
+		return token
 	}
 
-	func logout(_ req: Request) throws -> Future<HTTPStatus> {
+	// MARK: - Auth
 
-		let user = try req.requireAuthenticated(User.self)
-		let userToken = try UserToken.query(on: req).filter(\.userID == user.requireID())
+	func logout(_ req: Request) throws -> Future<HTTPStatus> {
+		
+		guard let userLocal = try req.authenticated(User.self) else {
+			throw Abort(.unauthorized, reason: "User has not been authorized.")
+		}
+
+		let userToken = try UserToken.query(on: req).filter(\.userID == userLocal.requireID())
 
 		try req.unauthenticate(User.self)
 		return userToken.delete().transform(to: .ok)
+	}
+
+	func list(_ req: Request) throws -> Future<[UserToken]> {
+		return UserToken.query(on: req).all()
 	}
 }

@@ -21,6 +21,15 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		A7530436215021C6004B465A /* UserMicroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7530435215021C6004B465A /* UserMicroService.swift */; };
+		A753043B215022A7004B465A /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = A753043A215022A7004B465A /* Typealias.swift */; };
+		A7BCC3D0215163FC002BCE56 /* RouteCollectionEctension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BCC3CF215163FC002BCE56 /* RouteCollectionEctension.swift */; };
+		A7BCC3D221516852002BCE56 /* UpdateUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BCC3D121516852002BCE56 /* UpdateUserRequest.swift */; };
+		A7BCC3D4215168A5002BCE56 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BCC3D3215168A5002BCE56 /* LoginRequest.swift */; };
+		A7BCC3D621516DA5002BCE56 /* FavoriteProductRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BCC3D521516DA5002BCE56 /* FavoriteProductRequest.swift */; };
+		A7BCC3D921516EAE002BCE56 /* ProductResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BCC3D821516EAE002BCE56 /* ProductResponse.swift */; };
+		A7BCC3DB21517688002BCE56 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BCC3DA21517688002BCE56 /* Mock.swift */; };
+		A7BCC3DD21517C4C002BCE56 /* FavoriteListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BCC3DC21517C4C002BCE56 /* FavoriteListResponse.swift */; };
 		OBJ_1074 /* AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* AppTests.swift */; };
 		OBJ_1076 /* App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "was-commerce::App::Product" /* App.framework */; };
 		OBJ_1077 /* FluentSQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "FluentSQLite::FluentSQLite::Product" /* FluentSQLite.framework */; };
@@ -5305,6 +5314,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A7530435215021C6004B465A /* UserMicroService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMicroService.swift; sourceTree = "<group>"; };
+		A753043A215022A7004B465A /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
+		A7BCC3CF215163FC002BCE56 /* RouteCollectionEctension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteCollectionEctension.swift; sourceTree = "<group>"; };
+		A7BCC3D121516852002BCE56 /* UpdateUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserRequest.swift; sourceTree = "<group>"; };
+		A7BCC3D3215168A5002BCE56 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		A7BCC3D521516DA5002BCE56 /* FavoriteProductRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteProductRequest.swift; sourceTree = "<group>"; };
+		A7BCC3D821516EAE002BCE56 /* ProductResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResponse.swift; sourceTree = "<group>"; };
+		A7BCC3DA21517688002BCE56 /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
+		A7BCC3DC21517C4C002BCE56 /* FavoriteListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListResponse.swift; sourceTree = "<group>"; };
 		"Auth::Authentication::Product" /* Authentication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Authentication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Console::Command::Product" /* Command.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Command.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Console::Console::Product" /* Console.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Console.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -6933,11 +6951,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A7530434215021B1004B465A /* MicroServices */ = {
+			isa = PBXGroup;
+			children = (
+				A753043C2150231A004B465A /* User */,
+			);
+			path = MicroServices;
+			sourceTree = "<group>";
+		};
+		A75304392150228B004B465A /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				A753043A215022A7004B465A /* Typealias.swift */,
+				A7BCC3DA21517688002BCE56 /* Mock.swift */,
+			);
+			path = Extras;
+			sourceTree = "<group>";
+		};
+		A753043C2150231A004B465A /* User */ = {
+			isa = PBXGroup;
+			children = (
+				A7530435215021C6004B465A /* UserMicroService.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		A7BCC3CE215163ED002BCE56 /* Entensions */ = {
+			isa = PBXGroup;
+			children = (
+				A7BCC3CF215163FC002BCE56 /* RouteCollectionEctension.swift */,
+			);
+			path = Entensions;
+			sourceTree = "<group>";
+		};
+		A7BCC3D721516EA1002BCE56 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				A7BCC3D821516EAE002BCE56 /* ProductResponse.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
 		OBJ_10 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_20 /* UserToken.swift */,
 				OBJ_11 /* AuthController.swift */,
+				OBJ_17 /* User.swift */,
+				OBJ_20 /* UserToken.swift */,
+				A7BCC3D3215168A5002BCE56 /* LoginRequest.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -7075,10 +7136,12 @@
 		OBJ_15 /* User */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_16 /* CreateUserRequest.swift */,
-				OBJ_17 /* User.swift */,
 				OBJ_18 /* UserController.swift */,
 				OBJ_19 /* UserResponse.swift */,
+				OBJ_16 /* CreateUserRequest.swift */,
+				A7BCC3D121516852002BCE56 /* UpdateUserRequest.swift */,
+				A7BCC3D521516DA5002BCE56 /* FavoriteProductRequest.swift */,
+				A7BCC3DC21517C4C002BCE56 /* FavoriteListResponse.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -7998,7 +8061,7 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -8007,7 +8070,6 @@
 				OBJ_30 /* Dependencies */,
 				OBJ_879 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_50 /* Token */ = {
@@ -9061,6 +9123,9 @@
 		OBJ_8 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				A7BCC3CE215163ED002BCE56 /* Entensions */,
+				A75304392150228B004B465A /* Extras */,
+				A7530434215021B1004B465A /* MicroServices */,
 				OBJ_9 /* Modules */,
 				OBJ_21 /* app.swift */,
 				OBJ_22 /* boot.swift */,
@@ -9221,6 +9286,7 @@
 		OBJ_9 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				A7BCC3D721516EA1002BCE56 /* Product */,
 				OBJ_10 /* Auth */,
 				OBJ_12 /* Todo */,
 				OBJ_15 /* User */,
@@ -10835,7 +10901,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_879 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -12031,17 +12097,26 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_930 /* AuthController.swift in Sources */,
+				A7BCC3D4215168A5002BCE56 /* LoginRequest.swift in Sources */,
 				OBJ_931 /* Todo.swift in Sources */,
 				OBJ_932 /* TodoController.swift in Sources */,
 				OBJ_933 /* CreateUserRequest.swift in Sources */,
 				OBJ_934 /* User.swift in Sources */,
 				OBJ_935 /* UserController.swift in Sources */,
+				A7BCC3DD21517C4C002BCE56 /* FavoriteListResponse.swift in Sources */,
+				A753043B215022A7004B465A /* Typealias.swift in Sources */,
 				OBJ_936 /* UserResponse.swift in Sources */,
 				OBJ_937 /* UserToken.swift in Sources */,
 				OBJ_938 /* app.swift in Sources */,
+				A7BCC3DB21517688002BCE56 /* Mock.swift in Sources */,
+				A7BCC3D0215163FC002BCE56 /* RouteCollectionEctension.swift in Sources */,
 				OBJ_939 /* boot.swift in Sources */,
+				A7530436215021C6004B465A /* UserMicroService.swift in Sources */,
+				A7BCC3D921516EAE002BCE56 /* ProductResponse.swift in Sources */,
+				A7BCC3D221516852002BCE56 /* UpdateUserRequest.swift in Sources */,
 				OBJ_940 /* configure.swift in Sources */,
 				OBJ_941 /* routes.swift in Sources */,
+				A7BCC3D621516DA5002BCE56 /* FavoriteProductRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

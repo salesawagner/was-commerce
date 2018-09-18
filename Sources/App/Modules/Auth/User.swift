@@ -66,7 +66,14 @@ extension User: Content { }
 extension User: Parameter { }
 
 extension User {
-	func toUserResponse() -> UserResponse {
-		return UserResponse(id: self.id, name: self.name, email: self.email)
+	static func make(json: JSON, passwordHash: String) -> User? {
+
+		guard let name = json["name"] as? String, let email = json["email"] as? String else {
+			return nil
+		}
+
+		return User(name: name, email: email, passwordHash: passwordHash)
 	}
 }
+
+
