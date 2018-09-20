@@ -22,6 +22,7 @@ Documentations
 =====================
 - **<a href="http://wagnersales.com.br/was-commerce/api"> API </a>**
 - **<a href="http://wagnersales.com.br/was-commerce/documentation/"> Project </a>**
+- **<a href="git-flow.md"> Git flow </a>**
 
 Server
 =====================
