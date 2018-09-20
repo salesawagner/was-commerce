@@ -1,6 +1,9 @@
 <p align="center"><img src="http://wagnersales.com.br/wp-content/uploads/2018/09/logo.png" alt="was-commerce Banner"></p>
-<br>
+<br />
+
 ##Was-Commerce
+
+<br />
 
 [![CircleCI](https://circleci.com/gh/salesawagner/was-commerce/tree/master.svg?style=svg)](https://circleci.com/gh/salesawagner/was-commerce/tree/master)
 [![Language](https://img.shields.io/badge/language-Swift%204.0-orange.svg?style=flat)](https://developer.apple.com/swift/)
