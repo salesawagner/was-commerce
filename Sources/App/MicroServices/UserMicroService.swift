@@ -12,7 +12,7 @@ class UserMicroService: NSObject {
 	// MAK: - Auth
 	
 	class func login(username: String, password: String) -> JSON {
-		return Mock.JSONUser
+		return Mock.JSONSuccess
 	}
 	
 	// MAK: - CRUD

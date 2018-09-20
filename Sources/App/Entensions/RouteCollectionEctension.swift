@@ -9,8 +9,8 @@ import Vapor
 
 extension RouteCollection {
 	func getTokenAuthGroup(router: Router) -> Router {
-		let tokenAuthMiddleware = User.tokenAuthMiddleware()
-		let guardAuthMiddleware = User.guardAuthMiddleware()
+		let tokenAuthMiddleware = Login.tokenAuthMiddleware()
+		let guardAuthMiddleware = Login.guardAuthMiddleware()
 		let tokenAuthGroup = router.grouped(tokenAuthMiddleware, guardAuthMiddleware)
 		return tokenAuthGroup
 	}

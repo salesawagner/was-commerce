@@ -10,7 +10,6 @@ import Vapor
 import Crypto
 
 struct CreateUserRequest: Content {
-
 	var name: String
 	var email: String
 	var password: String

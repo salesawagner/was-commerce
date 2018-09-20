@@ -9,21 +9,10 @@ import Vapor
 
 struct FavoriteListResponse: Content {
 	var list: [FavoriteProductResponse]
-}
-
-extension FavoriteListResponse {
-	static func make(json: JSON) -> FavoriteListResponse? {
-		guard let products = json["list"] as? [[String: Any]] else {
-			return nil
+	
+	init(list: [Product]) {
+		self.list = list.map { product -> FavoriteProductResponse in
+			FavoriteProductResponse(product: product)
 		}
-		
-		var list: [FavoriteProductResponse] = []
-		for product in products {
-			if let product = FavoriteProductResponse.make(json: product) {
-				list.append(product)
-			}
-		}
-		
-		return FavoriteListResponse(list: list)
 	}
 }

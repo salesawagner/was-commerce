@@ -1,3 +1,10 @@
+//
+//  AuthController.swift
+//  App
+//
+//  Created by Wagner Sales on 16/09/18.
+//
+
 import Authentication
 import Crypto
 import FluentSQLite
@@ -5,7 +12,7 @@ import Vapor
 
 final class UserToken: SQLiteModel {
 
-    static func create(userID: User.ID) throws -> UserToken {
+    static func create(userID: Login.ID) throws -> UserToken {
         let string = try CryptoRandom().generateData(count: 16).base64EncodedString()
         return .init(string: string, userID: userID)
     }
@@ -14,10 +21,10 @@ final class UserToken: SQLiteModel {
 	
     var id: Int?
 	var string: String
-	var userID: User.ID
+	var userID: Login.ID
 	var expiresAt: Date?
 
-	init(id: Int? = nil, string: String, userID: User.ID) {
+	init(id: Int? = nil, string: String, userID: Login.ID) {
         self.id = id
         self.string = string
         // set token to expire after 5 hours
@@ -27,19 +34,19 @@ final class UserToken: SQLiteModel {
 }
 
 extension UserToken {
-    var user: Parent<UserToken, User> {
+    var user: Parent<UserToken, Login> {
         return parent(\.userID)
     }
 }
 
 extension UserToken: Token {
-    typealias UserType = User
+    typealias UserType = Login
 
 	static var tokenKey: WritableKeyPath<UserToken, String> {
         return \.string
     }
 
-	static var userIDKey: WritableKeyPath<UserToken, User.ID> {
+	static var userIDKey: WritableKeyPath<UserToken, Login.ID> {
         return \.userID
     }
 }
@@ -51,7 +58,7 @@ extension UserToken: Migration {
             builder.field(for: \.string)
             builder.field(for: \.userID)
             builder.field(for: \.expiresAt)
-            builder.reference(from: \.userID, to: \User.id)
+            builder.reference(from: \.userID, to: \Login.id)
         }
     }
 }

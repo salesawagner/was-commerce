@@ -8,18 +8,14 @@
 import Vapor
 
 struct FavoriteProductResponse: Content {
-	var id: Int
-	var name: String
-	let consoleID: Int = 1
-}
 
-extension FavoriteProductResponse {
-	static func make(json: JSON) -> FavoriteProductResponse? {
-		
-		guard let id = json["id"] as? Int, let name = json["name"] as? String else {
-			return nil
-		}
-		
-		return FavoriteProductResponse(id: id, name: name)
+	let id: Int
+	let name: String
+	let consoleID: Int
+
+	init(product: Product) {
+		self.id = product.id
+		self.name = product.name
+		self.consoleID = product.console.id
 	}
 }

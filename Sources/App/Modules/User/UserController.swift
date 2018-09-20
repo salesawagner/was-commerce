@@ -21,7 +21,7 @@ final class UserController: RouteCollection {
 		// Private
 
 		let tokenAuthGroup = self.getTokenAuthGroup(router: group)
-		tokenAuthGroup.get("me", use: update)
+		tokenAuthGroup.get("me", use: me)
 		tokenAuthGroup.put("update", use: update)
 		tokenAuthGroup.delete("delete", use: delete)
 		
@@ -35,21 +35,13 @@ final class UserController: RouteCollection {
 
 	func create(_ req: Request) throws -> Future<Response> {
 
-		let userResponse = try req.content.decode(CreateUserRequest.self).flatMap { userRequest -> Future<Response> in
-
-			guard userRequest.password == userRequest.verifyPassword else {
-				throw Abort(.badRequest, reason: "Password and verification must match.")
-			}
-
-			let json = UserMicroService.create(parameters: userRequest.toParameters())
-			guard let userResponse = UserResponse.make(json: json) else {
-				throw Abort(.badRequest, reason: "Parse error.")
-			}
-
-			return try userResponse.encode(for: req)
+		let response = try req.content.decode(CreateUserRequest.self).flatMap { request -> Future<Response> in
+			let user = try User.create(request: request)
+			let response = UserResponse(user: user)
+			return try response.encode(for: req)
 		}
 
-		return userResponse
+		return response
 	}
 
 	// MARK: - AUTH
@@ -57,53 +49,42 @@ final class UserController: RouteCollection {
 	// MARK: - User
 
 	func me(_ req: Request) throws -> Future<Response> {
-		
-		guard let userLocal = try req.authenticated(User.self) else {
+
+		guard let userLocal = try Login.authenticated(req) else {
 			throw Abort(.unauthorized, reason: "User has not been authorized.")
 		}
-		
-		let json = UserMicroService.me(userID: try userLocal.requireID())
-		guard let userResponse = UserResponse.make(json: json) else {
-			throw Abort(.badRequest, reason: "Parse error.")
-		}
 
-		return try userResponse.encode(for: req)
+		let user = try User.me(userID: userLocal.id)
+		let response = UserResponse(user: user)
+
+		return try response.encode(for: req)
 	}
 
 	func update(_ req: Request) throws -> Future<Response> {
 
-		guard let userLocal = try req.authenticated(User.self) else {
+		guard let userLocal = try Login.authenticated(req) else {
 			throw Abort(.unauthorized, reason: "User has not been authorized.")
 		}
 
-		let userResponse = try req.content.decode(UpdateUserRequest.self).flatMap { userRequest -> Future<Response> in
+		let response = try req.content.decode(UpdateUserRequest.self).flatMap { request -> Future<Response> in
 
-			let userID = try userLocal.requireID()
-			let json = UserMicroService.update(userID: userID, parameters: userRequest.toParameters())
-			guard let userResponse = UserResponse.make(json: json) else {
-				throw Abort(.badRequest, reason: "Parse error.")
-			}
+			let userID = userLocal.id
+			let user = try User.update(userID: userID, request: request)
+			let response = UserResponse(user: user)
 
-			userLocal.name = userRequest.name
-			userLocal.email = userRequest.email
-			let _ = userLocal.update(on: req)
-
-			return try userResponse.encode(for: req)
+			return try response.encode(for: req)
 		}
 
-		return userResponse
+		return response
 	}
 	
 	func delete(_ req: Request) throws -> Future<HTTPStatus> {
 
-		guard let userLocal = try req.authenticated(User.self) else {
+		guard let userLocal = try Login.authenticated(req) else {
 			throw Abort(.unauthorized, reason: "User has not been authorized.")
 		}
 
-		let json = UserMicroService.delete(userID: try userLocal.requireID())
-		guard let success = json["success"] as? Bool, success else {
-			throw Abort(.notAcceptable, reason: "User can not be deleted.")
-		}
+		try User.delete(userID: userLocal.id)
 
 		let authController = AuthController()
 		return try authController.logout(req)
@@ -113,18 +94,14 @@ final class UserController: RouteCollection {
 	
 	func favoriteCreate(_ req: Request) throws -> Future<Response> {
 		
-		guard let userLocal = try req.authenticated(User.self) else {
+		guard let userLocal = try Login.authenticated(req) else {
 			throw Abort(.unauthorized, reason: "User has not been authorized.")
 		}
 		
-		let response = try req.content.decode(FavoriteProductRequest.self).flatMap { product -> Future<Response> in
-			
-			let json = UserMicroService.favoriteCreate(userID: try userLocal.requireID(), productID: product.id)
-			guard let productResponse = FavoriteProductResponse.make(json: json) else {
-				throw Abort(.badRequest, reason: "Parse error.")
-			}
-			
-			return try productResponse.encode(for: req)
+		let response = try req.content.decode(FavoriteProductRequest.self).flatMap { request -> Future<Response> in
+			let product = try User.favoriteCreate(userID: userLocal.id, request: request)
+			let response = FavoriteProductResponse(product: product)
+			return try response.encode(for: req)
 		}
 		
 		return response
@@ -132,13 +109,13 @@ final class UserController: RouteCollection {
 	
 	func favoriteDelete(_ req: Request) throws -> Future<HTTPStatus> {
 		
-		guard let userLocal = try req.authenticated(User.self) else {
+		guard let userLocal = try Login.authenticated(req) else {
 			throw Abort(.unauthorized, reason: "User has not been authorized.")
 		}
 		
 		let response = try req.content.decode(FavoriteProductRequest.self).flatMap { product -> Future<Response> in
 			
-			let json = UserMicroService.favoriteDelete(userID: try userLocal.requireID(), productID: product.id)
+			let json = UserMicroService.favoriteDelete(userID: userLocal.id, productID: product.id)
 			guard let success = json["success"] as? Bool, success else {
 				throw Abort(.badRequest, reason: "Parse error.")
 			}
@@ -151,15 +128,13 @@ final class UserController: RouteCollection {
 	
 	func favoriteList(_ req: Request) throws -> Future<Response> {
 		
-		guard let userLocal = try req.authenticated(User.self) else {
+		guard let userLocal = try Login.authenticated(req) else {
 			throw Abort(.unauthorized, reason: "User has not been authorized.")
 		}
 		
-		let json = UserMicroService.favoriteList(userID: try userLocal.requireID())
-		guard let response = FavoriteListResponse.make(json: json) else {
-			throw Abort(.badRequest, reason: "Parse error.")
-		}
+		let list = try User.favoriteList(userID: userLocal.id)
 
+		let response = FavoriteListResponse(list: list)
 		return try response.encode(for: req)
 	}
 

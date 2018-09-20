@@ -8,6 +8,9 @@
 import Foundation
 
 class ProductMicroService: NSObject {
+	class func console(consoleID: Int) -> JSON {
+		return Mock.JSONConsole
+	}
 	class func list(userID: Int? = nil, parameters: [String: Any]) -> JSON {
 		return Mock.JSONProductList
 	}
