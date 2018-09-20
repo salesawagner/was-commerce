@@ -21,11 +21,11 @@ Requirements
 Documentations
 =====================
 - **<a href="http://wagnersales.com.br/was-commerce/api"> API </a>**
-- **<a href="https://wagnersales.com.br/was-commerce/code"> Project </a>**
+- **<a href="http://wagnersales.com.br/was-commerce/documentation/"> Project </a>**
 
 Server
 =====================
-- **<a href="http://wagnersales.com.br/was-commerce/server"> Run on Heroku </a>**
+- **<a href="http://wagnersales.com.br/was-commerce/server"> Run on Heroku </a>  - https://was-commerce.herokuapp.com/**
 - **<a href="https://wagnersales.com.br/was-commerce/vapor"> Run local with vapor </a>**
 
 Author

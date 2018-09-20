@@ -7,13 +7,25 @@
 
 import Vapor
 
+/// Struct de response do produto detalhado
 struct ProductDetailResponse: Content {
 	
+	/// ID do produto
 	var id: Int
+	
+	/// Nome do produto
 	var name: String
+	
+	/// ID do console que o produto pertence
 	var consoleID: Int
+	
+	/// Bool para identificar se o usuário já favoritou o produto
 	var isFavorite: Bool?
+	
+	/// Bool para identificar se o usuário já comprou o produto
 	var isPurchased: Bool?
+	
+	/// Lista de produto recomendados com base no produto detalhado
 	var recomendations: [ProductResponse]?
 	
 	init(product: Product, auth: Bool = false) {

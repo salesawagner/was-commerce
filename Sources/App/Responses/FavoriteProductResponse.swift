@@ -7,22 +7,18 @@
 
 import Vapor
 
-/// balbalb abla alba lab alb
+/// Struct de response de produto favorito
 struct FavoriteProductResponse: Content {
 
-	
-	/// adsasdads
+	/// ID do produto
 	let id: Int
 	
-	/// asdasdasd
+	/// Nome do produto
 	let name: String
 	
-	/// adsdsadads
+	/// ID do console que o produto pertence
 	let consoleID: Int
 
-	/// asdasdasd
-	///
-	/// - Parameter product: asdasdasds
 	init(product: Product) {
 		self.id = product.id
 		self.name = product.name

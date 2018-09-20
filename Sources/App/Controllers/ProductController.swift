@@ -6,8 +6,8 @@
 //
 
 import Vapor
-import FluentSQLite
 
+/// Controladora para as rota de produto
 final class ProductController: RouteCollection {
 
 	func boot(router: Router) throws {

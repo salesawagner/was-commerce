@@ -7,6 +7,9 @@
 
 import Vapor
 
+/// Struct de request de criar produto favorito do usuário que representa os parametros
 struct FavoriteProductRequest: Content {
-	var id: Int
+	
+	/// ID do produto que será favoritado
+	var productID: Int
 }

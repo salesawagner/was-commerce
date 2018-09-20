@@ -7,6 +7,7 @@
 
 import Vapor
 
+/// Controladora para as rotas de carrinho
 final class CartController: RouteCollection {
 	
 	func boot(router: Router) throws {

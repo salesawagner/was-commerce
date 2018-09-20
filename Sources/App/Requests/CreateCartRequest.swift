@@ -7,6 +7,9 @@
 
 import Vapor
 
+/// Struct de request para adicionar um produto ao carrinho de compras que representa os parametros
 struct CreateCartRequest: Content {
+	
+	/// ID do produto
 	var productID: Int
 }

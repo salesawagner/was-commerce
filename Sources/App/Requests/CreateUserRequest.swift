@@ -8,10 +8,19 @@
 import Vapor
 import Crypto
 
+/// Struct de request de criar usuário que representa os parametros
 struct CreateUserRequest: Content {
+	
+	/// nome do usuário
 	var name: String
+	
+	/// email do usuário
 	var email: String
+
+	/// password do usuário
 	var password: String
+	
+	/// verificação de password do usuário
 	var verifyPassword: String
 }
 

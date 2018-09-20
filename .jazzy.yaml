@@ -15,11 +15,12 @@ sourcekitten_sourcefile: jazzy.json
 output: Docs
 min_acl: private
 hide_documentation_coverage: true
-skip_undocumented: false
+skip_undocumented: true
 include:
   - "*Controller.swift"
   - "*Response.swift"
   - "*Request.swift"
+  - "*UserToken.swift"  
   
 custom_categories:
 - name: Controllers
@@ -40,6 +41,7 @@ custom_categories:
 
 - name: Responses
   children:
+  - UserToken
   - FavoriteListResponse
   - FavoriteProductResponse
   - ProductListResponse

@@ -7,10 +7,16 @@
 
 import Vapor
 
+/// Struct de response do usuário
 struct UserResponse: Content {
 
+	/// ID do usuário
 	var id: Int
+	
+	/// nome do usuário
 	var name: String
+	
+	/// email do usuário
 	var email: String
 
 	init(user: User) {

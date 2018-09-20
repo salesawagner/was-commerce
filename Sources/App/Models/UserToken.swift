@@ -10,6 +10,7 @@ import Crypto
 import FluentSQLite
 import Vapor
 
+/// Fazer o login e gerar token de acesso para os endpoints que necessitam de autenticação.
 final class UserToken: SQLiteModel {
 
     static func create(userID: Login.ID) throws -> UserToken {
@@ -19,9 +20,16 @@ final class UserToken: SQLiteModel {
 
     static var deletedAtKey: TimestampKey? { return \.expiresAt }
 	
+    /// ID  do token gerado
     var id: Int?
+	
+	/// Token para autenticação
 	var string: String
+	
+	/// ID do usuário logado
 	var userID: Login.ID
+	
+	/// Description
 	var expiresAt: Date?
 
 	init(id: Int? = nil, string: String, userID: Login.ID) {

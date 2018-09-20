@@ -8,6 +8,7 @@
 import Vapor
 import FluentSQLite
 
+/// Controladora para as rota de autenticação
 final class AuthController: RouteCollection {
 
 	func boot(router: Router) throws {

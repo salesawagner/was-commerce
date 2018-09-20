@@ -7,8 +7,13 @@
 
 import Vapor
 
+/// Struct de request de atualização de usuário que representa os parametros
 struct UpdateUserRequest: Content {
+	
+	/// Novo nome do usuário
 	var name: String
+	
+	/// Novo email do usuário
 	var email: String
 }
 

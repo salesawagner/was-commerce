@@ -77,7 +77,7 @@ extension User {
 	}
 	
 	class func favoriteCreate(userID: Int, request: FavoriteProductRequest) throws -> Product {
-		let json = UserMicroService.favoriteCreate(userID: userID, productID: request.id)
+		let json = UserMicroService.favoriteCreate(userID: userID, productID: request.productID)
 
 		guard let product = Product(json: json) else {
 			throw Abort(.badRequest, reason: "Parse error.")

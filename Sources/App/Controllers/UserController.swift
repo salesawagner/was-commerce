@@ -7,6 +7,7 @@
 
 import Vapor
 
+/// Controladora para as rota de produto
 final class UserController: RouteCollection {
 
 	func boot(router: Router) throws {
@@ -114,7 +115,7 @@ final class UserController: RouteCollection {
 		
 		let response = try req.content.decode(FavoriteProductRequest.self).flatMap { product -> Future<Response> in
 			
-			let json = UserMicroService.favoriteDelete(userID: userLocal.id, productID: product.id)
+			let json = UserMicroService.favoriteDelete(userID: userLocal.id, productID: product.productID)
 			guard let success = json["success"] as? Bool, success else {
 				throw Abort(.badRequest, reason: "Parse error.")
 			}

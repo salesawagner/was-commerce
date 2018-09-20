@@ -7,7 +7,10 @@
 
 import Vapor
 
+/// Struct de response da lista de favoritos do usuário
 struct FavoriteListResponse: Content {
+	
+	/// lista de produtos favoritos
 	var list: [FavoriteProductResponse]
 	
 	init(list: [Product]) {
