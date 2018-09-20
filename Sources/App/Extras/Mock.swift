@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// blablaba blablab alb alb alab lab alb alab 
 struct Mock {
 	static let JSONSuccess: [String: Bool] = ["success": true]
 	static var JSONUser: [String: Any] {

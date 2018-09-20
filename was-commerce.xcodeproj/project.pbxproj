@@ -23,6 +23,7 @@
 /* Begin PBXBuildFile section */
 		A709D2482152DAEF009887CD /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = A709D2472152DAEF009887CD /* Product.swift */; };
 		A709D24A2152DB1F009887CD /* Console.swift in Sources */ = {isa = PBXBuildFile; fileRef = A709D2492152DB1F009887CD /* Console.swift */; };
+		A72BCF29215430C500E2088A /* ProductDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72BCF28215430C500E2088A /* ProductDetailResponse.swift */; };
 		A7530436215021C6004B465A /* UserMicroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7530435215021C6004B465A /* UserMicroService.swift */; };
 		A753043B215022A7004B465A /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = A753043A215022A7004B465A /* Typealias.swift */; };
 		A77A6F242153364D00174E41 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A6F232153364D00174E41 /* Login.swift */; };
@@ -5321,6 +5322,7 @@
 /* Begin PBXFileReference section */
 		A709D2472152DAEF009887CD /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		A709D2492152DB1F009887CD /* Console.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Console.swift; sourceTree = "<group>"; };
+		A72BCF28215430C500E2088A /* ProductDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailResponse.swift; sourceTree = "<group>"; };
 		A7530435215021C6004B465A /* UserMicroService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMicroService.swift; sourceTree = "<group>"; };
 		A753043A215022A7004B465A /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
 		A77A6F232153364D00174E41 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
@@ -6973,6 +6975,30 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		A72BCF2621542BA700E2088A /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_19 /* UserResponse.swift */,
+				A7BCC3DC21517C4C002BCE56 /* FavoriteListResponse.swift */,
+				A7BCC3E321518609002BCE56 /* FavoriteProductResponse.swift */,
+				A7BCC3D821516EAE002BCE56 /* ProductResponse.swift */,
+				A7BCC3E52151873B002BCE56 /* ProductListResponse.swift */,
+				A72BCF28215430C500E2088A /* ProductDetailResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		A72BCF2721542BBE00E2088A /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_16 /* CreateUserRequest.swift */,
+				A7BCC3D121516852002BCE56 /* UpdateUserRequest.swift */,
+				A7BCC3D521516DA5002BCE56 /* FavoriteProductRequest.swift */,
+				A7BCC3D3215168A5002BCE56 /* LoginRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
 		A7530434215021B1004B465A /* MicroServices */ = {
 			isa = PBXGroup;
 			children = (
@@ -6991,31 +7017,12 @@
 			path = Extras;
 			sourceTree = "<group>";
 		};
-		A7BCC3CE215163ED002BCE56 /* Entensions */ = {
+		A7BCC3CE215163ED002BCE56 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				A7BCC3CF215163FC002BCE56 /* RouteCollectionEctension.swift */,
 			);
-			path = Entensions;
-			sourceTree = "<group>";
-		};
-		A7BCC3D721516EA1002BCE56 /* Product */ = {
-			isa = PBXGroup;
-			children = (
-				A7BCC3E1215183D1002BCE56 /* ProductController.swift */,
-				A7BCC3D821516EAE002BCE56 /* ProductResponse.swift */,
-				A7BCC3E52151873B002BCE56 /* ProductListResponse.swift */,
-			);
-			path = Product;
-			sourceTree = "<group>";
-		};
-		OBJ_10 /* Auth */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_11 /* AuthController.swift */,
-				A7BCC3D3215168A5002BCE56 /* LoginRequest.swift */,
-			);
-			path = Auth;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		OBJ_105 /* Utilities */ = {
@@ -7137,20 +7144,6 @@
 				OBJ_149 /* QueryBuilder.swift */,
 			);
 			path = QueryBuilder;
-			sourceTree = "<group>";
-		};
-		OBJ_15 /* User */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_18 /* UserController.swift */,
-				OBJ_19 /* UserResponse.swift */,
-				OBJ_16 /* CreateUserRequest.swift */,
-				A7BCC3D121516852002BCE56 /* UpdateUserRequest.swift */,
-				A7BCC3D521516DA5002BCE56 /* FavoriteProductRequest.swift */,
-				A7BCC3DC21517C4C002BCE56 /* FavoriteListResponse.swift */,
-				A7BCC3E321518609002BCE56 /* FavoriteProductResponse.swift */,
-			);
-			path = User;
 			sourceTree = "<group>";
 		};
 		OBJ_150 /* Relations */ = {
@@ -9130,11 +9123,13 @@
 		OBJ_8 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				A72BCF2721542BBE00E2088A /* Requests */,
+				A72BCF2621542BA700E2088A /* Responses */,
 				A709D2462152DA7C009887CD /* Models */,
-				A7BCC3CE215163ED002BCE56 /* Entensions */,
+				A7BCC3CE215163ED002BCE56 /* Extensions */,
 				A75304392150228B004B465A /* Extras */,
 				A7530434215021B1004B465A /* MicroServices */,
-				OBJ_9 /* Modules */,
+				OBJ_9 /* Controllers */,
 				OBJ_21 /* app.swift */,
 				OBJ_22 /* boot.swift */,
 				OBJ_23 /* configure.swift */,
@@ -9291,14 +9286,14 @@
 			path = SQL;
 			sourceTree = "<group>";
 		};
-		OBJ_9 /* Modules */ = {
+		OBJ_9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A7BCC3D721516EA1002BCE56 /* Product */,
-				OBJ_10 /* Auth */,
-				OBJ_15 /* User */,
+				A7BCC3E1215183D1002BCE56 /* ProductController.swift */,
+				OBJ_11 /* AuthController.swift */,
+				OBJ_18 /* UserController.swift */,
 			);
-			path = Modules;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -12112,6 +12107,7 @@
 				A7BCC3DD21517C4C002BCE56 /* FavoriteListResponse.swift in Sources */,
 				A753043B215022A7004B465A /* Typealias.swift in Sources */,
 				OBJ_936 /* UserResponse.swift in Sources */,
+				A72BCF29215430C500E2088A /* ProductDetailResponse.swift in Sources */,
 				OBJ_937 /* UserToken.swift in Sources */,
 				OBJ_938 /* app.swift in Sources */,
 				A709D24A2152DB1F009887CD /* Console.swift in Sources */,

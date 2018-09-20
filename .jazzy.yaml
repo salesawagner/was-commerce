@@ -1,0 +1,45 @@
+# About
+module: App
+author: Wagner Sales
+author_url: https://wagnersales.com.br
+readme: README.md
+
+# URLs
+github_url: https://github.com/salesawagner/was-commerce
+root_url: http://wagnersales.com.br/was-commerce
+github_file_prefix: https://github.com/salesawagner/was-commerce
+
+# Generation
+clean: true
+sourcekitten_sourcefile: jazzy.json
+output: Docs
+min_acl: private
+hide_documentation_coverage: true
+skip_undocumented: false
+include:
+  - "*Controller.swift"
+  - "*Response.swift"
+  - "*Request.swift"
+  
+custom_categories:
+- name: Controllers
+  children:
+  - AuthController
+  - ProductController
+  - UserController
+  
+- name: Requests
+  children:
+  - CreateUserRequest
+  - FavoriteProductRequest
+  - LoginRequest
+  - UpdateUserRequest  
+
+- name: Responses
+  children:
+  - FavoriteListResponse
+  - FavoriteProductResponse
+  - ProductListResponse
+  - ProductResponse
+  - UserResponse
+  - ProductDetailResponse

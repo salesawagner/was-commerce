@@ -1,0 +1,404 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Controllers/AuthController.swift",
+      "line": 11,
+      "symbol": "AuthController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Controllers/AuthController.swift",
+      "line": 29,
+      "symbol": "AuthController.login(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Controllers/AuthController.swift",
+      "line": 46,
+      "symbol": "AuthController.logout(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Controllers/ProductController.swift",
+      "line": 11,
+      "symbol": "ProductController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Controllers/ProductController.swift",
+      "line": 20,
+      "symbol": "ProductController.detail(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Controllers/ProductController.swift",
+      "line": 30,
+      "symbol": "ProductController.list(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Controllers/UserController.swift",
+      "line": 11,
+      "symbol": "UserController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Controllers/UserController.swift",
+      "line": 36,
+      "symbol": "UserController.create(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Controllers/UserController.swift",
+      "line": 51,
+      "symbol": "UserController.me(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Controllers/UserController.swift",
+      "line": 63,
+      "symbol": "UserController.update(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Controllers/UserController.swift",
+      "line": 81,
+      "symbol": "UserController.delete(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Controllers/UserController.swift",
+      "line": 95,
+      "symbol": "UserController.favoriteCreate(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Controllers/UserController.swift",
+      "line": 110,
+      "symbol": "UserController.favoriteDelete(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Controllers/UserController.swift",
+      "line": 129,
+      "symbol": "UserController.favoriteList(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Requests/CreateUserRequest.swift",
+      "line": null,
+      "symbol": "CreateUserRequest",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Requests/CreateUserRequest.swift",
+      "line": 12,
+      "symbol": "CreateUserRequest",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Requests/CreateUserRequest.swift",
+      "line": 13,
+      "symbol": "CreateUserRequest.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Requests/CreateUserRequest.swift",
+      "line": 14,
+      "symbol": "CreateUserRequest.email",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Requests/CreateUserRequest.swift",
+      "line": 15,
+      "symbol": "CreateUserRequest.password",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Requests/CreateUserRequest.swift",
+      "line": 16,
+      "symbol": "CreateUserRequest.verifyPassword",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Requests/CreateUserRequest.swift",
+      "line": 20,
+      "symbol": "CreateUserRequest.toParameters()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Requests/FavoriteProductRequest.swift",
+      "line": 10,
+      "symbol": "FavoriteProductRequest",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Requests/FavoriteProductRequest.swift",
+      "line": 11,
+      "symbol": "FavoriteProductRequest.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Requests/LoginRequest.swift",
+      "line": 10,
+      "symbol": "LoginRequest",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Requests/LoginRequest.swift",
+      "line": 11,
+      "symbol": "LoginRequest.username",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Requests/LoginRequest.swift",
+      "line": 12,
+      "symbol": "LoginRequest.password",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Requests/UpdateUserRequest.swift",
+      "line": null,
+      "symbol": "UpdateUserRequest",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Requests/UpdateUserRequest.swift",
+      "line": 10,
+      "symbol": "UpdateUserRequest",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Requests/UpdateUserRequest.swift",
+      "line": 11,
+      "symbol": "UpdateUserRequest.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Requests/UpdateUserRequest.swift",
+      "line": 12,
+      "symbol": "UpdateUserRequest.email",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Requests/UpdateUserRequest.swift",
+      "line": 16,
+      "symbol": "UpdateUserRequest.toParameters()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Responses/FavoriteListResponse.swift",
+      "line": 10,
+      "symbol": "FavoriteListResponse",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Responses/FavoriteListResponse.swift",
+      "line": 11,
+      "symbol": "FavoriteListResponse.list",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Responses/FavoriteListResponse.swift",
+      "line": 13,
+      "symbol": "FavoriteListResponse.init(list:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Responses/ProductListResponse.swift",
+      "line": 10,
+      "symbol": "ProductListResponse",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Responses/ProductListResponse.swift",
+      "line": 11,
+      "symbol": "ProductListResponse.list",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Responses/ProductListResponse.swift",
+      "line": 13,
+      "symbol": "ProductListResponse.init(products:auth:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Responses/ProductResponse.swift",
+      "line": 10,
+      "symbol": "ProductResponse",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Responses/ProductResponse.swift",
+      "line": 12,
+      "symbol": "ProductResponse.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Responses/ProductResponse.swift",
+      "line": 13,
+      "symbol": "ProductResponse.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Responses/ProductResponse.swift",
+      "line": 14,
+      "symbol": "ProductResponse.consoleID",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Responses/ProductResponse.swift",
+      "line": 15,
+      "symbol": "ProductResponse.isFavorite",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Responses/ProductResponse.swift",
+      "line": 16,
+      "symbol": "ProductResponse.isPurchased",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Responses/ProductResponse.swift",
+      "line": 18,
+      "symbol": "ProductResponse.init(product:auth:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Responses/ProductResponse.swift",
+      "line": 31,
+      "symbol": "ProductDetailResponse",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Responses/ProductResponse.swift",
+      "line": 33,
+      "symbol": "ProductDetailResponse.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Responses/ProductResponse.swift",
+      "line": 34,
+      "symbol": "ProductDetailResponse.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Responses/ProductResponse.swift",
+      "line": 35,
+      "symbol": "ProductDetailResponse.consoleID",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Responses/ProductResponse.swift",
+      "line": 36,
+      "symbol": "ProductDetailResponse.isFavorite",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Responses/ProductResponse.swift",
+      "line": 37,
+      "symbol": "ProductDetailResponse.isPurchased",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Responses/ProductResponse.swift",
+      "line": 38,
+      "symbol": "ProductDetailResponse.recomendations",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Responses/ProductResponse.swift",
+      "line": 40,
+      "symbol": "ProductDetailResponse.init(product:auth:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Responses/UserResponse.swift",
+      "line": 10,
+      "symbol": "UserResponse",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Responses/UserResponse.swift",
+      "line": 12,
+      "symbol": "UserResponse.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Responses/UserResponse.swift",
+      "line": 13,
+      "symbol": "UserResponse.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Responses/UserResponse.swift",
+      "line": 14,
+      "symbol": "UserResponse.email",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/was-commerce/Sources/App/Responses/UserResponse.swift",
+      "line": 16,
+      "symbol": "UserResponse.init(user:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/salesawagner/Documents/Projects/WAS/was-commerce"
+}
