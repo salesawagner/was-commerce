@@ -64,6 +64,20 @@ extension Product: Parameter {
 	}
 }
 
+// MARK: - Helpers
+
+extension Product {
+	class func listProducts(from: [JSON]) -> [Product] {
+		var list: [Product] = []
+		for productJson in from {
+			if let product = Product(json: productJson) {
+				list.append(product)
+			}
+		}
+		return list
+	}
+}
+
 // MARK: - Microservice connection
 
 extension Product {
@@ -86,13 +100,7 @@ extension Product {
 			return []
 		}
 
-		var list: [Product] = []
-		for productJson in jsonList {
-			if let product = Product(json: productJson) {
-				list.append(product)
-			}
-		}
-
+		let list: [Product] = Product.listProducts(from: jsonList)
 		return list
 	}
 	
@@ -103,13 +111,7 @@ extension Product {
 			return []
 		}
 		
-		var list: [Product] = []
-		for productJson in jsonList {
-			if let product = Product(json: productJson) {
-				list.append(product)
-			}
-		}
-		
+		let list: [Product] = Product.listProducts(from: jsonList)
 		return list
 	}
 }

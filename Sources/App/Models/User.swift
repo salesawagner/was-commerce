@@ -10,7 +10,7 @@ import Authentication
 import FluentSQLite
 import Crypto
 
-final class User: NSObject {
+final class User {
 
 	var id: Int
 	var name: String

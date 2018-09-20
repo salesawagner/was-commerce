@@ -7,7 +7,7 @@
 
 import Vapor
 
-final class Console: Encodable, Decodable {
+final class Console {
 	
 	var id: Int
 	var name: String

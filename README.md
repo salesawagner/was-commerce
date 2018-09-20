@@ -1,20 +1,37 @@
-<p align="center">
-    <img src="https://user-images.githubusercontent.com/1342803/43925087-512bb1de-9bf4-11e8-869f-057af9afadb9.png" width="320" alt="Auth Template">
-    <br>
-    <br>
-    <a href="http://docs.vapor.codes/3.0/">
-        <img src="http://img.shields.io/badge/read_the-docs-2196f3.svg" alt="Documentation">
-    </a>
-    <a href="https://discord.gg/vapor">
-        <img src="https://img.shields.io/discord/431917998102675485.svg" alt="Team Chat">
-    </a>
-    <a href="LICENSE">
-        <img src="http://img.shields.io/badge/license-MIT-brightgreen.svg" alt="MIT License">
-    </a>
-    <a href="https://circleci.com/gh/vapor/auth-template">
-        <img src="https://circleci.com/gh/vapor/auth-template.svg?style=shield" alt="Continuous Integration">
-    </a>
-    <a href="https://swift.org">
-        <img src="http://img.shields.io/badge/swift-4.1-brightgreen.svg" alt="Swift 4.1">
-    </a>
-</p>
+<p align="center"><img src="http://wagnersales.com.br/wp-content/uploads/2018/09/logo.png" alt="was-commerce Banner"></p>
+<br>
+##Was-Commerce
+
+[![CircleCI](https://circleci.com/gh/salesawagner/was-commerce/tree/master.svg?style=svg)](https://circleci.com/gh/salesawagner/was-commerce/tree/master)
+[![Language](https://img.shields.io/badge/language-Swift%204.0-orange.svg?style=flat)](https://developer.apple.com/swift/)
+![Platform](https://img.shields.io/badge/platform-OSX-ffc713.svg?style=flat)
+[![License](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](https://github.com/salesawagner/waschat/blob/master/LICENSE)
+
+
+
+Requirements
+=====================
+| Swift Version | Minimum OSX  | Minimum Xcode  |
+|:-------------:|:------------:|:--------------:|
+| 4.0 | OSX 10.13 | Xcode 9+ |
+
+Documentations
+=====================
+- **<a href="http://wagnersales.com.br/was-commerce/api"> API </a>**
+- **<a href="https://wagnersales.com.br/was-commerce/code"> Project </a>**
+
+Server
+=====================
+- **<a href="http://wagnersales.com.br/was-commerce/server"> Run on Heroku </a>**
+- **<a href="https://wagnersales.com.br/was-commerce/vapor"> Run local with vapor </a>**
+
+Author
+==================
+**Wagner Sales**
+
+- **Website:** <a href="http://www.wagnersales.com.br">wagnersales.com.br</a>
+- **Email:** <a href="mailto:salesawagner@gmail.com">salesawagner@gmail.com</a>
+
+License
+================
+MIT license. See the **[LICENSE](https://github.com/salesawagner/waschat/blob/master/LICENSE)** file for more info.

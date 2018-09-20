@@ -27,13 +27,16 @@ custom_categories:
   - AuthController
   - ProductController
   - UserController
+  - CartController
   
 - name: Requests
   children:
   - CreateUserRequest
   - FavoriteProductRequest
   - LoginRequest
-  - UpdateUserRequest  
+  - UpdateUserRequest
+  - CreateCartRequest
+  - CreateCartRequest
 
 - name: Responses
   children:

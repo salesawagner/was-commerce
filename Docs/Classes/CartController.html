@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ProductListResponse Structure Reference</title>
+    <title>CartController Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Struct/ProductListResponse" class="dashAnchor"></a>
-    <a title="ProductListResponse Structure Reference"></a>
+    <a name="//apple_ref/swift/Class/CartController" class="dashAnchor"></a>
+    <a title="CartController Class Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">App Docs</a></p>
@@ -23,7 +23,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">App Reference</a>
         <img id="carat" src="../img/carat.png" />
-        ProductListResponse Structure Reference
+        CartController Class Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -94,10 +94,10 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>ProductListResponse</h1>
+            <h1>CartController</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">ProductListResponse</span> <span class="p">:</span> <span class="kt">Content</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">final</span> <span class="kd">class</span> <span class="kt">CartController</span> <span class="p">:</span> <span class="kt">RouteCollection</span></code></pre>
 
                 </div>
               </div>
@@ -110,9 +110,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:3App19ProductListResponseV4listSayAA0bD0VGvp"></a>
-                    <a name="//apple_ref/swift/Property/list" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3App19ProductListResponseV4listSayAA0bD0VGvp">list</a>
+                    <a name="/s:5Vapor15RouteCollectionP4boot6routeryAA6Router_p_tKF"></a>
+                    <a name="//apple_ref/swift/Method/boot(router:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Vapor15RouteCollectionP4boot6routeryAA6Router_p_tKF">boot(router:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -120,19 +120,18 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">list</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/ProductResponse.html">ProductResponse</a></span><span class="p">]</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">boot</span><span class="p">(</span><span class="nv">router</span><span class="p">:</span> <span class="kt">Router</span><span class="p">)</span> <span class="k">throws</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/salesawagner/was-commerce/Sources/App/Responses/ProductListResponse.swift#L">Show on GitHub</a>
+                        <a href="https://github.com/salesawagner/was-commerce/Sources/App/Controllers/CartController.swift#L12-L17">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -140,9 +139,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:3App19ProductListResponseV8products4authACSayAA0B0CG_Sbtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(products:auth:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3App19ProductListResponseV8products4authACSayAA0B0CG_Sbtcfc">init(products:auth:)</a>
+                    <a name="/s:3App14CartControllerC6createy3NIO15EventLoopFutureCy5Vapor8ResponseCGAH7RequestCKF"></a>
+                    <a name="//apple_ref/swift/Method/create(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App14CartControllerC6createy3NIO15EventLoopFutureCy5Vapor8ResponseCGAH7RequestCKF">create(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -157,12 +156,42 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">products</span><span class="p">:</span> <span class="p">[</span><span class="kt">Product</span><span class="p">],</span> <span class="nv">auth</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">create</span><span class="p">(</span><span class="n">_</span> <span class="nv">req</span><span class="p">:</span> <span class="kt">Request</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Future</span><span class="o">&lt;</span><span class="kt">Response</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/salesawagner/was-commerce/Sources/App/Responses/ProductListResponse.swift#L13-L20">Show on GitHub</a>
+                        <a href="https://github.com/salesawagner/was-commerce/Sources/App/Controllers/CartController.swift#L19-L33">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3App14CartControllerC4listy3NIO15EventLoopFutureCy5Vapor8ResponseCGAH7RequestCKF"></a>
+                    <a name="//apple_ref/swift/Method/list(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3App14CartControllerC4listy3NIO15EventLoopFutureCy5Vapor8ResponseCGAH7RequestCKF">list(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">list</span><span class="p">(</span><span class="n">_</span> <span class="nv">req</span><span class="p">:</span> <span class="kt">Request</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Future</span><span class="o">&lt;</span><span class="kt">Response</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/salesawagner/was-commerce/Sources/App/Controllers/CartController.swift#L35-L45">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

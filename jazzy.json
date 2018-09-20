@@ -245,6 +245,287 @@
     ]
   }
 }, {
+  "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Controllers\/CartController.swift" : {
+    "key.diagnostic_stage" : "source.diagnostic.stage.swift.parse",
+    "key.length" : 1103,
+    "key.offset" : 0,
+    "key.substructure" : [
+      {
+        "key.accessibility" : "source.lang.swift.accessibility.internal",
+        "key.annotated_decl" : "<Declaration>final class CartController : <Type usr=\"s:5Vapor15RouteCollectionP\">RouteCollection<\/Type><\/Declaration>",
+        "key.attributes" : [
+          {
+            "key.attribute" : "source.decl.attribute.final",
+            "key.length" : 5,
+            "key.offset" : 98
+          }
+        ],
+        "key.bodylength" : 958,
+        "key.bodyoffset" : 143,
+        "key.elements" : [
+          {
+            "key.kind" : "source.lang.swift.structure.elem.typeref",
+            "key.length" : 15,
+            "key.offset" : 126
+          }
+        ],
+        "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Controllers\/CartController.swift",
+        "key.fully_annotated_decl" : "<decl.class><syntaxtype.keyword>final<\/syntaxtype.keyword> <syntaxtype.keyword>class<\/syntaxtype.keyword> <decl.name>CartController<\/decl.name> : <ref.protocol usr=\"s:5Vapor15RouteCollectionP\">RouteCollection<\/ref.protocol><\/decl.class>",
+        "key.inheritedtypes" : [
+          {
+            "key.name" : "RouteCollection"
+          }
+        ],
+        "key.kind" : "source.lang.swift.decl.class",
+        "key.length" : 998,
+        "key.name" : "CartController",
+        "key.namelength" : 14,
+        "key.nameoffset" : 110,
+        "key.offset" : 104,
+        "key.parsed_declaration" : "final class CartController: RouteCollection",
+        "key.parsed_scope.end" : 46,
+        "key.parsed_scope.start" : 10,
+        "key.runtime_name" : "_TtC4main14CartController",
+        "key.substructure" : [
+          {
+            "key.accessibility" : "source.lang.swift.accessibility.internal",
+            "key.annotated_decl" : "<Declaration>func boot(router: <Type usr=\"s:5Vapor6RouterP\">Router<\/Type>) throws<\/Declaration>",
+            "key.bodylength" : 190,
+            "key.bodyoffset" : 181,
+            "key.doc.declaration" : "func boot(router: Router) throws",
+            "key.doc.full_as_xml" : "<Function><Name>boot(router:)<\/Name><USR>s:5Vapor15RouteCollectionP4boot6routeryAA6Router_p_tKF<\/USR><Declaration>func boot(router: Router) throws<\/Declaration><CommentParts><Abstract><Para>Registers routes to the incoming router.<\/Para><\/Abstract><Parameters><Parameter><Name>router<\/Name><Direction isExplicit=\"0\">in<\/Direction><Discussion><Para><codeVoice>Router<\/codeVoice> to register any new routes to.<\/Para><\/Discussion><\/Parameter><\/Parameters><\/CommentParts><\/Function>",
+            "key.doc.name" : "boot(router:)",
+            "key.doc.parameters" : [
+              {
+                "discussion" : [
+                  {
+                    "Para" : "`Router` to register any new routes to."
+                  }
+                ],
+                "name" : "router"
+              }
+            ],
+            "key.doc.type" : "Function",
+            "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Controllers\/CartController.swift",
+            "key.fully_annotated_decl" : "<decl.function.method.instance><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>boot<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>router<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.protocol usr=\"s:5Vapor6RouterP\">Router<\/ref.protocol><\/decl.var.parameter.type><\/decl.var.parameter>) <syntaxtype.keyword>throws<\/syntaxtype.keyword><\/decl.function.method.instance>",
+            "key.kind" : "source.lang.swift.decl.function.method.instance",
+            "key.length" : 225,
+            "key.name" : "boot(router:)",
+            "key.namelength" : 20,
+            "key.nameoffset" : 152,
+            "key.offset" : 147,
+            "key.overrides" : [
+              {
+                "key.usr" : "s:5Vapor15RouteCollectionP4boot6routeryAA6Router_p_tKF"
+              }
+            ],
+            "key.parsed_declaration" : "func boot(router: Router) throws",
+            "key.parsed_scope.end" : 17,
+            "key.parsed_scope.start" : 12,
+            "key.substructure" : [
+              {
+                "key.annotated_decl" : "<Declaration>let group: <Type usr=\"s:5Vapor6RouterP\">Router<\/Type><\/Declaration>",
+                "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Controllers\/CartController.swift",
+                "key.fully_annotated_decl" : "<decl.var.local><syntaxtype.keyword>let<\/syntaxtype.keyword> <decl.name>group<\/decl.name>: <decl.var.type><ref.protocol usr=\"s:5Vapor6RouterP\">Router<\/ref.protocol><\/decl.var.type><\/decl.var.local>",
+                "key.kind" : "source.lang.swift.decl.var.local",
+                "key.length" : 34,
+                "key.name" : "group",
+                "key.namelength" : 5,
+                "key.nameoffset" : 188,
+                "key.offset" : 184,
+                "key.parsed_declaration" : "let group = router.grouped(\"cart\")",
+                "key.parsed_scope.end" : 13,
+                "key.parsed_scope.start" : 13,
+                "key.related_decls" : [
+                  {
+                    "key.annotated_decl" : "<RelatedName usr=\"c:@S@group\">group<\/RelatedName>"
+                  }
+                ],
+                "key.typename" : "Router",
+                "key.typeusr" : "$S5Vapor6Router_pD",
+                "key.usr" : "s:3App14CartControllerC4boot6routery5Vapor6Router_p_tKF5groupL_AfG_pvp"
+              },
+              {
+                "key.annotated_decl" : "<Declaration>let tokenAuthGroup: <Type usr=\"s:5Vapor6RouterP\">Router<\/Type><\/Declaration>",
+                "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Controllers\/CartController.swift",
+                "key.fully_annotated_decl" : "<decl.var.local><syntaxtype.keyword>let<\/syntaxtype.keyword> <decl.name>tokenAuthGroup<\/decl.name>: <decl.var.type><ref.protocol usr=\"s:5Vapor6RouterP\">Router<\/ref.protocol><\/decl.var.type><\/decl.var.local>",
+                "key.kind" : "source.lang.swift.decl.var.local",
+                "key.length" : 63,
+                "key.name" : "tokenAuthGroup",
+                "key.namelength" : 14,
+                "key.nameoffset" : 225,
+                "key.offset" : 221,
+                "key.parsed_declaration" : "let tokenAuthGroup = group.grouped(Login.tokenAuthMiddleware())",
+                "key.parsed_scope.end" : 14,
+                "key.parsed_scope.start" : 14,
+                "key.typename" : "Router",
+                "key.typeusr" : "$S5Vapor6Router_pD",
+                "key.usr" : "s:3App14CartControllerC4boot6routery5Vapor6Router_p_tKF14tokenAuthGroupL_AfG_pvp"
+              }
+            ],
+            "key.typename" : "(CartController) -> (Router) throws -> ()",
+            "key.typeusr" : "$S6routery5Vapor6Router_p_tKcD",
+            "key.usr" : "s:5Vapor15RouteCollectionP4boot6routeryAA6Router_p_tKF"
+          },
+          {
+            "key.accessibility" : "source.lang.swift.accessibility.internal",
+            "key.annotated_decl" : "<Declaration>func create(_ req: <Type usr=\"s:5Vapor7RequestC\">Request<\/Type>) throws -&gt; <Type usr=\"s:5Async6Futurea\">Future<\/Type>&lt;<Type usr=\"s:5Vapor8ResponseC\">Response<\/Type>&gt;<\/Declaration>",
+            "key.bodylength" : 391,
+            "key.bodyoffset" : 432,
+            "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Controllers\/CartController.swift",
+            "key.fully_annotated_decl" : "<decl.function.method.instance><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>create<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>_<\/decl.var.parameter.argument_label> <decl.var.parameter.name>req<\/decl.var.parameter.name>: <decl.var.parameter.type><ref.class usr=\"s:5Vapor7RequestC\">Request<\/ref.class><\/decl.var.parameter.type><\/decl.var.parameter>) <syntaxtype.keyword>throws<\/syntaxtype.keyword> -&gt; <decl.function.returntype><ref.typealias usr=\"s:5Async6Futurea\">Future<\/ref.typealias>&lt;<ref.class usr=\"s:5Vapor8ResponseC\">Response<\/ref.class>&gt;<\/decl.function.returntype><\/decl.function.method.instance>",
+            "key.kind" : "source.lang.swift.decl.function.method.instance",
+            "key.length" : 448,
+            "key.name" : "create(_:)",
+            "key.namelength" : 22,
+            "key.nameoffset" : 381,
+            "key.offset" : 376,
+            "key.parsed_declaration" : "func create(_ req: Request) throws -> Future<Response>",
+            "key.parsed_scope.end" : 33,
+            "key.parsed_scope.start" : 19,
+            "key.substructure" : [
+              {
+                "key.annotated_decl" : "<Declaration>let userLocal: <Type usr=\"s:3App4UserC\">User<\/Type>?<\/Declaration>",
+                "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Controllers\/CartController.swift",
+                "key.fully_annotated_decl" : "<decl.var.local><syntaxtype.keyword>let<\/syntaxtype.keyword> <decl.name>userLocal<\/decl.name>: <decl.var.type><ref.class usr=\"s:3App4UserC\">User<\/ref.class>?<\/decl.var.type><\/decl.var.local>",
+                "key.kind" : "source.lang.swift.decl.var.local",
+                "key.length" : 44,
+                "key.name" : "userLocal",
+                "key.namelength" : 9,
+                "key.nameoffset" : 440,
+                "key.offset" : 436,
+                "key.parsed_declaration" : "let userLocal = try Login.authenticated(req)",
+                "key.parsed_scope.end" : 21,
+                "key.parsed_scope.start" : 21,
+                "key.typename" : "User?",
+                "key.typeusr" : "$S3App4UserCSgD",
+                "key.usr" : "s:3App14CartControllerC6createy3NIO15EventLoopFutureCy5Vapor8ResponseCGAH7RequestCKF9userLocalL_AA4UserCSgvp"
+              },
+              {
+                "key.annotated_decl" : "<Declaration>let response: <Type usr=\"s:3NIO15EventLoopFutureC\">EventLoopFuture<\/Type>&lt;<Type usr=\"s:5Vapor8ResponseC\">Response<\/Type>&gt;<\/Declaration>",
+                "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Controllers\/CartController.swift",
+                "key.fully_annotated_decl" : "<decl.var.local><syntaxtype.keyword>let<\/syntaxtype.keyword> <decl.name>response<\/decl.name>: <decl.var.type><ref.class usr=\"s:3NIO15EventLoopFutureC\">EventLoopFuture<\/ref.class>&lt;<ref.class usr=\"s:5Vapor8ResponseC\">Response<\/ref.class>&gt;<\/decl.var.type><\/decl.var.local>",
+                "key.kind" : "source.lang.swift.decl.var.local",
+                "key.length" : 318,
+                "key.name" : "response",
+                "key.namelength" : 8,
+                "key.nameoffset" : 488,
+                "key.offset" : 484,
+                "key.parsed_declaration" : "let response = try req.content.decode(CreateCartRequest.self).flatMap { request -> Future<Response> in",
+                "key.parsed_scope.end" : 23,
+                "key.parsed_scope.start" : 23,
+                "key.typename" : "EventLoopFuture<Response>",
+                "key.typeusr" : "$S3NIO15EventLoopFutureCy5Vapor8ResponseCGD",
+                "key.usr" : "s:3App14CartControllerC6createy3NIO15EventLoopFutureCy5Vapor8ResponseCGAH7RequestCKF8responseL_AKvp"
+              }
+            ],
+            "key.typename" : "(CartController) -> (Request) throws -> EventLoopFuture<Response>",
+            "key.typeusr" : "$Sy3NIO15EventLoopFutureCy5Vapor8ResponseCGAD7RequestCKcD",
+            "key.usr" : "s:3App14CartControllerC6createy3NIO15EventLoopFutureCy5Vapor8ResponseCGAH7RequestCKF"
+          },
+          {
+            "key.accessibility" : "source.lang.swift.accessibility.internal",
+            "key.annotated_decl" : "<Declaration>func list(_ req: <Type usr=\"s:5Vapor7RequestC\">Request<\/Type>) throws -&gt; <Type usr=\"s:5Async6Futurea\">Future<\/Type>&lt;<Type usr=\"s:5Vapor8ResponseC\">Response<\/Type>&gt;<\/Declaration>",
+            "key.bodylength" : 217,
+            "key.bodyoffset" : 882,
+            "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Controllers\/CartController.swift",
+            "key.fully_annotated_decl" : "<decl.function.method.instance><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>list<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>_<\/decl.var.parameter.argument_label> <decl.var.parameter.name>req<\/decl.var.parameter.name>: <decl.var.parameter.type><ref.class usr=\"s:5Vapor7RequestC\">Request<\/ref.class><\/decl.var.parameter.type><\/decl.var.parameter>) <syntaxtype.keyword>throws<\/syntaxtype.keyword> -&gt; <decl.function.returntype><ref.typealias usr=\"s:5Async6Futurea\">Future<\/ref.typealias>&lt;<ref.class usr=\"s:5Vapor8ResponseC\">Response<\/ref.class>&gt;<\/decl.function.returntype><\/decl.function.method.instance>",
+            "key.kind" : "source.lang.swift.decl.function.method.instance",
+            "key.length" : 272,
+            "key.name" : "list(_:)",
+            "key.namelength" : 20,
+            "key.nameoffset" : 833,
+            "key.offset" : 828,
+            "key.parsed_declaration" : "func list(_ req: Request) throws -> Future<Response>",
+            "key.parsed_scope.end" : 45,
+            "key.parsed_scope.start" : 35,
+            "key.substructure" : [
+              {
+                "key.annotated_decl" : "<Declaration>let userLocal: <Type usr=\"s:3App4UserC\">User<\/Type>?<\/Declaration>",
+                "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Controllers\/CartController.swift",
+                "key.fully_annotated_decl" : "<decl.var.local><syntaxtype.keyword>let<\/syntaxtype.keyword> <decl.name>userLocal<\/decl.name>: <decl.var.type><ref.class usr=\"s:3App4UserC\">User<\/ref.class>?<\/decl.var.type><\/decl.var.local>",
+                "key.kind" : "source.lang.swift.decl.var.local",
+                "key.length" : 44,
+                "key.name" : "userLocal",
+                "key.namelength" : 9,
+                "key.nameoffset" : 890,
+                "key.offset" : 886,
+                "key.parsed_declaration" : "let userLocal = try Login.authenticated(req)",
+                "key.parsed_scope.end" : 37,
+                "key.parsed_scope.start" : 37,
+                "key.typename" : "User?",
+                "key.typeusr" : "$S3App4UserCSgD",
+                "key.usr" : "s:3App14CartControllerC4listy3NIO15EventLoopFutureCy5Vapor8ResponseCGAH7RequestCKF9userLocalL_AA4UserCSgvp"
+              },
+              {
+                "key.annotated_decl" : "<Declaration>let userID: <Type usr=\"s:Si\">Int<\/Type>?<\/Declaration>",
+                "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Controllers\/CartController.swift",
+                "key.fully_annotated_decl" : "<decl.var.local><syntaxtype.keyword>let<\/syntaxtype.keyword> <decl.name>userID<\/decl.name>: <decl.var.type><ref.struct usr=\"s:Si\">Int<\/ref.struct>?<\/decl.var.type><\/decl.var.local>",
+                "key.kind" : "source.lang.swift.decl.var.local",
+                "key.length" : 26,
+                "key.name" : "userID",
+                "key.namelength" : 6,
+                "key.nameoffset" : 938,
+                "key.offset" : 934,
+                "key.parsed_declaration" : "let userID = userLocal?.id",
+                "key.parsed_scope.end" : 39,
+                "key.parsed_scope.start" : 39,
+                "key.typename" : "Int?",
+                "key.typeusr" : "$SSiSgD",
+                "key.usr" : "s:3App14CartControllerC4listy3NIO15EventLoopFutureCy5Vapor8ResponseCGAH7RequestCKF6userIDL_SiSgvp"
+              },
+              {
+                "key.annotated_decl" : "<Declaration>let list: [<Type usr=\"s:3App7ProductC\">Product<\/Type>]<\/Declaration>",
+                "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Controllers\/CartController.swift",
+                "key.fully_annotated_decl" : "<decl.var.local><syntaxtype.keyword>let<\/syntaxtype.keyword> <decl.name>list<\/decl.name>: <decl.var.type>[<ref.class usr=\"s:3App7ProductC\">Product<\/ref.class>]<\/decl.var.type><\/decl.var.local>",
+                "key.kind" : "source.lang.swift.decl.var.local",
+                "key.length" : 40,
+                "key.name" : "list",
+                "key.namelength" : 4,
+                "key.nameoffset" : 968,
+                "key.offset" : 964,
+                "key.parsed_declaration" : "let list = try Cart.list(userID: userID)",
+                "key.parsed_scope.end" : 41,
+                "key.parsed_scope.start" : 41,
+                "key.related_decls" : [
+                  {
+                    "key.annotated_decl" : "<RelatedName usr=\"s:3App14CartControllerC4listy3NIO15EventLoopFutureCy5Vapor8ResponseCGAH7RequestCKF\">list(_:)<\/RelatedName>"
+                  }
+                ],
+                "key.typename" : "[Product]",
+                "key.typeusr" : "$SSay3App7ProductCGD",
+                "key.usr" : "s:3App14CartControllerC4listy3NIO15EventLoopFutureCy5Vapor8ResponseCGAH7RequestCKFADL_SayAA7ProductCGvp"
+              },
+              {
+                "key.annotated_decl" : "<Declaration>let response: <Type usr=\"s:3App19ProductListResponseV\">ProductListResponse<\/Type><\/Declaration>",
+                "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Controllers\/CartController.swift",
+                "key.fully_annotated_decl" : "<decl.var.local><syntaxtype.keyword>let<\/syntaxtype.keyword> <decl.name>response<\/decl.name>: <decl.var.type><ref.struct usr=\"s:3App19ProductListResponseV\">ProductListResponse<\/ref.struct><\/decl.var.type><\/decl.var.local>",
+                "key.kind" : "source.lang.swift.decl.var.local",
+                "key.length" : 50,
+                "key.name" : "response",
+                "key.namelength" : 8,
+                "key.nameoffset" : 1011,
+                "key.offset" : 1007,
+                "key.parsed_declaration" : "let response = ProductListResponse(products: list)",
+                "key.parsed_scope.end" : 42,
+                "key.parsed_scope.start" : 42,
+                "key.typename" : "ProductListResponse",
+                "key.typeusr" : "$S3App19ProductListResponseVD",
+                "key.usr" : "s:3App14CartControllerC4listy3NIO15EventLoopFutureCy5Vapor8ResponseCGAH7RequestCKF8responseL_AA011ProductListJ0Vvp"
+              }
+            ],
+            "key.typename" : "(CartController) -> (Request) throws -> EventLoopFuture<Response>",
+            "key.typeusr" : "$Sy3NIO15EventLoopFutureCy5Vapor8ResponseCGAD7RequestCKcD",
+            "key.usr" : "s:3App14CartControllerC4listy3NIO15EventLoopFutureCy5Vapor8ResponseCGAH7RequestCKF"
+          }
+        ],
+        "key.typename" : "CartController.Type",
+        "key.typeusr" : "$S3App14CartControllerCmD",
+        "key.usr" : "s:3App14CartControllerC"
+      }
+    ]
+  }
+}, {
   "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Controllers\/ProductController.swift" : {
     "key.diagnostic_stage" : "source.diagnostic.stage.swift.parse",
     "key.length" : 1056,
@@ -402,9 +683,9 @@
                 "key.usr" : "s:3App17ProductControllerC6detaily3NIO15EventLoopFutureCy5Vapor8ResponseCGAH7RequestCKF9productIDL_Sivp"
               },
               {
-                "key.annotated_decl" : "<Declaration>let user: <Type usr=\"c:@M@App@objc(cs)User\">User<\/Type>?<\/Declaration>",
+                "key.annotated_decl" : "<Declaration>let user: <Type usr=\"s:3App4UserC\">User<\/Type>?<\/Declaration>",
                 "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Controllers\/ProductController.swift",
-                "key.fully_annotated_decl" : "<decl.var.local><syntaxtype.keyword>let<\/syntaxtype.keyword> <decl.name>user<\/decl.name>: <decl.var.type><ref.class usr=\"c:@M@App@objc(cs)User\">User<\/ref.class>?<\/decl.var.type><\/decl.var.local>",
+                "key.fully_annotated_decl" : "<decl.var.local><syntaxtype.keyword>let<\/syntaxtype.keyword> <decl.name>user<\/decl.name>: <decl.var.type><ref.class usr=\"s:3App4UserC\">User<\/ref.class>?<\/decl.var.type><\/decl.var.local>",
                 "key.kind" : "source.lang.swift.decl.var.local",
                 "key.length" : 39,
                 "key.name" : "user",
@@ -480,9 +761,9 @@
             "key.parsed_scope.start" : 30,
             "key.substructure" : [
               {
-                "key.annotated_decl" : "<Declaration>let user: <Type usr=\"c:@M@App@objc(cs)User\">User<\/Type>?<\/Declaration>",
+                "key.annotated_decl" : "<Declaration>let user: <Type usr=\"s:3App4UserC\">User<\/Type>?<\/Declaration>",
                 "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Controllers\/ProductController.swift",
-                "key.fully_annotated_decl" : "<decl.var.local><syntaxtype.keyword>let<\/syntaxtype.keyword> <decl.name>user<\/decl.name>: <decl.var.type><ref.class usr=\"c:@M@App@objc(cs)User\">User<\/ref.class>?<\/decl.var.type><\/decl.var.local>",
+                "key.fully_annotated_decl" : "<decl.var.local><syntaxtype.keyword>let<\/syntaxtype.keyword> <decl.name>user<\/decl.name>: <decl.var.type><ref.class usr=\"s:3App4UserC\">User<\/ref.class>?<\/decl.var.type><\/decl.var.local>",
                 "key.kind" : "source.lang.swift.decl.var.local",
                 "key.length" : 39,
                 "key.name" : "user",
@@ -555,7 +836,7 @@
 }, {
   "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Controllers\/UserController.swift" : {
     "key.diagnostic_stage" : "source.diagnostic.stage.swift.parse",
-    "key.length" : 3781,
+    "key.length" : 3761,
     "key.offset" : 0,
     "key.substructure" : [
       {
@@ -565,16 +846,16 @@
           {
             "key.attribute" : "source.decl.attribute.final",
             "key.length" : 5,
-            "key.offset" : 118
+            "key.offset" : 98
           }
         ],
         "key.bodylength" : 3616,
-        "key.bodyoffset" : 163,
+        "key.bodyoffset" : 143,
         "key.elements" : [
           {
             "key.kind" : "source.lang.swift.structure.elem.typeref",
             "key.length" : 15,
-            "key.offset" : 146
+            "key.offset" : 126
           }
         ],
         "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Controllers\/UserController.swift",
@@ -588,18 +869,18 @@
         "key.length" : 3656,
         "key.name" : "UserController",
         "key.namelength" : 14,
-        "key.nameoffset" : 130,
-        "key.offset" : 124,
+        "key.nameoffset" : 110,
+        "key.offset" : 104,
         "key.parsed_declaration" : "final class UserController: RouteCollection",
-        "key.parsed_scope.end" : 141,
-        "key.parsed_scope.start" : 11,
+        "key.parsed_scope.end" : 140,
+        "key.parsed_scope.start" : 10,
         "key.runtime_name" : "_TtC4main14UserController",
         "key.substructure" : [
           {
             "key.accessibility" : "source.lang.swift.accessibility.internal",
             "key.annotated_decl" : "<Declaration>func boot(router: <Type usr=\"s:5Vapor6RouterP\">Router<\/Type>) throws<\/Declaration>",
             "key.bodylength" : 506,
-            "key.bodyoffset" : 200,
+            "key.bodyoffset" : 180,
             "key.doc.declaration" : "func boot(router: Router) throws",
             "key.doc.full_as_xml" : "<Function><Name>boot(router:)<\/Name><USR>s:5Vapor15RouteCollectionP4boot6routeryAA6Router_p_tKF<\/USR><Declaration>func boot(router: Router) throws<\/Declaration><CommentParts><Abstract><Para>Registers routes to the incoming router.<\/Para><\/Abstract><Parameters><Parameter><Name>router<\/Name><Direction isExplicit=\"0\">in<\/Direction><Discussion><Para><codeVoice>Router<\/codeVoice> to register any new routes to.<\/Para><\/Discussion><\/Parameter><\/Parameters><\/CommentParts><\/Function>",
             "key.doc.name" : "boot(router:)",
@@ -620,16 +901,16 @@
             "key.length" : 541,
             "key.name" : "boot(router:)",
             "key.namelength" : 20,
-            "key.nameoffset" : 171,
-            "key.offset" : 166,
+            "key.nameoffset" : 151,
+            "key.offset" : 146,
             "key.overrides" : [
               {
                 "key.usr" : "s:5Vapor15RouteCollectionP4boot6routeryAA6Router_p_tKF"
               }
             ],
             "key.parsed_declaration" : "func boot(router: Router) throws",
-            "key.parsed_scope.end" : 32,
-            "key.parsed_scope.start" : 13,
+            "key.parsed_scope.end" : 31,
+            "key.parsed_scope.start" : 12,
             "key.substructure" : [
               {
                 "key.annotated_decl" : "<Declaration>let group: <Type usr=\"s:5Vapor6RouterP\">Router<\/Type><\/Declaration>",
@@ -639,11 +920,11 @@
                 "key.length" : 34,
                 "key.name" : "group",
                 "key.namelength" : 5,
-                "key.nameoffset" : 208,
-                "key.offset" : 204,
+                "key.nameoffset" : 188,
+                "key.offset" : 184,
                 "key.parsed_declaration" : "let group = router.grouped(\"user\")",
-                "key.parsed_scope.end" : 15,
-                "key.parsed_scope.start" : 15,
+                "key.parsed_scope.end" : 14,
+                "key.parsed_scope.start" : 14,
                 "key.related_decls" : [
                   {
                     "key.annotated_decl" : "<RelatedName usr=\"c:@S@group\">group<\/RelatedName>"
@@ -661,11 +942,11 @@
                 "key.length" : 58,
                 "key.name" : "tokenAuthGroup",
                 "key.namelength" : 14,
-                "key.nameoffset" : 310,
-                "key.offset" : 306,
+                "key.nameoffset" : 290,
+                "key.offset" : 286,
                 "key.parsed_declaration" : "let tokenAuthGroup = self.getTokenAuthGroup(router: group)",
-                "key.parsed_scope.end" : 23,
-                "key.parsed_scope.start" : 23,
+                "key.parsed_scope.end" : 22,
+                "key.parsed_scope.start" : 22,
                 "key.typename" : "Router",
                 "key.typeusr" : "$S5Vapor6Router_pD",
                 "key.usr" : "s:3App14UserControllerC4boot6routery5Vapor6Router_p_tKF14tokenAuthGroupL_AfG_pvp"
@@ -678,11 +959,11 @@
                 "key.length" : 54,
                 "key.name" : "favoriteGroup",
                 "key.namelength" : 13,
-                "key.nameoffset" : 501,
-                "key.offset" : 497,
+                "key.nameoffset" : 481,
+                "key.offset" : 477,
                 "key.parsed_declaration" : "let favoriteGroup = tokenAuthGroup.grouped(\"favorite\")",
-                "key.parsed_scope.end" : 28,
-                "key.parsed_scope.start" : 28,
+                "key.parsed_scope.end" : 27,
+                "key.parsed_scope.start" : 27,
                 "key.typename" : "Router",
                 "key.typeusr" : "$S5Vapor6Router_pD",
                 "key.usr" : "s:3App14UserControllerC4boot6routery5Vapor6Router_p_tKF13favoriteGroupL_AfG_pvp"
@@ -698,24 +979,24 @@
             "key.name" : "MARK: - PUBLIC",
             "key.namelength" : 0,
             "key.nameoffset" : 0,
-            "key.offset" : 713
+            "key.offset" : 693
           },
           {
             "key.accessibility" : "source.lang.swift.accessibility.internal",
             "key.annotated_decl" : "<Declaration>func create(_ req: <Type usr=\"s:5Vapor7RequestC\">Request<\/Type>) throws -&gt; <Type usr=\"s:5Async6Futurea\">Future<\/Type>&lt;<Type usr=\"s:5Vapor8ResponseC\">Response<\/Type>&gt;<\/Declaration>",
             "key.bodylength" : 262,
-            "key.bodyoffset" : 786,
+            "key.bodyoffset" : 766,
             "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Controllers\/UserController.swift",
             "key.fully_annotated_decl" : "<decl.function.method.instance><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>create<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>_<\/decl.var.parameter.argument_label> <decl.var.parameter.name>req<\/decl.var.parameter.name>: <decl.var.parameter.type><ref.class usr=\"s:5Vapor7RequestC\">Request<\/ref.class><\/decl.var.parameter.type><\/decl.var.parameter>) <syntaxtype.keyword>throws<\/syntaxtype.keyword> -&gt; <decl.function.returntype><ref.typealias usr=\"s:5Async6Futurea\">Future<\/ref.typealias>&lt;<ref.class usr=\"s:5Vapor8ResponseC\">Response<\/ref.class>&gt;<\/decl.function.returntype><\/decl.function.method.instance>",
             "key.kind" : "source.lang.swift.decl.function.method.instance",
             "key.length" : 319,
             "key.name" : "create(_:)",
             "key.namelength" : 22,
-            "key.nameoffset" : 735,
-            "key.offset" : 730,
+            "key.nameoffset" : 715,
+            "key.offset" : 710,
             "key.parsed_declaration" : "func create(_ req: Request) throws -> Future<Response>",
-            "key.parsed_scope.end" : 45,
-            "key.parsed_scope.start" : 36,
+            "key.parsed_scope.end" : 44,
+            "key.parsed_scope.start" : 35,
             "key.substructure" : [
               {
                 "key.annotated_decl" : "<Declaration>let response: <Type usr=\"s:3NIO15EventLoopFutureC\">EventLoopFuture<\/Type>&lt;<Type usr=\"s:5Vapor8ResponseC\">Response<\/Type>&gt;<\/Declaration>",
@@ -725,11 +1006,11 @@
                 "key.length" : 237,
                 "key.name" : "response",
                 "key.namelength" : 8,
-                "key.nameoffset" : 794,
-                "key.offset" : 790,
+                "key.nameoffset" : 774,
+                "key.offset" : 770,
                 "key.parsed_declaration" : "let response = try req.content.decode(CreateUserRequest.self).flatMap { request -> Future<Response> in",
-                "key.parsed_scope.end" : 38,
-                "key.parsed_scope.start" : 38,
+                "key.parsed_scope.end" : 37,
+                "key.parsed_scope.start" : 37,
                 "key.typename" : "EventLoopFuture<Response>",
                 "key.typeusr" : "$S3NIO15EventLoopFutureCy5Vapor8ResponseCGD",
                 "key.usr" : "s:3App14UserControllerC6createy3NIO15EventLoopFutureCy5Vapor8ResponseCGAH7RequestCKF8responseL_AKvp"
@@ -745,7 +1026,7 @@
             "key.name" : "MARK: - AUTH",
             "key.namelength" : 0,
             "key.nameoffset" : 0,
-            "key.offset" : 1055
+            "key.offset" : 1035
           },
           {
             "key.kind" : "source.lang.swift.syntaxtype.comment.mark",
@@ -753,38 +1034,38 @@
             "key.name" : "MARK: - User",
             "key.namelength" : 0,
             "key.nameoffset" : 0,
-            "key.offset" : 1074
+            "key.offset" : 1054
           },
           {
             "key.accessibility" : "source.lang.swift.accessibility.internal",
             "key.annotated_decl" : "<Declaration>func me(_ req: <Type usr=\"s:5Vapor7RequestC\">Request<\/Type>) throws -&gt; <Type usr=\"s:5Async6Futurea\">Future<\/Type>&lt;<Type usr=\"s:5Vapor8ResponseC\">Response<\/Type>&gt;<\/Declaration>",
             "key.bodylength" : 268,
-            "key.bodyoffset" : 1141,
+            "key.bodyoffset" : 1121,
             "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Controllers\/UserController.swift",
             "key.fully_annotated_decl" : "<decl.function.method.instance><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>me<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>_<\/decl.var.parameter.argument_label> <decl.var.parameter.name>req<\/decl.var.parameter.name>: <decl.var.parameter.type><ref.class usr=\"s:5Vapor7RequestC\">Request<\/ref.class><\/decl.var.parameter.type><\/decl.var.parameter>) <syntaxtype.keyword>throws<\/syntaxtype.keyword> -&gt; <decl.function.returntype><ref.typealias usr=\"s:5Async6Futurea\">Future<\/ref.typealias>&lt;<ref.class usr=\"s:5Vapor8ResponseC\">Response<\/ref.class>&gt;<\/decl.function.returntype><\/decl.function.method.instance>",
             "key.kind" : "source.lang.swift.decl.function.method.instance",
             "key.length" : 321,
             "key.name" : "me(_:)",
             "key.namelength" : 18,
-            "key.nameoffset" : 1094,
-            "key.offset" : 1089,
+            "key.nameoffset" : 1074,
+            "key.offset" : 1069,
             "key.parsed_declaration" : "func me(_ req: Request) throws -> Future<Response>",
-            "key.parsed_scope.end" : 61,
-            "key.parsed_scope.start" : 51,
+            "key.parsed_scope.end" : 60,
+            "key.parsed_scope.start" : 50,
             "key.substructure" : [
               {
-                "key.annotated_decl" : "<Declaration>let user: <Type usr=\"c:@M@App@objc(cs)User\">User<\/Type><\/Declaration>",
+                "key.annotated_decl" : "<Declaration>let user: <Type usr=\"s:3App4UserC\">User<\/Type><\/Declaration>",
                 "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Controllers\/UserController.swift",
-                "key.fully_annotated_decl" : "<decl.var.local><syntaxtype.keyword>let<\/syntaxtype.keyword> <decl.name>user<\/decl.name>: <decl.var.type><ref.class usr=\"c:@M@App@objc(cs)User\">User<\/ref.class><\/decl.var.type><\/decl.var.local>",
+                "key.fully_annotated_decl" : "<decl.var.local><syntaxtype.keyword>let<\/syntaxtype.keyword> <decl.name>user<\/decl.name>: <decl.var.type><ref.class usr=\"s:3App4UserC\">User<\/ref.class><\/decl.var.type><\/decl.var.local>",
                 "key.kind" : "source.lang.swift.decl.var.local",
                 "key.length" : 44,
                 "key.name" : "user",
                 "key.namelength" : 4,
-                "key.nameoffset" : 1285,
-                "key.offset" : 1281,
+                "key.nameoffset" : 1265,
+                "key.offset" : 1261,
                 "key.parsed_declaration" : "let user = try User.me(userID: userLocal.id)",
-                "key.parsed_scope.end" : 57,
-                "key.parsed_scope.start" : 57,
+                "key.parsed_scope.end" : 56,
+                "key.parsed_scope.start" : 56,
                 "key.related_decls" : [
                   {
                     "key.annotated_decl" : "<RelatedName usr=\"c:@S@user\">user<\/RelatedName>"
@@ -802,11 +1083,11 @@
                 "key.length" : 39,
                 "key.name" : "response",
                 "key.namelength" : 8,
-                "key.nameoffset" : 1332,
-                "key.offset" : 1328,
+                "key.nameoffset" : 1312,
+                "key.offset" : 1308,
                 "key.parsed_declaration" : "let response = UserResponse(user: user)",
-                "key.parsed_scope.end" : 58,
-                "key.parsed_scope.start" : 58,
+                "key.parsed_scope.end" : 57,
+                "key.parsed_scope.start" : 57,
                 "key.typename" : "UserResponse",
                 "key.typeusr" : "$S3App12UserResponseVD",
                 "key.usr" : "s:3App14UserControllerC2mey3NIO15EventLoopFutureCy5Vapor8ResponseCGAH7RequestCKF8responseL_AA0bJ0Vvp"
@@ -820,18 +1101,18 @@
             "key.accessibility" : "source.lang.swift.accessibility.internal",
             "key.annotated_decl" : "<Declaration>func update(_ req: <Type usr=\"s:5Vapor7RequestC\">Request<\/Type>) throws -&gt; <Type usr=\"s:5Async6Futurea\">Future<\/Type>&lt;<Type usr=\"s:5Vapor8ResponseC\">Response<\/Type>&gt;<\/Declaration>",
             "key.bodylength" : 445,
-            "key.bodyoffset" : 1469,
+            "key.bodyoffset" : 1449,
             "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Controllers\/UserController.swift",
             "key.fully_annotated_decl" : "<decl.function.method.instance><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>update<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>_<\/decl.var.parameter.argument_label> <decl.var.parameter.name>req<\/decl.var.parameter.name>: <decl.var.parameter.type><ref.class usr=\"s:5Vapor7RequestC\">Request<\/ref.class><\/decl.var.parameter.type><\/decl.var.parameter>) <syntaxtype.keyword>throws<\/syntaxtype.keyword> -&gt; <decl.function.returntype><ref.typealias usr=\"s:5Async6Futurea\">Future<\/ref.typealias>&lt;<ref.class usr=\"s:5Vapor8ResponseC\">Response<\/ref.class>&gt;<\/decl.function.returntype><\/decl.function.method.instance>",
             "key.kind" : "source.lang.swift.decl.function.method.instance",
             "key.length" : 502,
             "key.name" : "update(_:)",
             "key.namelength" : 22,
-            "key.nameoffset" : 1418,
-            "key.offset" : 1413,
+            "key.nameoffset" : 1398,
+            "key.offset" : 1393,
             "key.parsed_declaration" : "func update(_ req: Request) throws -> Future<Response>",
-            "key.parsed_scope.end" : 79,
-            "key.parsed_scope.start" : 63,
+            "key.parsed_scope.end" : 78,
+            "key.parsed_scope.start" : 62,
             "key.substructure" : [
               {
                 "key.annotated_decl" : "<Declaration>let response: <Type usr=\"s:3NIO15EventLoopFutureC\">EventLoopFuture<\/Type>&lt;<Type usr=\"s:5Vapor8ResponseC\">Response<\/Type>&gt;<\/Declaration>",
@@ -841,11 +1122,11 @@
                 "key.length" : 284,
                 "key.name" : "response",
                 "key.namelength" : 8,
-                "key.nameoffset" : 1613,
-                "key.offset" : 1609,
+                "key.nameoffset" : 1593,
+                "key.offset" : 1589,
                 "key.parsed_declaration" : "let response = try req.content.decode(UpdateUserRequest.self).flatMap { request -> Future<Response> in",
-                "key.parsed_scope.end" : 69,
-                "key.parsed_scope.start" : 69,
+                "key.parsed_scope.end" : 68,
+                "key.parsed_scope.start" : 68,
                 "key.typename" : "EventLoopFuture<Response>",
                 "key.typeusr" : "$S3NIO15EventLoopFutureCy5Vapor8ResponseCGD",
                 "key.usr" : "s:3App14UserControllerC6updatey3NIO15EventLoopFutureCy5Vapor8ResponseCGAH7RequestCKF8responseL_AKvp"
@@ -859,18 +1140,18 @@
             "key.accessibility" : "source.lang.swift.accessibility.internal",
             "key.annotated_decl" : "<Declaration>func delete(_ req: <Type usr=\"s:5Vapor7RequestC\">Request<\/Type>) throws -&gt; <Type usr=\"s:5Async6Futurea\">Future<\/Type>&lt;<Type usr=\"s:5Vapor10HTTPStatusa\">HTTPStatus<\/Type>&gt;<\/Declaration>",
             "key.bodylength" : 260,
-            "key.bodyoffset" : 1977,
+            "key.bodyoffset" : 1957,
             "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Controllers\/UserController.swift",
             "key.fully_annotated_decl" : "<decl.function.method.instance><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>delete<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>_<\/decl.var.parameter.argument_label> <decl.var.parameter.name>req<\/decl.var.parameter.name>: <decl.var.parameter.type><ref.class usr=\"s:5Vapor7RequestC\">Request<\/ref.class><\/decl.var.parameter.type><\/decl.var.parameter>) <syntaxtype.keyword>throws<\/syntaxtype.keyword> -&gt; <decl.function.returntype><ref.typealias usr=\"s:5Async6Futurea\">Future<\/ref.typealias>&lt;<ref.typealias usr=\"s:5Vapor10HTTPStatusa\">HTTPStatus<\/ref.typealias>&gt;<\/decl.function.returntype><\/decl.function.method.instance>",
             "key.kind" : "source.lang.swift.decl.function.method.instance",
             "key.length" : 319,
             "key.name" : "delete(_:)",
             "key.namelength" : 22,
-            "key.nameoffset" : 1924,
-            "key.offset" : 1919,
+            "key.nameoffset" : 1904,
+            "key.offset" : 1899,
             "key.parsed_declaration" : "func delete(_ req: Request) throws -> Future<HTTPStatus>",
-            "key.parsed_scope.end" : 91,
-            "key.parsed_scope.start" : 81,
+            "key.parsed_scope.end" : 90,
+            "key.parsed_scope.start" : 80,
             "key.substructure" : [
               {
                 "key.annotated_decl" : "<Declaration>let authController: <Type usr=\"s:3App14AuthControllerC\">AuthController<\/Type><\/Declaration>",
@@ -880,11 +1161,11 @@
                 "key.length" : 37,
                 "key.name" : "authController",
                 "key.namelength" : 14,
-                "key.nameoffset" : 2162,
-                "key.offset" : 2158,
+                "key.nameoffset" : 2142,
+                "key.offset" : 2138,
                 "key.parsed_declaration" : "let authController = AuthController()",
-                "key.parsed_scope.end" : 89,
-                "key.parsed_scope.start" : 89,
+                "key.parsed_scope.end" : 88,
+                "key.parsed_scope.start" : 88,
                 "key.typename" : "AuthController",
                 "key.typeusr" : "$S3App14AuthControllerCD",
                 "key.usr" : "s:3App14UserControllerC6deletey3NIO15EventLoopFutureCy8NIOHTTP118HTTPResponseStatusOG5Vapor7RequestCKF04authC0L_AA04AuthC0Cvp"
@@ -900,24 +1181,24 @@
             "key.name" : "MARK: - Favorite",
             "key.namelength" : 0,
             "key.nameoffset" : 0,
-            "key.offset" : 2245
+            "key.offset" : 2225
           },
           {
             "key.accessibility" : "source.lang.swift.accessibility.internal",
             "key.annotated_decl" : "<Declaration>func favoriteCreate(_ req: <Type usr=\"s:5Vapor7RequestC\">Request<\/Type>) throws -&gt; <Type usr=\"s:5Async6Futurea\">Future<\/Type>&lt;<Type usr=\"s:5Vapor8ResponseC\">Response<\/Type>&gt;<\/Declaration>",
             "key.bodylength" : 459,
-            "key.bodyoffset" : 2329,
+            "key.bodyoffset" : 2309,
             "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Controllers\/UserController.swift",
             "key.fully_annotated_decl" : "<decl.function.method.instance><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>favoriteCreate<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>_<\/decl.var.parameter.argument_label> <decl.var.parameter.name>req<\/decl.var.parameter.name>: <decl.var.parameter.type><ref.class usr=\"s:5Vapor7RequestC\">Request<\/ref.class><\/decl.var.parameter.type><\/decl.var.parameter>) <syntaxtype.keyword>throws<\/syntaxtype.keyword> -&gt; <decl.function.returntype><ref.typealias usr=\"s:5Async6Futurea\">Future<\/ref.typealias>&lt;<ref.class usr=\"s:5Vapor8ResponseC\">Response<\/ref.class>&gt;<\/decl.function.returntype><\/decl.function.method.instance>",
             "key.kind" : "source.lang.swift.decl.function.method.instance",
             "key.length" : 524,
             "key.name" : "favoriteCreate(_:)",
             "key.namelength" : 30,
-            "key.nameoffset" : 2270,
-            "key.offset" : 2265,
+            "key.nameoffset" : 2250,
+            "key.offset" : 2245,
             "key.parsed_declaration" : "func favoriteCreate(_ req: Request) throws -> Future<Response>",
-            "key.parsed_scope.end" : 108,
-            "key.parsed_scope.start" : 95,
+            "key.parsed_scope.end" : 107,
+            "key.parsed_scope.start" : 94,
             "key.substructure" : [
               {
                 "key.annotated_decl" : "<Declaration>let response: <Type usr=\"s:3NIO15EventLoopFutureC\">EventLoopFuture<\/Type>&lt;<Type usr=\"s:5Vapor8ResponseC\">Response<\/Type>&gt;<\/Declaration>",
@@ -927,11 +1208,11 @@
                 "key.length" : 292,
                 "key.name" : "response",
                 "key.namelength" : 8,
-                "key.nameoffset" : 2477,
-                "key.offset" : 2473,
+                "key.nameoffset" : 2457,
+                "key.offset" : 2453,
                 "key.parsed_declaration" : "let response = try req.content.decode(FavoriteProductRequest.self).flatMap { request -> Future<Response> in",
-                "key.parsed_scope.end" : 101,
-                "key.parsed_scope.start" : 101,
+                "key.parsed_scope.end" : 100,
+                "key.parsed_scope.start" : 100,
                 "key.typename" : "EventLoopFuture<Response>",
                 "key.typeusr" : "$S3NIO15EventLoopFutureCy5Vapor8ResponseCGD",
                 "key.usr" : "s:3App14UserControllerC14favoriteCreatey3NIO15EventLoopFutureCy5Vapor8ResponseCGAH7RequestCKF8responseL_AKvp"
@@ -945,18 +1226,18 @@
             "key.accessibility" : "source.lang.swift.accessibility.internal",
             "key.annotated_decl" : "<Declaration>func favoriteDelete(_ req: <Type usr=\"s:5Vapor7RequestC\">Request<\/Type>) throws -&gt; <Type usr=\"s:5Async6Futurea\">Future<\/Type>&lt;<Type usr=\"s:5Vapor10HTTPStatusa\">HTTPStatus<\/Type>&gt;<\/Declaration>",
             "key.bodylength" : 560,
-            "key.bodyoffset" : 2859,
+            "key.bodyoffset" : 2839,
             "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Controllers\/UserController.swift",
             "key.fully_annotated_decl" : "<decl.function.method.instance><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>favoriteDelete<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>_<\/decl.var.parameter.argument_label> <decl.var.parameter.name>req<\/decl.var.parameter.name>: <decl.var.parameter.type><ref.class usr=\"s:5Vapor7RequestC\">Request<\/ref.class><\/decl.var.parameter.type><\/decl.var.parameter>) <syntaxtype.keyword>throws<\/syntaxtype.keyword> -&gt; <decl.function.returntype><ref.typealias usr=\"s:5Async6Futurea\">Future<\/ref.typealias>&lt;<ref.typealias usr=\"s:5Vapor10HTTPStatusa\">HTTPStatus<\/ref.typealias>&gt;<\/decl.function.returntype><\/decl.function.method.instance>",
             "key.kind" : "source.lang.swift.decl.function.method.instance",
             "key.length" : 627,
             "key.name" : "favoriteDelete(_:)",
             "key.namelength" : 30,
-            "key.nameoffset" : 2798,
-            "key.offset" : 2793,
+            "key.nameoffset" : 2778,
+            "key.offset" : 2773,
             "key.parsed_declaration" : "func favoriteDelete(_ req: Request) throws -> Future<HTTPStatus>",
-            "key.parsed_scope.end" : 127,
-            "key.parsed_scope.start" : 110,
+            "key.parsed_scope.end" : 126,
+            "key.parsed_scope.start" : 109,
             "key.substructure" : [
               {
                 "key.annotated_decl" : "<Declaration>let response: <Type usr=\"s:3NIO15EventLoopFutureC\">EventLoopFuture<\/Type>&lt;<Type usr=\"s:5Vapor8ResponseC\">Response<\/Type>&gt;<\/Declaration>",
@@ -966,11 +1247,11 @@
                 "key.length" : 374,
                 "key.name" : "response",
                 "key.namelength" : 8,
-                "key.nameoffset" : 3007,
-                "key.offset" : 3003,
+                "key.nameoffset" : 2987,
+                "key.offset" : 2983,
                 "key.parsed_declaration" : "let response = try req.content.decode(FavoriteProductRequest.self).flatMap { product -> Future<Response> in",
-                "key.parsed_scope.end" : 116,
-                "key.parsed_scope.start" : 116,
+                "key.parsed_scope.end" : 115,
+                "key.parsed_scope.start" : 115,
                 "key.typename" : "EventLoopFuture<Response>",
                 "key.typeusr" : "$S3NIO15EventLoopFutureCy5Vapor8ResponseCGD",
                 "key.usr" : "s:3App14UserControllerC14favoriteDeletey3NIO15EventLoopFutureCy8NIOHTTP118HTTPResponseStatusOG5Vapor7RequestCKF8responseL_AGyAL8ResponseCGvp"
@@ -984,18 +1265,18 @@
             "key.accessibility" : "source.lang.swift.accessibility.internal",
             "key.annotated_decl" : "<Declaration>func favoriteList(_ req: <Type usr=\"s:5Vapor7RequestC\">Request<\/Type>) throws -&gt; <Type usr=\"s:5Async6Futurea\">Future<\/Type>&lt;<Type usr=\"s:5Vapor8ResponseC\">Response<\/Type>&gt;<\/Declaration>",
             "key.bodylength" : 290,
-            "key.bodyoffset" : 3486,
+            "key.bodyoffset" : 3466,
             "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Controllers\/UserController.swift",
             "key.fully_annotated_decl" : "<decl.function.method.instance><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>favoriteList<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>_<\/decl.var.parameter.argument_label> <decl.var.parameter.name>req<\/decl.var.parameter.name>: <decl.var.parameter.type><ref.class usr=\"s:5Vapor7RequestC\">Request<\/ref.class><\/decl.var.parameter.type><\/decl.var.parameter>) <syntaxtype.keyword>throws<\/syntaxtype.keyword> -&gt; <decl.function.returntype><ref.typealias usr=\"s:5Async6Futurea\">Future<\/ref.typealias>&lt;<ref.class usr=\"s:5Vapor8ResponseC\">Response<\/ref.class>&gt;<\/decl.function.returntype><\/decl.function.method.instance>",
             "key.kind" : "source.lang.swift.decl.function.method.instance",
             "key.length" : 353,
             "key.name" : "favoriteList(_:)",
             "key.namelength" : 28,
-            "key.nameoffset" : 3429,
-            "key.offset" : 3424,
+            "key.nameoffset" : 3409,
+            "key.offset" : 3404,
             "key.parsed_declaration" : "func favoriteList(_ req: Request) throws -> Future<Response>",
-            "key.parsed_scope.end" : 139,
-            "key.parsed_scope.start" : 129,
+            "key.parsed_scope.end" : 138,
+            "key.parsed_scope.start" : 128,
             "key.substructure" : [
               {
                 "key.annotated_decl" : "<Declaration>let list: [<Type usr=\"s:3App7ProductC\">Product<\/Type>]<\/Declaration>",
@@ -1005,11 +1286,11 @@
                 "key.length" : 54,
                 "key.name" : "list",
                 "key.namelength" : 4,
-                "key.nameoffset" : 3634,
-                "key.offset" : 3630,
+                "key.nameoffset" : 3614,
+                "key.offset" : 3610,
                 "key.parsed_declaration" : "let list = try User.favoriteList(userID: userLocal.id)",
-                "key.parsed_scope.end" : 135,
-                "key.parsed_scope.start" : 135,
+                "key.parsed_scope.end" : 134,
+                "key.parsed_scope.start" : 134,
                 "key.typename" : "[Product]",
                 "key.typeusr" : "$SSay3App7ProductCGD",
                 "key.usr" : "s:3App14UserControllerC12favoriteListy3NIO15EventLoopFutureCy5Vapor8ResponseCGAH7RequestCKF4listL_SayAA7ProductCGvp"
@@ -1022,11 +1303,11 @@
                 "key.length" : 47,
                 "key.name" : "response",
                 "key.namelength" : 8,
-                "key.nameoffset" : 3692,
-                "key.offset" : 3688,
+                "key.nameoffset" : 3672,
+                "key.offset" : 3668,
                 "key.parsed_declaration" : "let response = FavoriteListResponse(list: list)",
-                "key.parsed_scope.end" : 137,
-                "key.parsed_scope.start" : 137,
+                "key.parsed_scope.end" : 136,
+                "key.parsed_scope.start" : 136,
                 "key.typename" : "FavoriteListResponse",
                 "key.typeusr" : "$S3App20FavoriteListResponseVD",
                 "key.usr" : "s:3App14UserControllerC12favoriteListy3NIO15EventLoopFutureCy5Vapor8ResponseCGAH7RequestCKF8responseL_AA08FavoriteeK0Vvp"
@@ -1431,6 +1712,83 @@
     ]
   }
 }, {
+  "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/MicroServices\/BillingMicroService.swift" : {
+    "key.diagnostic_stage" : "source.diagnostic.stage.swift.parse",
+    "key.length" : 312,
+    "key.offset" : 0,
+    "key.substructure" : [
+      {
+        "key.accessibility" : "source.lang.swift.accessibility.internal",
+        "key.annotated_decl" : "<Declaration>class BillingMicroService<\/Declaration>",
+        "key.bodylength" : 175,
+        "key.bodyoffset" : 135,
+        "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/MicroServices\/BillingMicroService.swift",
+        "key.fully_annotated_decl" : "<decl.class><syntaxtype.keyword>class<\/syntaxtype.keyword> <decl.name>BillingMicroService<\/decl.name><\/decl.class>",
+        "key.kind" : "source.lang.swift.decl.class",
+        "key.length" : 203,
+        "key.name" : "BillingMicroService",
+        "key.namelength" : 19,
+        "key.nameoffset" : 114,
+        "key.offset" : 108,
+        "key.parsed_declaration" : "class BillingMicroService",
+        "key.parsed_scope.end" : 17,
+        "key.parsed_scope.start" : 10,
+        "key.runtime_name" : "_TtC4main19BillingMicroService",
+        "key.substructure" : [
+          {
+            "key.accessibility" : "source.lang.swift.accessibility.internal",
+            "key.annotated_decl" : "<Declaration>class func create(userID: <Type usr=\"s:Si\">Int<\/Type>? = default, productID: <Type usr=\"s:Si\">Int<\/Type>) -&gt; <Type usr=\"s:3App4JSONa\">JSON<\/Type><\/Declaration>",
+            "key.bodylength" : 28,
+            "key.bodyoffset" : 200,
+            "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/MicroServices\/BillingMicroService.swift",
+            "key.fully_annotated_decl" : "<decl.function.method.class><syntaxtype.keyword>class<\/syntaxtype.keyword> <syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>create<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>userID<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.struct usr=\"s:Si\">Int<\/ref.struct>?<\/decl.var.parameter.type> = <syntaxtype.keyword>default<\/syntaxtype.keyword><\/decl.var.parameter>, <decl.var.parameter><decl.var.parameter.argument_label>productID<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.struct usr=\"s:Si\">Int<\/ref.struct><\/decl.var.parameter.type><\/decl.var.parameter>) -&gt; <decl.function.returntype><ref.typealias usr=\"s:3App4JSONa\">JSON<\/ref.typealias><\/decl.function.returntype><\/decl.function.method.class>",
+            "key.kind" : "source.lang.swift.decl.function.method.class",
+            "key.length" : 92,
+            "key.name" : "create(userID:productID:)",
+            "key.namelength" : 42,
+            "key.nameoffset" : 148,
+            "key.offset" : 137,
+            "key.parsed_declaration" : "class func create(userID: Int? = nil, productID: Int) -> JSON",
+            "key.parsed_scope.end" : 13,
+            "key.parsed_scope.start" : 11,
+            "key.substructure" : [
+
+            ],
+            "key.typename" : "(BillingMicroService.Type) -> (Int?, Int) -> [String : Any]",
+            "key.typeusr" : "$S6userID07productB0SDySSypGSiSg_SitcD",
+            "key.usr" : "s:3App19BillingMicroServiceC6create6userID07productG0SDySSypGSiSg_SitFZ"
+          },
+          {
+            "key.accessibility" : "source.lang.swift.accessibility.internal",
+            "key.annotated_decl" : "<Declaration>class func list(userID: <Type usr=\"s:Si\">Int<\/Type>? = default) -&gt; <Type usr=\"s:3App4JSONa\">JSON<\/Type><\/Declaration>",
+            "key.bodylength" : 32,
+            "key.bodyoffset" : 276,
+            "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/MicroServices\/BillingMicroService.swift",
+            "key.fully_annotated_decl" : "<decl.function.method.class><syntaxtype.keyword>class<\/syntaxtype.keyword> <syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>list<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>userID<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.struct usr=\"s:Si\">Int<\/ref.struct>?<\/decl.var.parameter.type> = <syntaxtype.keyword>default<\/syntaxtype.keyword><\/decl.var.parameter>) -&gt; <decl.function.returntype><ref.typealias usr=\"s:3App4JSONa\">JSON<\/ref.typealias><\/decl.function.returntype><\/decl.function.method.class>",
+            "key.kind" : "source.lang.swift.decl.function.method.class",
+            "key.length" : 78,
+            "key.name" : "list(userID:)",
+            "key.namelength" : 24,
+            "key.nameoffset" : 242,
+            "key.offset" : 231,
+            "key.parsed_declaration" : "class func list(userID: Int? = nil) -> JSON",
+            "key.parsed_scope.end" : 16,
+            "key.parsed_scope.start" : 14,
+            "key.substructure" : [
+
+            ],
+            "key.typename" : "(BillingMicroService.Type) -> (Int?) -> [String : Any]",
+            "key.typeusr" : "$S6userIDSDySSypGSiSg_tcD",
+            "key.usr" : "s:3App19BillingMicroServiceC4list6userIDSDySSypGSiSg_tFZ"
+          }
+        ],
+        "key.typename" : "BillingMicroService.Type",
+        "key.typeusr" : "$S3App19BillingMicroServiceCmD",
+        "key.usr" : "s:3App19BillingMicroServiceC"
+      }
+    ]
+  }
+}, {
   "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/MicroServices\/ProductMicroService.swift" : {
     "key.diagnostic_stage" : "source.diagnostic.stage.swift.parse",
     "key.length" : 424,
@@ -1770,14 +2128,300 @@
     ]
   }
 }, {
-  "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/Console.swift" : {
+  "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/Cart.swift" : {
     "key.diagnostic_stage" : "source.diagnostic.stage.swift.parse",
-    "key.length" : 730,
+    "key.length" : 1097,
     "key.offset" : 0,
     "key.substructure" : [
       {
         "key.accessibility" : "source.lang.swift.accessibility.internal",
-        "key.annotated_decl" : "<Declaration>final class Console : <Type usr=\"s:SE\">Encodable<\/Type>, <Type usr=\"s:Se\">Decodable<\/Type><\/Declaration>",
+        "key.annotated_decl" : "<Declaration>final class Cart<\/Declaration>",
+        "key.attributes" : [
+          {
+            "key.attribute" : "source.decl.attribute.final",
+            "key.length" : 5,
+            "key.offset" : 89
+          }
+        ],
+        "key.bodylength" : 374,
+        "key.bodyoffset" : 107,
+        "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/Cart.swift",
+        "key.fully_annotated_decl" : "<decl.class><syntaxtype.keyword>final<\/syntaxtype.keyword> <syntaxtype.keyword>class<\/syntaxtype.keyword> <decl.name>Cart<\/decl.name><\/decl.class>",
+        "key.kind" : "source.lang.swift.decl.class",
+        "key.length" : 387,
+        "key.name" : "Cart",
+        "key.namelength" : 4,
+        "key.nameoffset" : 101,
+        "key.offset" : 95,
+        "key.parsed_declaration" : "final class Cart",
+        "key.parsed_scope.end" : 29,
+        "key.parsed_scope.start" : 11,
+        "key.runtime_name" : "_TtC4main4Cart",
+        "key.substructure" : [
+          {
+            "key.accessibility" : "source.lang.swift.accessibility.internal",
+            "key.annotated_decl" : "<Declaration>var id: <Type usr=\"s:Si\">Int<\/Type><\/Declaration>",
+            "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/Cart.swift",
+            "key.fully_annotated_decl" : "<decl.var.instance><syntaxtype.keyword>var<\/syntaxtype.keyword> <decl.name>id<\/decl.name>: <decl.var.type><ref.struct usr=\"s:Si\">Int<\/ref.struct><\/decl.var.type><\/decl.var.instance>",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.length" : 11,
+            "key.name" : "id",
+            "key.namelength" : 2,
+            "key.nameoffset" : 114,
+            "key.offset" : 110,
+            "key.parsed_declaration" : "var id: Int",
+            "key.parsed_scope.end" : 13,
+            "key.parsed_scope.start" : 13,
+            "key.setter_accessibility" : "source.lang.swift.accessibility.internal",
+            "key.typename" : "Int",
+            "key.typeusr" : "$SSiD",
+            "key.usr" : "s:3App4CartC2idSivp"
+          },
+          {
+            "key.accessibility" : "source.lang.swift.accessibility.internal",
+            "key.annotated_decl" : "<Declaration>var products: [<Type usr=\"s:3App7ProductC\">Product<\/Type>]<\/Declaration>",
+            "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/Cart.swift",
+            "key.fully_annotated_decl" : "<decl.var.instance><syntaxtype.keyword>var<\/syntaxtype.keyword> <decl.name>products<\/decl.name>: <decl.var.type>[<ref.class usr=\"s:3App7ProductC\">Product<\/ref.class>]<\/decl.var.type><\/decl.var.instance>",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.length" : 28,
+            "key.name" : "products",
+            "key.namelength" : 8,
+            "key.nameoffset" : 127,
+            "key.offset" : 123,
+            "key.parsed_declaration" : "var products: [Product] = []",
+            "key.parsed_scope.end" : 14,
+            "key.parsed_scope.start" : 14,
+            "key.setter_accessibility" : "source.lang.swift.accessibility.internal",
+            "key.typename" : "[Product]",
+            "key.typeusr" : "$SSay3App7ProductCGD",
+            "key.usr" : "s:3App4CartC8productsSayAA7ProductCGvp"
+          },
+          {
+            "key.accessibility" : "source.lang.swift.accessibility.internal",
+            "key.annotated_decl" : "<Declaration>init(id: <Type usr=\"s:Si\">Int<\/Type>, products: [<Type usr=\"s:3App7ProductC\">Product<\/Type>])<\/Declaration>",
+            "key.bodylength" : 44,
+            "key.bodyoffset" : 190,
+            "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/Cart.swift",
+            "key.fully_annotated_decl" : "<decl.function.constructor><syntaxtype.keyword>init<\/syntaxtype.keyword>(<decl.var.parameter><decl.var.parameter.argument_label>id<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.struct usr=\"s:Si\">Int<\/ref.struct><\/decl.var.parameter.type><\/decl.var.parameter>, <decl.var.parameter><decl.var.parameter.argument_label>products<\/decl.var.parameter.argument_label>: <decl.var.parameter.type>[<ref.class usr=\"s:3App7ProductC\">Product<\/ref.class>]<\/decl.var.parameter.type><\/decl.var.parameter>)<\/decl.function.constructor>",
+            "key.kind" : "source.lang.swift.decl.function.method.instance",
+            "key.length" : 81,
+            "key.name" : "init(id:products:)",
+            "key.namelength" : 34,
+            "key.nameoffset" : 154,
+            "key.offset" : 154,
+            "key.parsed_declaration" : "init(id: Int, products: [Product])",
+            "key.parsed_scope.end" : 19,
+            "key.parsed_scope.start" : 16,
+            "key.related_decls" : [
+              {
+                "key.annotated_decl" : "<RelatedName usr=\"s:3App4CartC4jsonACSgSDySSypG_tcfc\">init(json:)<\/RelatedName>"
+              }
+            ],
+            "key.substructure" : [
+
+            ],
+            "key.typename" : "(Cart.Type) -> (Int, [Product]) -> Cart",
+            "key.typeusr" : "$S2id8products3App4CartCSi_SayAC7ProductCGtcD",
+            "key.usr" : "s:3App4CartC2id8productsACSi_SayAA7ProductCGtcfc"
+          },
+          {
+            "key.accessibility" : "source.lang.swift.accessibility.internal",
+            "key.annotated_decl" : "<Declaration>convenience init?(json: <Type usr=\"s:3App4JSONa\">JSON<\/Type>)<\/Declaration>",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.convenience",
+                "key.length" : 11,
+                "key.offset" : 238
+              }
+            ],
+            "key.bodylength" : 210,
+            "key.bodyoffset" : 269,
+            "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/Cart.swift",
+            "key.fully_annotated_decl" : "<decl.function.constructor><syntaxtype.keyword>convenience<\/syntaxtype.keyword> <syntaxtype.keyword>init<\/syntaxtype.keyword>?(<decl.var.parameter><decl.var.parameter.argument_label>json<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.typealias usr=\"s:3App4JSONa\">JSON<\/ref.typealias><\/decl.var.parameter.type><\/decl.var.parameter>)<\/decl.function.constructor>",
+            "key.kind" : "source.lang.swift.decl.function.method.instance",
+            "key.length" : 230,
+            "key.name" : "init(json:)",
+            "key.namelength" : 17,
+            "key.nameoffset" : 250,
+            "key.offset" : 250,
+            "key.parsed_declaration" : "convenience init?(json: JSON)",
+            "key.parsed_scope.end" : 28,
+            "key.parsed_scope.start" : 21,
+            "key.related_decls" : [
+              {
+                "key.annotated_decl" : "<RelatedName usr=\"s:3App4CartC2id8productsACSi_SayAA7ProductCGtcfc\">init(id:products:)<\/RelatedName>"
+              }
+            ],
+            "key.substructure" : [
+              {
+                "key.annotated_decl" : "<Declaration>let products: [<Type usr=\"s:3App7ProductC\">Product<\/Type>]<\/Declaration>",
+                "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/Cart.swift",
+                "key.fully_annotated_decl" : "<decl.var.local><syntaxtype.keyword>let<\/syntaxtype.keyword> <decl.name>products<\/decl.name>: <decl.var.type>[<ref.class usr=\"s:3App7ProductC\">Product<\/ref.class>]<\/decl.var.type><\/decl.var.local>",
+                "key.kind" : "source.lang.swift.decl.var.local",
+                "key.length" : 55,
+                "key.name" : "products",
+                "key.namelength" : 8,
+                "key.nameoffset" : 386,
+                "key.offset" : 382,
+                "key.parsed_declaration" : "let products = Product.listProducts(from: productsList)",
+                "key.parsed_scope.end" : 26,
+                "key.parsed_scope.start" : 26,
+                "key.related_decls" : [
+                  {
+                    "key.annotated_decl" : "<RelatedName usr=\"s:3App4CartC8productsSayAA7ProductCGvp\">products<\/RelatedName>"
+                  }
+                ],
+                "key.typename" : "[Product]",
+                "key.typeusr" : "$SSay3App7ProductCGD",
+                "key.usr" : "s:3App4CartC4jsonACSgSDySSypG_tcfc8productsL_SayAA7ProductCGvp"
+              }
+            ],
+            "key.typename" : "(Cart.Type) -> ([String : Any]) -> Cart?",
+            "key.typeusr" : "$S4json3App4CartCSgSDySSypG_tcD",
+            "key.usr" : "s:3App4CartC4jsonACSgSDySSypG_tcfc"
+          }
+        ],
+        "key.typename" : "Cart.Type",
+        "key.typeusr" : "$S3App4CartCmD",
+        "key.usr" : "s:3App4CartC"
+      },
+      {
+        "key.kind" : "source.lang.swift.syntaxtype.comment.mark",
+        "key.length" : 31,
+        "key.name" : "MARK: - Microservice connection",
+        "key.namelength" : 0,
+        "key.nameoffset" : 0,
+        "key.offset" : 487
+      },
+      {
+        "key.annotated_decl" : "<Declaration>final class Cart<\/Declaration>",
+        "key.bodylength" : 559,
+        "key.bodyoffset" : 536,
+        "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/Cart.swift",
+        "key.fully_annotated_decl" : "<decl.class><syntaxtype.keyword>final<\/syntaxtype.keyword> <syntaxtype.keyword>class<\/syntaxtype.keyword> <decl.name>Cart<\/decl.name><\/decl.class>",
+        "key.kind" : "source.lang.swift.decl.extension",
+        "key.length" : 576,
+        "key.name" : "Cart",
+        "key.namelength" : 4,
+        "key.nameoffset" : 530,
+        "key.offset" : 520,
+        "key.substructure" : [
+          {
+            "key.accessibility" : "source.lang.swift.accessibility.internal",
+            "key.annotated_decl" : "<Declaration>class func create(userID: <Type usr=\"s:Si\">Int<\/Type>?, request: <Type usr=\"s:3App17CreateCartRequestV\">CreateCartRequest<\/Type>) throws -&gt; <Type usr=\"s:3App7ProductC\">Product<\/Type><\/Declaration>",
+            "key.bodylength" : 212,
+            "key.bodyoffset" : 617,
+            "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/Cart.swift",
+            "key.fully_annotated_decl" : "<decl.function.method.class><syntaxtype.keyword>class<\/syntaxtype.keyword> <syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>create<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>userID<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.struct usr=\"s:Si\">Int<\/ref.struct>?<\/decl.var.parameter.type><\/decl.var.parameter>, <decl.var.parameter><decl.var.parameter.argument_label>request<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.struct usr=\"s:3App17CreateCartRequestV\">CreateCartRequest<\/ref.struct><\/decl.var.parameter.type><\/decl.var.parameter>) <syntaxtype.keyword>throws<\/syntaxtype.keyword> -&gt; <decl.function.returntype><ref.class usr=\"s:3App7ProductC\">Product<\/ref.class><\/decl.function.returntype><\/decl.function.method.class>",
+            "key.kind" : "source.lang.swift.decl.function.method.class",
+            "key.length" : 292,
+            "key.name" : "create(userID:request:)",
+            "key.namelength" : 48,
+            "key.nameoffset" : 549,
+            "key.offset" : 538,
+            "key.parsed_declaration" : "class func create(userID: Int?, request: CreateCartRequest) throws -> Product",
+            "key.parsed_scope.end" : 42,
+            "key.parsed_scope.start" : 34,
+            "key.substructure" : [
+              {
+                "key.annotated_decl" : "<Declaration>let json: <Type usr=\"s:3App4JSONa\">JSON<\/Type><\/Declaration>",
+                "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/Cart.swift",
+                "key.fully_annotated_decl" : "<decl.var.local><syntaxtype.keyword>let<\/syntaxtype.keyword> <decl.name>json<\/decl.name>: <decl.var.type><ref.typealias usr=\"s:3App4JSONa\">JSON<\/ref.typealias><\/decl.var.type><\/decl.var.local>",
+                "key.kind" : "source.lang.swift.decl.var.local",
+                "key.length" : 83,
+                "key.name" : "json",
+                "key.namelength" : 4,
+                "key.nameoffset" : 625,
+                "key.offset" : 621,
+                "key.parsed_declaration" : "let json = BillingMicroService.create(userID: userID, productID: request.productID)",
+                "key.parsed_scope.end" : 36,
+                "key.parsed_scope.start" : 36,
+                "key.typename" : "[String : Any]",
+                "key.typeusr" : "$SSDySSypGD",
+                "key.usr" : "s:3App4CartC6create6userID7requestAA7ProductCSiSg_AA06CreateB7RequestVtKFZ4jsonL_SDySSypGvp"
+              }
+            ],
+            "key.typename" : "(Cart.Type) -> (Int?, CreateCartRequest) throws -> Product",
+            "key.typeusr" : "$S6userID7request3App7ProductCSiSg_AC17CreateCartRequestVtKcD",
+            "key.usr" : "s:3App4CartC6create6userID7requestAA7ProductCSiSg_AA06CreateB7RequestVtKFZ"
+          },
+          {
+            "key.accessibility" : "source.lang.swift.accessibility.internal",
+            "key.annotated_decl" : "<Declaration>class func list(userID: <Type usr=\"s:Si\">Int<\/Type>?) throws -&gt; [<Type usr=\"s:3App7ProductC\">Product<\/Type>]<\/Declaration>",
+            "key.bodylength" : 208,
+            "key.bodyoffset" : 885,
+            "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/Cart.swift",
+            "key.fully_annotated_decl" : "<decl.function.method.class><syntaxtype.keyword>class<\/syntaxtype.keyword> <syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>list<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>userID<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.struct usr=\"s:Si\">Int<\/ref.struct>?<\/decl.var.parameter.type><\/decl.var.parameter>) <syntaxtype.keyword>throws<\/syntaxtype.keyword> -&gt; <decl.function.returntype>[<ref.class usr=\"s:3App7ProductC\">Product<\/ref.class>]<\/decl.function.returntype><\/decl.function.method.class>",
+            "key.kind" : "source.lang.swift.decl.function.method.class",
+            "key.length" : 260,
+            "key.name" : "list(userID:)",
+            "key.namelength" : 18,
+            "key.nameoffset" : 845,
+            "key.offset" : 834,
+            "key.parsed_declaration" : "class func list(userID: Int?) throws -> [Product]",
+            "key.parsed_scope.end" : 53,
+            "key.parsed_scope.start" : 44,
+            "key.substructure" : [
+              {
+                "key.annotated_decl" : "<Declaration>let json: <Type usr=\"s:3App4JSONa\">JSON<\/Type><\/Declaration>",
+                "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/Cart.swift",
+                "key.fully_annotated_decl" : "<decl.var.local><syntaxtype.keyword>let<\/syntaxtype.keyword> <decl.name>json<\/decl.name>: <decl.var.type><ref.typealias usr=\"s:3App4JSONa\">JSON<\/ref.typealias><\/decl.var.type><\/decl.var.local>",
+                "key.kind" : "source.lang.swift.decl.var.local",
+                "key.length" : 51,
+                "key.name" : "json",
+                "key.namelength" : 4,
+                "key.nameoffset" : 895,
+                "key.offset" : 891,
+                "key.parsed_declaration" : "let json = BillingMicroService.list(userID: userID)",
+                "key.parsed_scope.end" : 46,
+                "key.parsed_scope.start" : 46,
+                "key.typename" : "[String : Any]",
+                "key.typeusr" : "$SSDySSypGD",
+                "key.usr" : "s:3App4CartC4list6userIDSayAA7ProductCGSiSg_tKFZ4jsonL_SDySSypGvp"
+              },
+              {
+                "key.annotated_decl" : "<Declaration>let list: [<Type usr=\"s:3App7ProductC\">Product<\/Type>]<\/Declaration>",
+                "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/Cart.swift",
+                "key.fully_annotated_decl" : "<decl.var.local><syntaxtype.keyword>let<\/syntaxtype.keyword> <decl.name>list<\/decl.name>: <decl.var.type>[<ref.class usr=\"s:3App7ProductC\">Product<\/ref.class>]<\/decl.var.type><\/decl.var.local>",
+                "key.kind" : "source.lang.swift.decl.var.local",
+                "key.length" : 58,
+                "key.name" : "list",
+                "key.namelength" : 4,
+                "key.nameoffset" : 1023,
+                "key.offset" : 1019,
+                "key.parsed_declaration" : "let list: [Product] = Product.listProducts(from: jsonList)",
+                "key.parsed_scope.end" : 51,
+                "key.parsed_scope.start" : 51,
+                "key.related_decls" : [
+                  {
+                    "key.annotated_decl" : "<RelatedName usr=\"s:3App4CartC4list6userIDSayAA7ProductCGSiSg_tKFZ\">list(userID:)<\/RelatedName>"
+                  }
+                ],
+                "key.typename" : "[Product]",
+                "key.typeusr" : "$SSay3App7ProductCGD",
+                "key.usr" : "s:3App4CartC4list6userIDSayAA7ProductCGSiSg_tKFZADL_AHvp"
+              }
+            ],
+            "key.typename" : "(Cart.Type) -> (Int?) throws -> [Product]",
+            "key.typeusr" : "$S6userIDSay3App7ProductCGSiSg_tKcD",
+            "key.usr" : "s:3App4CartC4list6userIDSayAA7ProductCGSiSg_tKFZ"
+          }
+        ],
+        "key.typename" : "Cart.Type",
+        "key.typeusr" : "$S3App4CartCmD",
+        "key.usr" : "s:3App4CartC"
+      }
+    ]
+  }
+}, {
+  "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/Console.swift" : {
+    "key.diagnostic_stage" : "source.diagnostic.stage.swift.parse",
+    "key.length" : 708,
+    "key.offset" : 0,
+    "key.substructure" : [
+      {
+        "key.accessibility" : "source.lang.swift.accessibility.internal",
+        "key.annotated_decl" : "<Declaration>final class Console<\/Declaration>",
         "key.attributes" : [
           {
             "key.attribute" : "source.decl.attribute.final",
@@ -1786,36 +2430,16 @@
           }
         ],
         "key.bodylength" : 271,
-        "key.bodyoffset" : 134,
-        "key.elements" : [
-          {
-            "key.kind" : "source.lang.swift.structure.elem.typeref",
-            "key.length" : 9,
-            "key.offset" : 112
-          },
-          {
-            "key.kind" : "source.lang.swift.structure.elem.typeref",
-            "key.length" : 9,
-            "key.offset" : 123
-          }
-        ],
+        "key.bodyoffset" : 112,
         "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/Console.swift",
-        "key.fully_annotated_decl" : "<decl.class><syntaxtype.keyword>final<\/syntaxtype.keyword> <syntaxtype.keyword>class<\/syntaxtype.keyword> <decl.name>Console<\/decl.name> : <ref.protocol usr=\"s:SE\">Encodable<\/ref.protocol>, <ref.protocol usr=\"s:Se\">Decodable<\/ref.protocol><\/decl.class>",
-        "key.inheritedtypes" : [
-          {
-            "key.name" : "Encodable"
-          },
-          {
-            "key.name" : "Decodable"
-          }
-        ],
+        "key.fully_annotated_decl" : "<decl.class><syntaxtype.keyword>final<\/syntaxtype.keyword> <syntaxtype.keyword>class<\/syntaxtype.keyword> <decl.name>Console<\/decl.name><\/decl.class>",
         "key.kind" : "source.lang.swift.decl.class",
-        "key.length" : 309,
+        "key.length" : 287,
         "key.name" : "Console",
         "key.namelength" : 7,
         "key.nameoffset" : 103,
         "key.offset" : 97,
-        "key.parsed_declaration" : "final class Console: Encodable, Decodable",
+        "key.parsed_declaration" : "final class Console",
         "key.parsed_scope.end" : 26,
         "key.parsed_scope.start" : 10,
         "key.runtime_name" : "_TtC4main7Console",
@@ -1829,8 +2453,8 @@
             "key.length" : 11,
             "key.name" : "id",
             "key.namelength" : 2,
-            "key.nameoffset" : 142,
-            "key.offset" : 138,
+            "key.nameoffset" : 120,
+            "key.offset" : 116,
             "key.parsed_declaration" : "var id: Int",
             "key.parsed_scope.end" : 12,
             "key.parsed_scope.start" : 12,
@@ -1848,8 +2472,8 @@
             "key.length" : 16,
             "key.name" : "name",
             "key.namelength" : 4,
-            "key.nameoffset" : 155,
-            "key.offset" : 151,
+            "key.nameoffset" : 133,
+            "key.offset" : 129,
             "key.parsed_declaration" : "var name: String",
             "key.parsed_scope.end" : 13,
             "key.parsed_scope.start" : 13,
@@ -1862,24 +2486,21 @@
             "key.accessibility" : "source.lang.swift.accessibility.internal",
             "key.annotated_decl" : "<Declaration>init(id: <Type usr=\"s:Si\">Int<\/Type>, name: <Type usr=\"s:SS\">String<\/Type>)<\/Declaration>",
             "key.bodylength" : 36,
-            "key.bodyoffset" : 200,
+            "key.bodyoffset" : 178,
             "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/Console.swift",
             "key.fully_annotated_decl" : "<decl.function.constructor><syntaxtype.keyword>init<\/syntaxtype.keyword>(<decl.var.parameter><decl.var.parameter.argument_label>id<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.struct usr=\"s:Si\">Int<\/ref.struct><\/decl.var.parameter.type><\/decl.var.parameter>, <decl.var.parameter><decl.var.parameter.argument_label>name<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.struct usr=\"s:SS\">String<\/ref.struct><\/decl.var.parameter.type><\/decl.var.parameter>)<\/decl.function.constructor>",
             "key.kind" : "source.lang.swift.decl.function.method.instance",
             "key.length" : 66,
             "key.name" : "init(id:name:)",
             "key.namelength" : 27,
-            "key.nameoffset" : 171,
-            "key.offset" : 171,
+            "key.nameoffset" : 149,
+            "key.offset" : 149,
             "key.parsed_declaration" : "init(id: Int, name: String)",
             "key.parsed_scope.end" : 18,
             "key.parsed_scope.start" : 15,
             "key.related_decls" : [
               {
                 "key.annotated_decl" : "<RelatedName usr=\"s:3App7ConsoleC4jsonACSgSDySSypG_tcfc\">init(json:)<\/RelatedName>"
-              },
-              {
-                "key.annotated_decl" : "<RelatedName usr=\"s:3App7ConsoleC4fromACs7Decoder_p_tKcfc\">init(from:)<\/RelatedName>"
               }
             ],
             "key.substructure" : [
@@ -1896,28 +2517,25 @@
               {
                 "key.attribute" : "source.decl.attribute.convenience",
                 "key.length" : 11,
-                "key.offset" : 241
+                "key.offset" : 219
               }
             ],
             "key.bodylength" : 131,
-            "key.bodyoffset" : 272,
+            "key.bodyoffset" : 250,
             "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/Console.swift",
             "key.fully_annotated_decl" : "<decl.function.constructor><syntaxtype.keyword>convenience<\/syntaxtype.keyword> <syntaxtype.keyword>init<\/syntaxtype.keyword>?(<decl.var.parameter><decl.var.parameter.argument_label>json<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.typealias usr=\"s:3App4JSONa\">JSON<\/ref.typealias><\/decl.var.parameter.type><\/decl.var.parameter>)<\/decl.function.constructor>",
             "key.kind" : "source.lang.swift.decl.function.method.instance",
             "key.length" : 151,
             "key.name" : "init(json:)",
             "key.namelength" : 17,
-            "key.nameoffset" : 253,
-            "key.offset" : 253,
+            "key.nameoffset" : 231,
+            "key.offset" : 231,
             "key.parsed_declaration" : "convenience init?(json: JSON)",
             "key.parsed_scope.end" : 25,
             "key.parsed_scope.start" : 20,
             "key.related_decls" : [
               {
                 "key.annotated_decl" : "<RelatedName usr=\"s:3App7ConsoleC2id4nameACSi_SStcfc\">init(id:name:)<\/RelatedName>"
-              },
-              {
-                "key.annotated_decl" : "<RelatedName usr=\"s:3App7ConsoleC4fromACs7Decoder_p_tKcfc\">init(from:)<\/RelatedName>"
               }
             ],
             "key.substructure" : [
@@ -1938,34 +2556,34 @@
         "key.name" : "MARK: - Microservice connection",
         "key.namelength" : 0,
         "key.nameoffset" : 0,
-        "key.offset" : 411
+        "key.offset" : 389
       },
       {
-        "key.annotated_decl" : "<Declaration>final class Console : <Type usr=\"s:SE\">Encodable<\/Type>, <Type usr=\"s:Se\">Decodable<\/Type><\/Declaration>",
+        "key.annotated_decl" : "<Declaration>final class Console<\/Declaration>",
         "key.bodylength" : 265,
-        "key.bodyoffset" : 463,
+        "key.bodyoffset" : 441,
         "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/Console.swift",
-        "key.fully_annotated_decl" : "<decl.class><syntaxtype.keyword>final<\/syntaxtype.keyword> <syntaxtype.keyword>class<\/syntaxtype.keyword> <decl.name>Console<\/decl.name> : <ref.protocol usr=\"s:SE\">Encodable<\/ref.protocol>, <ref.protocol usr=\"s:Se\">Decodable<\/ref.protocol><\/decl.class>",
+        "key.fully_annotated_decl" : "<decl.class><syntaxtype.keyword>final<\/syntaxtype.keyword> <syntaxtype.keyword>class<\/syntaxtype.keyword> <decl.name>Console<\/decl.name><\/decl.class>",
         "key.kind" : "source.lang.swift.decl.extension",
         "key.length" : 285,
         "key.name" : "Console",
         "key.namelength" : 7,
-        "key.nameoffset" : 454,
-        "key.offset" : 444,
+        "key.nameoffset" : 432,
+        "key.offset" : 422,
         "key.substructure" : [
           {
             "key.accessibility" : "source.lang.swift.accessibility.internal",
             "key.annotated_decl" : "<Declaration>class func getInfo(productJson: <Type usr=\"s:3App4JSONa\">JSON<\/Type>) throws -&gt; <Type usr=\"s:3App7ConsoleC\">Console<\/Type>?<\/Declaration>",
             "key.bodylength" : 203,
-            "key.bodyoffset" : 523,
+            "key.bodyoffset" : 501,
             "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/Console.swift",
             "key.fully_annotated_decl" : "<decl.function.method.class><syntaxtype.keyword>class<\/syntaxtype.keyword> <syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>getInfo<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>productJson<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.typealias usr=\"s:3App4JSONa\">JSON<\/ref.typealias><\/decl.var.parameter.type><\/decl.var.parameter>) <syntaxtype.keyword>throws<\/syntaxtype.keyword> -&gt; <decl.function.returntype><ref.class usr=\"s:3App7ConsoleC\">Console<\/ref.class>?<\/decl.function.returntype><\/decl.function.method.class>",
             "key.kind" : "source.lang.swift.decl.function.method.class",
             "key.length" : 262,
             "key.name" : "getInfo(productJson:)",
             "key.namelength" : 26,
-            "key.nameoffset" : 476,
-            "key.offset" : 465,
+            "key.nameoffset" : 454,
+            "key.offset" : 443,
             "key.parsed_declaration" : "class func getInfo(productJson: JSON) throws -> Console?",
             "key.parsed_scope.end" : 38,
             "key.parsed_scope.start" : 31,
@@ -1978,8 +2596,8 @@
                 "key.length" : 53,
                 "key.name" : "json",
                 "key.namelength" : 4,
-                "key.nameoffset" : 646,
-                "key.offset" : 642,
+                "key.nameoffset" : 624,
+                "key.offset" : 620,
                 "key.parsed_declaration" : "let json = ProductMicroService.console(consoleID: id)",
                 "key.parsed_scope.end" : 36,
                 "key.parsed_scope.start" : 36,
@@ -2259,11 +2877,11 @@
           },
           {
             "key.accessibility" : "source.lang.swift.accessibility.internal",
-            "key.annotated_decl" : "<Declaration>class func authenticated(_ req: <Type usr=\"s:5Vapor7RequestC\">Request<\/Type>) throws -&gt; <Type usr=\"c:@M@App@objc(cs)User\">User<\/Type>?<\/Declaration>",
+            "key.annotated_decl" : "<Declaration>class func authenticated(_ req: <Type usr=\"s:5Vapor7RequestC\">Request<\/Type>) throws -&gt; <Type usr=\"s:3App4UserC\">User<\/Type>?<\/Declaration>",
             "key.bodylength" : 155,
             "key.bodyoffset" : 1176,
             "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/Login.swift",
-            "key.fully_annotated_decl" : "<decl.function.method.class><syntaxtype.keyword>class<\/syntaxtype.keyword> <syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>authenticated<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>_<\/decl.var.parameter.argument_label> <decl.var.parameter.name>req<\/decl.var.parameter.name>: <decl.var.parameter.type><ref.class usr=\"s:5Vapor7RequestC\">Request<\/ref.class><\/decl.var.parameter.type><\/decl.var.parameter>) <syntaxtype.keyword>throws<\/syntaxtype.keyword> -&gt; <decl.function.returntype><ref.class usr=\"c:@M@App@objc(cs)User\">User<\/ref.class>?<\/decl.function.returntype><\/decl.function.method.class>",
+            "key.fully_annotated_decl" : "<decl.function.method.class><syntaxtype.keyword>class<\/syntaxtype.keyword> <syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>authenticated<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>_<\/decl.var.parameter.argument_label> <decl.var.parameter.name>req<\/decl.var.parameter.name>: <decl.var.parameter.type><ref.class usr=\"s:5Vapor7RequestC\">Request<\/ref.class><\/decl.var.parameter.type><\/decl.var.parameter>) <syntaxtype.keyword>throws<\/syntaxtype.keyword> -&gt; <decl.function.returntype><ref.class usr=\"s:3App4UserC\">User<\/ref.class>?<\/decl.function.returntype><\/decl.function.method.class>",
             "key.kind" : "source.lang.swift.decl.function.method.class",
             "key.length" : 214,
             "key.name" : "authenticated(_:)",
@@ -2557,7 +3175,7 @@
 }, {
   "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/Product.swift" : {
     "key.diagnostic_stage" : "source.diagnostic.stage.swift.parse",
-    "key.length" : 2601,
+    "key.length" : 2687,
     "key.offset" : 0,
     "key.substructure" : [
       {
@@ -2954,41 +3572,111 @@
       },
       {
         "key.kind" : "source.lang.swift.syntaxtype.comment.mark",
-        "key.length" : 31,
-        "key.name" : "MARK: - Microservice connection",
+        "key.length" : 15,
+        "key.name" : "MARK: - Helpers",
         "key.namelength" : 0,
         "key.nameoffset" : 0,
         "key.offset" : 1526
       },
       {
         "key.annotated_decl" : "<Declaration>final class Product<\/Declaration>",
-        "key.bodylength" : 1021,
-        "key.bodyoffset" : 1578,
+        "key.bodylength" : 210,
+        "key.bodyoffset" : 1562,
         "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/Product.swift",
         "key.fully_annotated_decl" : "<decl.class><syntaxtype.keyword>final<\/syntaxtype.keyword> <syntaxtype.keyword>class<\/syntaxtype.keyword> <decl.name>Product<\/decl.name><\/decl.class>",
         "key.kind" : "source.lang.swift.decl.extension",
-        "key.length" : 1041,
+        "key.length" : 230,
         "key.name" : "Product",
         "key.namelength" : 7,
-        "key.nameoffset" : 1569,
-        "key.offset" : 1559,
+        "key.nameoffset" : 1553,
+        "key.offset" : 1543,
+        "key.substructure" : [
+          {
+            "key.accessibility" : "source.lang.swift.accessibility.internal",
+            "key.annotated_decl" : "<Declaration>class func listProducts(from: [<Type usr=\"s:3App4JSONa\">JSON<\/Type>]) -&gt; [<Type usr=\"s:3App7ProductC\">Product<\/Type>]<\/Declaration>",
+            "key.bodylength" : 154,
+            "key.bodyoffset" : 1616,
+            "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/Product.swift",
+            "key.fully_annotated_decl" : "<decl.function.method.class><syntaxtype.keyword>class<\/syntaxtype.keyword> <syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>listProducts<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>from<\/decl.var.parameter.argument_label>: <decl.var.parameter.type>[<ref.typealias usr=\"s:3App4JSONa\">JSON<\/ref.typealias>]<\/decl.var.parameter.type><\/decl.var.parameter>) -&gt; <decl.function.returntype>[<ref.class usr=\"s:3App7ProductC\">Product<\/ref.class>]<\/decl.function.returntype><\/decl.function.method.class>",
+            "key.kind" : "source.lang.swift.decl.function.method.class",
+            "key.length" : 207,
+            "key.name" : "listProducts(from:)",
+            "key.namelength" : 26,
+            "key.nameoffset" : 1575,
+            "key.offset" : 1564,
+            "key.parsed_declaration" : "class func listProducts(from: [JSON]) -> [Product]",
+            "key.parsed_scope.end" : 78,
+            "key.parsed_scope.start" : 70,
+            "key.substructure" : [
+              {
+                "key.annotated_decl" : "<Declaration>var list: [<Type usr=\"s:3App7ProductC\">Product<\/Type>]<\/Declaration>",
+                "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/Product.swift",
+                "key.fully_annotated_decl" : "<decl.var.local><syntaxtype.keyword>var<\/syntaxtype.keyword> <decl.name>list<\/decl.name>: <decl.var.type>[<ref.class usr=\"s:3App7ProductC\">Product<\/ref.class>]<\/decl.var.type><\/decl.var.local>",
+                "key.kind" : "source.lang.swift.decl.var.local",
+                "key.length" : 24,
+                "key.name" : "list",
+                "key.namelength" : 4,
+                "key.nameoffset" : 1623,
+                "key.offset" : 1619,
+                "key.parsed_declaration" : "var list: [Product] = []",
+                "key.parsed_scope.end" : 71,
+                "key.parsed_scope.start" : 71,
+                "key.related_decls" : [
+                  {
+                    "key.annotated_decl" : "<RelatedName usr=\"s:3App7ProductC4list6userID10parametersSayACGSiSg_SDySSypGtFZ\">list(userID:parameters:)<\/RelatedName>"
+                  }
+                ],
+                "key.typename" : "[Product]",
+                "key.typeusr" : "$SSay3App7ProductCGD",
+                "key.usr" : "s:3App7ProductC12listProducts4fromSayACGSaySDySSypGG_tFZ0C0L_AFvp"
+              }
+            ],
+            "key.typename" : "(Product.Type) -> ([[String : Any]]) -> [Product]",
+            "key.typeusr" : "$S4fromSay3App7ProductCGSaySDySSypGG_tcD",
+            "key.usr" : "s:3App7ProductC12listProducts4fromSayACGSaySDySSypGG_tFZ"
+          }
+        ],
+        "key.typename" : "Product.Type",
+        "key.typeusr" : "$S3App7ProductCmD",
+        "key.usr" : "s:3App7ProductC"
+      },
+      {
+        "key.kind" : "source.lang.swift.syntaxtype.comment.mark",
+        "key.length" : 31,
+        "key.name" : "MARK: - Microservice connection",
+        "key.namelength" : 0,
+        "key.nameoffset" : 0,
+        "key.offset" : 1778
+      },
+      {
+        "key.annotated_decl" : "<Declaration>final class Product<\/Declaration>",
+        "key.bodylength" : 855,
+        "key.bodyoffset" : 1830,
+        "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/Product.swift",
+        "key.fully_annotated_decl" : "<decl.class><syntaxtype.keyword>final<\/syntaxtype.keyword> <syntaxtype.keyword>class<\/syntaxtype.keyword> <decl.name>Product<\/decl.name><\/decl.class>",
+        "key.kind" : "source.lang.swift.decl.extension",
+        "key.length" : 875,
+        "key.name" : "Product",
+        "key.namelength" : 7,
+        "key.nameoffset" : 1821,
+        "key.offset" : 1811,
         "key.substructure" : [
           {
             "key.accessibility" : "source.lang.swift.accessibility.internal",
             "key.annotated_decl" : "<Declaration>class func detail(userID: <Type usr=\"s:Si\">Int<\/Type>?, productID: <Type usr=\"s:Si\">Int<\/Type>) throws -&gt; <Type usr=\"s:3App7ProductC\">Product<\/Type><\/Declaration>",
             "key.bodylength" : 209,
-            "key.bodyoffset" : 1649,
+            "key.bodyoffset" : 1901,
             "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/Product.swift",
             "key.fully_annotated_decl" : "<decl.function.method.class><syntaxtype.keyword>class<\/syntaxtype.keyword> <syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>detail<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>userID<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.struct usr=\"s:Si\">Int<\/ref.struct>?<\/decl.var.parameter.type><\/decl.var.parameter>, <decl.var.parameter><decl.var.parameter.argument_label>productID<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.struct usr=\"s:Si\">Int<\/ref.struct><\/decl.var.parameter.type><\/decl.var.parameter>) <syntaxtype.keyword>throws<\/syntaxtype.keyword> -&gt; <decl.function.returntype><ref.class usr=\"s:3App7ProductC\">Product<\/ref.class><\/decl.function.returntype><\/decl.function.method.class>",
             "key.kind" : "source.lang.swift.decl.function.method.class",
             "key.length" : 277,
             "key.name" : "detail(userID:productID:)",
             "key.namelength" : 36,
-            "key.nameoffset" : 1593,
-            "key.offset" : 1582,
+            "key.nameoffset" : 1845,
+            "key.offset" : 1834,
             "key.parsed_declaration" : "class func detail(userID: Int?, productID: Int) throws -> Product",
-            "key.parsed_scope.end" : 80,
-            "key.parsed_scope.start" : 71,
+            "key.parsed_scope.end" : 94,
+            "key.parsed_scope.start" : 85,
             "key.substructure" : [
               {
                 "key.annotated_decl" : "<Declaration>let json: <Type usr=\"s:3App4JSONa\">JSON<\/Type><\/Declaration>",
@@ -2998,11 +3686,11 @@
                 "key.length" : 75,
                 "key.name" : "json",
                 "key.namelength" : 4,
-                "key.nameoffset" : 1657,
-                "key.offset" : 1653,
+                "key.nameoffset" : 1909,
+                "key.offset" : 1905,
                 "key.parsed_declaration" : "let json = ProductMicroService.detail(userID: userID, productID: productID)",
-                "key.parsed_scope.end" : 73,
-                "key.parsed_scope.start" : 73,
+                "key.parsed_scope.end" : 87,
+                "key.parsed_scope.start" : 87,
                 "key.typename" : "[String : Any]",
                 "key.typeusr" : "$SSDySSypGD",
                 "key.usr" : "s:3App7ProductC6detail6userID07productE0ACSiSg_SitKFZ4jsonL_SDySSypGvp"
@@ -3015,19 +3703,19 @@
           {
             "key.accessibility" : "source.lang.swift.accessibility.internal",
             "key.annotated_decl" : "<Declaration>class func list(userID: <Type usr=\"s:Si\">Int<\/Type>?, parameters: [<Type usr=\"s:SS\">String<\/Type> : Any]) -&gt; [<Type usr=\"s:3App7ProductC\">Product<\/Type>]<\/Declaration>",
-            "key.bodylength" : 310,
-            "key.bodyoffset" : 1934,
+            "key.bodylength" : 228,
+            "key.bodyoffset" : 2186,
             "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/Product.swift",
             "key.fully_annotated_decl" : "<decl.function.method.class><syntaxtype.keyword>class<\/syntaxtype.keyword> <syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>list<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>userID<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.struct usr=\"s:Si\">Int<\/ref.struct>?<\/decl.var.parameter.type><\/decl.var.parameter>, <decl.var.parameter><decl.var.parameter.argument_label>parameters<\/decl.var.parameter.argument_label>: <decl.var.parameter.type>[<ref.struct usr=\"s:SS\">String<\/ref.struct> : Any]<\/decl.var.parameter.type><\/decl.var.parameter>) -&gt; <decl.function.returntype>[<ref.class usr=\"s:3App7ProductC\">Product<\/ref.class>]<\/decl.function.returntype><\/decl.function.method.class>",
             "key.kind" : "source.lang.swift.decl.function.method.class",
-            "key.length" : 382,
+            "key.length" : 300,
             "key.name" : "list(userID:parameters:)",
             "key.namelength" : 45,
-            "key.nameoffset" : 1874,
-            "key.offset" : 1863,
+            "key.nameoffset" : 2126,
+            "key.offset" : 2115,
             "key.parsed_declaration" : "class func list(userID: Int?, parameters: [String: Any]) -> [Product]",
-            "key.parsed_scope.end" : 97,
-            "key.parsed_scope.start" : 82,
+            "key.parsed_scope.end" : 105,
+            "key.parsed_scope.start" : 96,
             "key.substructure" : [
               {
                 "key.annotated_decl" : "<Declaration>let json: <Type usr=\"s:3App4JSONa\">JSON<\/Type><\/Declaration>",
@@ -3037,28 +3725,28 @@
                 "key.length" : 75,
                 "key.name" : "json",
                 "key.namelength" : 4,
-                "key.nameoffset" : 1942,
-                "key.offset" : 1938,
+                "key.nameoffset" : 2194,
+                "key.offset" : 2190,
                 "key.parsed_declaration" : "let json = ProductMicroService.list(userID: userID, parameters: parameters)",
-                "key.parsed_scope.end" : 84,
-                "key.parsed_scope.start" : 84,
+                "key.parsed_scope.end" : 98,
+                "key.parsed_scope.start" : 98,
                 "key.typename" : "[String : Any]",
                 "key.typeusr" : "$SSDySSypGD",
                 "key.usr" : "s:3App7ProductC4list6userID10parametersSayACGSiSg_SDySSypGtFZ4jsonL_AIvp"
               },
               {
-                "key.annotated_decl" : "<Declaration>var list: [<Type usr=\"s:3App7ProductC\">Product<\/Type>]<\/Declaration>",
+                "key.annotated_decl" : "<Declaration>let list: [<Type usr=\"s:3App7ProductC\">Product<\/Type>]<\/Declaration>",
                 "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/Product.swift",
-                "key.fully_annotated_decl" : "<decl.var.local><syntaxtype.keyword>var<\/syntaxtype.keyword> <decl.name>list<\/decl.name>: <decl.var.type>[<ref.class usr=\"s:3App7ProductC\">Product<\/ref.class>]<\/decl.var.type><\/decl.var.local>",
+                "key.fully_annotated_decl" : "<decl.var.local><syntaxtype.keyword>let<\/syntaxtype.keyword> <decl.name>list<\/decl.name>: <decl.var.type>[<ref.class usr=\"s:3App7ProductC\">Product<\/ref.class>]<\/decl.var.type><\/decl.var.local>",
                 "key.kind" : "source.lang.swift.decl.var.local",
-                "key.length" : 24,
+                "key.length" : 58,
                 "key.name" : "list",
                 "key.namelength" : 4,
-                "key.nameoffset" : 2092,
-                "key.offset" : 2088,
-                "key.parsed_declaration" : "var list: [Product] = []",
-                "key.parsed_scope.end" : 89,
-                "key.parsed_scope.start" : 89,
+                "key.nameoffset" : 2344,
+                "key.offset" : 2340,
+                "key.parsed_declaration" : "let list: [Product] = Product.listProducts(from: jsonList)",
+                "key.parsed_scope.end" : 103,
+                "key.parsed_scope.start" : 103,
                 "key.related_decls" : [
                   {
                     "key.annotated_decl" : "<RelatedName usr=\"s:3App7ProductC4list6userID10parametersSayACGSiSg_SDySSypGtFZ\">list(userID:parameters:)<\/RelatedName>"
@@ -3076,19 +3764,19 @@
           {
             "key.accessibility" : "source.lang.swift.accessibility.internal",
             "key.annotated_decl" : "<Declaration>class func favoriteList(userID: <Type usr=\"s:Si\">Int<\/Type>) -&gt; [<Type usr=\"s:3App7ProductC\">Product<\/Type>]<\/Declaration>",
-            "key.bodylength" : 297,
-            "key.bodyoffset" : 2300,
+            "key.bodylength" : 213,
+            "key.bodyoffset" : 2470,
             "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/Product.swift",
             "key.fully_annotated_decl" : "<decl.function.method.class><syntaxtype.keyword>class<\/syntaxtype.keyword> <syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>favoriteList<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>userID<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.struct usr=\"s:Si\">Int<\/ref.struct><\/decl.var.parameter.type><\/decl.var.parameter>) -&gt; <decl.function.returntype>[<ref.class usr=\"s:3App7ProductC\">Product<\/ref.class>]<\/decl.function.returntype><\/decl.function.method.class>",
             "key.kind" : "source.lang.swift.decl.function.method.class",
-            "key.length" : 349,
+            "key.length" : 265,
             "key.name" : "favoriteList(userID:)",
             "key.namelength" : 25,
-            "key.nameoffset" : 2260,
-            "key.offset" : 2249,
+            "key.nameoffset" : 2430,
+            "key.offset" : 2419,
             "key.parsed_declaration" : "class func favoriteList(userID: Int) -> [Product]",
-            "key.parsed_scope.end" : 114,
-            "key.parsed_scope.start" : 99,
+            "key.parsed_scope.end" : 116,
+            "key.parsed_scope.start" : 107,
             "key.substructure" : [
               {
                 "key.annotated_decl" : "<Declaration>let json: <Type usr=\"s:3App4JSONa\">JSON<\/Type><\/Declaration>",
@@ -3098,28 +3786,28 @@
                 "key.length" : 56,
                 "key.name" : "json",
                 "key.namelength" : 4,
-                "key.nameoffset" : 2310,
-                "key.offset" : 2306,
+                "key.nameoffset" : 2480,
+                "key.offset" : 2476,
                 "key.parsed_declaration" : "let json = UserMicroService.favoriteList(userID: userID)",
-                "key.parsed_scope.end" : 101,
-                "key.parsed_scope.start" : 101,
+                "key.parsed_scope.end" : 109,
+                "key.parsed_scope.start" : 109,
                 "key.typename" : "[String : Any]",
                 "key.typeusr" : "$SSDySSypGD",
                 "key.usr" : "s:3App7ProductC12favoriteList6userIDSayACGSi_tFZ4jsonL_SDySSypGvp"
               },
               {
-                "key.annotated_decl" : "<Declaration>var list: [<Type usr=\"s:3App7ProductC\">Product<\/Type>]<\/Declaration>",
+                "key.annotated_decl" : "<Declaration>let list: [<Type usr=\"s:3App7ProductC\">Product<\/Type>]<\/Declaration>",
                 "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/Product.swift",
-                "key.fully_annotated_decl" : "<decl.var.local><syntaxtype.keyword>var<\/syntaxtype.keyword> <decl.name>list<\/decl.name>: <decl.var.type>[<ref.class usr=\"s:3App7ProductC\">Product<\/ref.class>]<\/decl.var.type><\/decl.var.local>",
+                "key.fully_annotated_decl" : "<decl.var.local><syntaxtype.keyword>let<\/syntaxtype.keyword> <decl.name>list<\/decl.name>: <decl.var.type>[<ref.class usr=\"s:3App7ProductC\">Product<\/ref.class>]<\/decl.var.type><\/decl.var.local>",
                 "key.kind" : "source.lang.swift.decl.var.local",
-                "key.length" : 24,
+                "key.length" : 58,
                 "key.name" : "list",
                 "key.namelength" : 4,
-                "key.nameoffset" : 2443,
-                "key.offset" : 2439,
-                "key.parsed_declaration" : "var list: [Product] = []",
-                "key.parsed_scope.end" : 106,
-                "key.parsed_scope.start" : 106,
+                "key.nameoffset" : 2613,
+                "key.offset" : 2609,
+                "key.parsed_declaration" : "let list: [Product] = Product.listProducts(from: jsonList)",
+                "key.parsed_scope.end" : 114,
+                "key.parsed_scope.start" : 114,
                 "key.related_decls" : [
                   {
                     "key.annotated_decl" : "<RelatedName usr=\"s:3App7ProductC4list6userID10parametersSayACGSiSg_SDySSypGtFZ\">list(userID:parameters:)<\/RelatedName>"
@@ -3144,12 +3832,12 @@
 }, {
   "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/User.swift" : {
     "key.diagnostic_stage" : "source.diagnostic.stage.swift.parse",
-    "key.length" : 2485,
+    "key.length" : 2475,
     "key.offset" : 0,
     "key.substructure" : [
       {
         "key.accessibility" : "source.lang.swift.accessibility.internal",
-        "key.annotated_decl" : "<Declaration>final class User : <Type usr=\"c:objc(cs)NSObject\">NSObject<\/Type><\/Declaration>",
+        "key.annotated_decl" : "<Declaration>final class User<\/Declaration>",
         "key.attributes" : [
           {
             "key.attribute" : "source.decl.attribute.final",
@@ -3158,28 +3846,16 @@
           }
         ],
         "key.bodylength" : 414,
-        "key.bodyoffset" : 182,
-        "key.elements" : [
-          {
-            "key.kind" : "source.lang.swift.structure.elem.typeref",
-            "key.length" : 8,
-            "key.offset" : 172
-          }
-        ],
+        "key.bodyoffset" : 172,
         "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/User.swift",
-        "key.fully_annotated_decl" : "<decl.class><syntaxtype.keyword>final<\/syntaxtype.keyword> <syntaxtype.keyword>class<\/syntaxtype.keyword> <decl.name>User<\/decl.name> : <ref.class usr=\"c:objc(cs)NSObject\">NSObject<\/ref.class><\/decl.class>",
-        "key.inheritedtypes" : [
-          {
-            "key.name" : "NSObject"
-          }
-        ],
+        "key.fully_annotated_decl" : "<decl.class><syntaxtype.keyword>final<\/syntaxtype.keyword> <syntaxtype.keyword>class<\/syntaxtype.keyword> <decl.name>User<\/decl.name><\/decl.class>",
         "key.kind" : "source.lang.swift.decl.class",
-        "key.length" : 437,
+        "key.length" : 427,
         "key.name" : "User",
         "key.namelength" : 4,
         "key.nameoffset" : 166,
         "key.offset" : 160,
-        "key.parsed_declaration" : "final class User: NSObject",
+        "key.parsed_declaration" : "final class User",
         "key.parsed_scope.end" : 32,
         "key.parsed_scope.start" : 13,
         "key.runtime_name" : "_TtC4main4User",
@@ -3193,8 +3869,8 @@
             "key.length" : 11,
             "key.name" : "id",
             "key.namelength" : 2,
-            "key.nameoffset" : 189,
-            "key.offset" : 185,
+            "key.nameoffset" : 179,
+            "key.offset" : 175,
             "key.parsed_declaration" : "var id: Int",
             "key.parsed_scope.end" : 15,
             "key.parsed_scope.start" : 15,
@@ -3212,8 +3888,8 @@
             "key.length" : 16,
             "key.name" : "name",
             "key.namelength" : 4,
-            "key.nameoffset" : 202,
-            "key.offset" : 198,
+            "key.nameoffset" : 192,
+            "key.offset" : 188,
             "key.parsed_declaration" : "var name: String",
             "key.parsed_scope.end" : 16,
             "key.parsed_scope.start" : 16,
@@ -3231,8 +3907,8 @@
             "key.length" : 17,
             "key.name" : "email",
             "key.namelength" : 5,
-            "key.nameoffset" : 220,
-            "key.offset" : 216,
+            "key.nameoffset" : 210,
+            "key.offset" : 206,
             "key.parsed_declaration" : "var email: String",
             "key.parsed_scope.end" : 17,
             "key.parsed_scope.start" : 17,
@@ -3250,8 +3926,8 @@
             "key.length" : 36,
             "key.name" : "favoriteProducts",
             "key.namelength" : 16,
-            "key.nameoffset" : 239,
-            "key.offset" : 235,
+            "key.nameoffset" : 229,
+            "key.offset" : 225,
             "key.parsed_declaration" : "var favoriteProducts: [Product] = []",
             "key.parsed_scope.end" : 18,
             "key.parsed_scope.start" : 18,
@@ -3264,15 +3940,15 @@
             "key.accessibility" : "source.lang.swift.accessibility.internal",
             "key.annotated_decl" : "<Declaration>init(id: <Type usr=\"s:Si\">Int<\/Type>, name: <Type usr=\"s:SS\">String<\/Type>, email: <Type usr=\"s:SS\">String<\/Type>)<\/Declaration>",
             "key.bodylength" : 57,
-            "key.bodyoffset" : 318,
+            "key.bodyoffset" : 308,
             "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/User.swift",
             "key.fully_annotated_decl" : "<decl.function.constructor><syntaxtype.keyword>init<\/syntaxtype.keyword>(<decl.var.parameter><decl.var.parameter.argument_label>id<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.struct usr=\"s:Si\">Int<\/ref.struct><\/decl.var.parameter.type><\/decl.var.parameter>, <decl.var.parameter><decl.var.parameter.argument_label>name<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.struct usr=\"s:SS\">String<\/ref.struct><\/decl.var.parameter.type><\/decl.var.parameter>, <decl.var.parameter><decl.var.parameter.argument_label>email<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.struct usr=\"s:SS\">String<\/ref.struct><\/decl.var.parameter.type><\/decl.var.parameter>)<\/decl.function.constructor>",
             "key.kind" : "source.lang.swift.decl.function.method.instance",
             "key.length" : 102,
             "key.name" : "init(id:name:email:)",
             "key.namelength" : 42,
-            "key.nameoffset" : 274,
-            "key.offset" : 274,
+            "key.nameoffset" : 264,
+            "key.offset" : 264,
             "key.parsed_declaration" : "init(id: Int, name: String, email: String)",
             "key.parsed_scope.end" : 24,
             "key.parsed_scope.start" : 20,
@@ -3295,19 +3971,19 @@
               {
                 "key.attribute" : "source.decl.attribute.convenience",
                 "key.length" : 11,
-                "key.offset" : 380
+                "key.offset" : 370
               }
             ],
             "key.bodylength" : 183,
-            "key.bodyoffset" : 411,
+            "key.bodyoffset" : 401,
             "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/User.swift",
             "key.fully_annotated_decl" : "<decl.function.constructor><syntaxtype.keyword>convenience<\/syntaxtype.keyword> <syntaxtype.keyword>init<\/syntaxtype.keyword>?(<decl.var.parameter><decl.var.parameter.argument_label>json<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.typealias usr=\"s:3App4JSONa\">JSON<\/ref.typealias><\/decl.var.parameter.type><\/decl.var.parameter>)<\/decl.function.constructor>",
             "key.kind" : "source.lang.swift.decl.function.method.instance",
             "key.length" : 203,
             "key.name" : "init(json:)",
             "key.namelength" : 17,
-            "key.nameoffset" : 392,
-            "key.offset" : 392,
+            "key.nameoffset" : 382,
+            "key.offset" : 382,
             "key.parsed_declaration" : "convenience init?(json: JSON)",
             "key.parsed_scope.end" : 31,
             "key.parsed_scope.start" : 26,
@@ -3326,7 +4002,7 @@
         ],
         "key.typename" : "User.Type",
         "key.typeusr" : "$S3App4UserCmD",
-        "key.usr" : "c:@M@App@objc(cs)User"
+        "key.usr" : "s:3App4UserC"
       },
       {
         "key.kind" : "source.lang.swift.syntaxtype.comment.mark",
@@ -3334,34 +4010,34 @@
         "key.name" : "MARK: - Microservice connection",
         "key.namelength" : 0,
         "key.nameoffset" : 0,
-        "key.offset" : 602
+        "key.offset" : 592
       },
       {
-        "key.annotated_decl" : "<Declaration>final class User : <Type usr=\"c:objc(cs)NSObject\">NSObject<\/Type><\/Declaration>",
+        "key.annotated_decl" : "<Declaration>final class User<\/Declaration>",
         "key.bodylength" : 1832,
-        "key.bodyoffset" : 651,
+        "key.bodyoffset" : 641,
         "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/User.swift",
-        "key.fully_annotated_decl" : "<decl.class><syntaxtype.keyword>final<\/syntaxtype.keyword> <syntaxtype.keyword>class<\/syntaxtype.keyword> <decl.name>User<\/decl.name> : <ref.class usr=\"c:objc(cs)NSObject\">NSObject<\/ref.class><\/decl.class>",
+        "key.fully_annotated_decl" : "<decl.class><syntaxtype.keyword>final<\/syntaxtype.keyword> <syntaxtype.keyword>class<\/syntaxtype.keyword> <decl.name>User<\/decl.name><\/decl.class>",
         "key.kind" : "source.lang.swift.decl.extension",
         "key.length" : 1849,
         "key.name" : "User",
         "key.namelength" : 4,
-        "key.nameoffset" : 645,
-        "key.offset" : 635,
+        "key.nameoffset" : 635,
+        "key.offset" : 625,
         "key.substructure" : [
           {
             "key.accessibility" : "source.lang.swift.accessibility.internal",
-            "key.annotated_decl" : "<Declaration>class func create(request: <Type usr=\"s:3App17CreateUserRequestV\">CreateUserRequest<\/Type>) throws -&gt; <Type usr=\"c:@M@App@objc(cs)User\">User<\/Type><\/Declaration>",
+            "key.annotated_decl" : "<Declaration>class func create(request: <Type usr=\"s:3App17CreateUserRequestV\">CreateUserRequest<\/Type>) throws -&gt; <Type usr=\"s:3App4UserC\">User<\/Type><\/Declaration>",
             "key.bodylength" : 330,
-            "key.bodyoffset" : 716,
+            "key.bodyoffset" : 706,
             "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/User.swift",
-            "key.fully_annotated_decl" : "<decl.function.method.class><syntaxtype.keyword>class<\/syntaxtype.keyword> <syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>create<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>request<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.struct usr=\"s:3App17CreateUserRequestV\">CreateUserRequest<\/ref.struct><\/decl.var.parameter.type><\/decl.var.parameter>) <syntaxtype.keyword>throws<\/syntaxtype.keyword> -&gt; <decl.function.returntype><ref.class usr=\"c:@M@App@objc(cs)User\">User<\/ref.class><\/decl.function.returntype><\/decl.function.method.class>",
+            "key.fully_annotated_decl" : "<decl.function.method.class><syntaxtype.keyword>class<\/syntaxtype.keyword> <syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>create<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>request<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.struct usr=\"s:3App17CreateUserRequestV\">CreateUserRequest<\/ref.struct><\/decl.var.parameter.type><\/decl.var.parameter>) <syntaxtype.keyword>throws<\/syntaxtype.keyword> -&gt; <decl.function.returntype><ref.class usr=\"s:3App4UserC\">User<\/ref.class><\/decl.function.returntype><\/decl.function.method.class>",
             "key.kind" : "source.lang.swift.decl.function.method.class",
             "key.length" : 393,
             "key.name" : "create(request:)",
             "key.namelength" : 34,
-            "key.nameoffset" : 665,
-            "key.offset" : 654,
+            "key.nameoffset" : 655,
+            "key.offset" : 644,
             "key.parsed_declaration" : "class func create(request: CreateUserRequest) throws -> User",
             "key.parsed_scope.end" : 50,
             "key.parsed_scope.start" : 38,
@@ -3374,8 +4050,8 @@
                 "key.length" : 70,
                 "key.name" : "json",
                 "key.namelength" : 4,
-                "key.nameoffset" : 864,
-                "key.offset" : 860,
+                "key.nameoffset" : 854,
+                "key.offset" : 850,
                 "key.parsed_declaration" : "let json = UserMicroService.create(parameters: request.toParameters())",
                 "key.parsed_scope.end" : 44,
                 "key.parsed_scope.start" : 44,
@@ -3390,17 +4066,17 @@
           },
           {
             "key.accessibility" : "source.lang.swift.accessibility.internal",
-            "key.annotated_decl" : "<Declaration>class func update(userID: <Type usr=\"s:Si\">Int<\/Type>, request: <Type usr=\"s:3App17UpdateUserRequestV\">UpdateUserRequest<\/Type>) throws -&gt; <Type usr=\"c:@M@App@objc(cs)User\">User<\/Type><\/Declaration>",
+            "key.annotated_decl" : "<Declaration>class func update(userID: <Type usr=\"s:Si\">Int<\/Type>, request: <Type usr=\"s:3App17UpdateUserRequestV\">UpdateUserRequest<\/Type>) throws -&gt; <Type usr=\"s:3App4UserC\">User<\/Type><\/Declaration>",
             "key.bodylength" : 206,
-            "key.bodyoffset" : 1126,
+            "key.bodyoffset" : 1116,
             "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/User.swift",
-            "key.fully_annotated_decl" : "<decl.function.method.class><syntaxtype.keyword>class<\/syntaxtype.keyword> <syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>update<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>userID<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.struct usr=\"s:Si\">Int<\/ref.struct><\/decl.var.parameter.type><\/decl.var.parameter>, <decl.var.parameter><decl.var.parameter.argument_label>request<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.struct usr=\"s:3App17UpdateUserRequestV\">UpdateUserRequest<\/ref.struct><\/decl.var.parameter.type><\/decl.var.parameter>) <syntaxtype.keyword>throws<\/syntaxtype.keyword> -&gt; <decl.function.returntype><ref.class usr=\"c:@M@App@objc(cs)User\">User<\/ref.class><\/decl.function.returntype><\/decl.function.method.class>",
+            "key.fully_annotated_decl" : "<decl.function.method.class><syntaxtype.keyword>class<\/syntaxtype.keyword> <syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>update<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>userID<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.struct usr=\"s:Si\">Int<\/ref.struct><\/decl.var.parameter.type><\/decl.var.parameter>, <decl.var.parameter><decl.var.parameter.argument_label>request<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.struct usr=\"s:3App17UpdateUserRequestV\">UpdateUserRequest<\/ref.struct><\/decl.var.parameter.type><\/decl.var.parameter>) <syntaxtype.keyword>throws<\/syntaxtype.keyword> -&gt; <decl.function.returntype><ref.class usr=\"s:3App4UserC\">User<\/ref.class><\/decl.function.returntype><\/decl.function.method.class>",
             "key.kind" : "source.lang.swift.decl.function.method.class",
             "key.length" : 282,
             "key.name" : "update(userID:request:)",
             "key.namelength" : 47,
-            "key.nameoffset" : 1062,
-            "key.offset" : 1051,
+            "key.nameoffset" : 1052,
+            "key.offset" : 1041,
             "key.parsed_declaration" : "class func update(userID: Int, request: UpdateUserRequest) throws -> User",
             "key.parsed_scope.end" : 60,
             "key.parsed_scope.start" : 52,
@@ -3413,8 +4089,8 @@
                 "key.length" : 86,
                 "key.name" : "json",
                 "key.namelength" : 4,
-                "key.nameoffset" : 1134,
-                "key.offset" : 1130,
+                "key.nameoffset" : 1124,
+                "key.offset" : 1120,
                 "key.parsed_declaration" : "let json = UserMicroService.update(userID: userID, parameters: request.toParameters())",
                 "key.parsed_scope.end" : 54,
                 "key.parsed_scope.start" : 54,
@@ -3431,15 +4107,15 @@
             "key.accessibility" : "source.lang.swift.accessibility.internal",
             "key.annotated_decl" : "<Declaration>class func delete(userID: <Type usr=\"s:Si\">Int<\/Type>) throws<\/Declaration>",
             "key.bodylength" : 189,
-            "key.bodyoffset" : 1376,
+            "key.bodyoffset" : 1366,
             "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/User.swift",
             "key.fully_annotated_decl" : "<decl.function.method.class><syntaxtype.keyword>class<\/syntaxtype.keyword> <syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>delete<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>userID<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.struct usr=\"s:Si\">Int<\/ref.struct><\/decl.var.parameter.type><\/decl.var.parameter>) <syntaxtype.keyword>throws<\/syntaxtype.keyword><\/decl.function.method.class>",
             "key.kind" : "source.lang.swift.decl.function.method.class",
             "key.length" : 229,
             "key.name" : "delete(userID:)",
             "key.namelength" : 19,
-            "key.nameoffset" : 1348,
-            "key.offset" : 1337,
+            "key.nameoffset" : 1338,
+            "key.offset" : 1327,
             "key.parsed_declaration" : "class func delete(userID: Int) throws",
             "key.parsed_scope.end" : 67,
             "key.parsed_scope.start" : 62,
@@ -3452,8 +4128,8 @@
                 "key.length" : 50,
                 "key.name" : "json",
                 "key.namelength" : 4,
-                "key.nameoffset" : 1383,
-                "key.offset" : 1379,
+                "key.nameoffset" : 1373,
+                "key.offset" : 1369,
                 "key.parsed_declaration" : "let json = UserMicroService.delete(userID: userID)",
                 "key.parsed_scope.end" : 63,
                 "key.parsed_scope.start" : 63,
@@ -3468,17 +4144,17 @@
           },
           {
             "key.accessibility" : "source.lang.swift.accessibility.internal",
-            "key.annotated_decl" : "<Declaration>class func me(userID: <Type usr=\"s:Si\">Int<\/Type>) throws -&gt; <Type usr=\"c:@M@App@objc(cs)User\">User<\/Type><\/Declaration>",
+            "key.annotated_decl" : "<Declaration>class func me(userID: <Type usr=\"s:Si\">Int<\/Type>) throws -&gt; <Type usr=\"s:3App4UserC\">User<\/Type><\/Declaration>",
             "key.bodylength" : 166,
-            "key.bodyoffset" : 1613,
+            "key.bodyoffset" : 1603,
             "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/User.swift",
-            "key.fully_annotated_decl" : "<decl.function.method.class><syntaxtype.keyword>class<\/syntaxtype.keyword> <syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>me<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>userID<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.struct usr=\"s:Si\">Int<\/ref.struct><\/decl.var.parameter.type><\/decl.var.parameter>) <syntaxtype.keyword>throws<\/syntaxtype.keyword> -&gt; <decl.function.returntype><ref.class usr=\"c:@M@App@objc(cs)User\">User<\/ref.class><\/decl.function.returntype><\/decl.function.method.class>",
+            "key.fully_annotated_decl" : "<decl.function.method.class><syntaxtype.keyword>class<\/syntaxtype.keyword> <syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>me<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>userID<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.struct usr=\"s:Si\">Int<\/ref.struct><\/decl.var.parameter.type><\/decl.var.parameter>) <syntaxtype.keyword>throws<\/syntaxtype.keyword> -&gt; <decl.function.returntype><ref.class usr=\"s:3App4UserC\">User<\/ref.class><\/decl.function.returntype><\/decl.function.method.class>",
             "key.kind" : "source.lang.swift.decl.function.method.class",
             "key.length" : 210,
             "key.name" : "me(userID:)",
             "key.namelength" : 15,
-            "key.nameoffset" : 1581,
-            "key.offset" : 1570,
+            "key.nameoffset" : 1571,
+            "key.offset" : 1560,
             "key.parsed_declaration" : "class func me(userID: Int) throws -> User",
             "key.parsed_scope.end" : 77,
             "key.parsed_scope.start" : 69,
@@ -3491,8 +4167,8 @@
                 "key.length" : 46,
                 "key.name" : "json",
                 "key.namelength" : 4,
-                "key.nameoffset" : 1621,
-                "key.offset" : 1617,
+                "key.nameoffset" : 1611,
+                "key.offset" : 1607,
                 "key.parsed_declaration" : "let json = UserMicroService.me(userID: userID)",
                 "key.parsed_scope.end" : 71,
                 "key.parsed_scope.start" : 71,
@@ -3509,15 +4185,15 @@
             "key.accessibility" : "source.lang.swift.accessibility.internal",
             "key.annotated_decl" : "<Declaration>class func favoriteCreate(userID: <Type usr=\"s:Si\">Int<\/Type>, request: <Type usr=\"s:3App22FavoriteProductRequestV\">FavoriteProductRequest<\/Type>) throws -&gt; <Type usr=\"s:3App7ProductC\">Product<\/Type><\/Declaration>",
             "key.bodylength" : 210,
-            "key.bodyoffset" : 1875,
+            "key.bodyoffset" : 1865,
             "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/User.swift",
             "key.fully_annotated_decl" : "<decl.function.method.class><syntaxtype.keyword>class<\/syntaxtype.keyword> <syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>favoriteCreate<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>userID<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.struct usr=\"s:Si\">Int<\/ref.struct><\/decl.var.parameter.type><\/decl.var.parameter>, <decl.var.parameter><decl.var.parameter.argument_label>request<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.struct usr=\"s:3App22FavoriteProductRequestV\">FavoriteProductRequest<\/ref.struct><\/decl.var.parameter.type><\/decl.var.parameter>) <syntaxtype.keyword>throws<\/syntaxtype.keyword> -&gt; <decl.function.returntype><ref.class usr=\"s:3App7ProductC\">Product<\/ref.class><\/decl.function.returntype><\/decl.function.method.class>",
             "key.kind" : "source.lang.swift.decl.function.method.class",
             "key.length" : 302,
             "key.name" : "favoriteCreate(userID:request:)",
             "key.namelength" : 60,
-            "key.nameoffset" : 1795,
-            "key.offset" : 1784,
+            "key.nameoffset" : 1785,
+            "key.offset" : 1774,
             "key.parsed_declaration" : "class func favoriteCreate(userID: Int, request: FavoriteProductRequest) throws -> Product",
             "key.parsed_scope.end" : 87,
             "key.parsed_scope.start" : 79,
@@ -3530,8 +4206,8 @@
                 "key.length" : 81,
                 "key.name" : "json",
                 "key.namelength" : 4,
-                "key.nameoffset" : 1882,
-                "key.offset" : 1878,
+                "key.nameoffset" : 1872,
+                "key.offset" : 1868,
                 "key.parsed_declaration" : "let json = UserMicroService.favoriteCreate(userID: userID, productID: request.id)",
                 "key.parsed_scope.end" : 80,
                 "key.parsed_scope.start" : 80,
@@ -3548,15 +4224,15 @@
             "key.accessibility" : "source.lang.swift.accessibility.internal",
             "key.annotated_decl" : "<Declaration>class func favoriteList(userID: <Type usr=\"s:Si\">Int<\/Type>) throws -&gt; [<Type usr=\"s:3App7ProductC\">Product<\/Type>]<\/Declaration>",
             "key.bodylength" : 333,
-            "key.bodyoffset" : 2148,
+            "key.bodyoffset" : 2138,
             "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Models\/User.swift",
             "key.fully_annotated_decl" : "<decl.function.method.class><syntaxtype.keyword>class<\/syntaxtype.keyword> <syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>favoriteList<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>userID<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.struct usr=\"s:Si\">Int<\/ref.struct><\/decl.var.parameter.type><\/decl.var.parameter>) <syntaxtype.keyword>throws<\/syntaxtype.keyword> -&gt; <decl.function.returntype>[<ref.class usr=\"s:3App7ProductC\">Product<\/ref.class>]<\/decl.function.returntype><\/decl.function.method.class>",
             "key.kind" : "source.lang.swift.decl.function.method.class",
             "key.length" : 392,
             "key.name" : "favoriteList(userID:)",
             "key.namelength" : 25,
-            "key.nameoffset" : 2101,
-            "key.offset" : 2090,
+            "key.nameoffset" : 2091,
+            "key.offset" : 2080,
             "key.parsed_declaration" : "class func favoriteList(userID: Int) throws -> [Product]",
             "key.parsed_scope.end" : 103,
             "key.parsed_scope.start" : 89,
@@ -3569,8 +4245,8 @@
                 "key.length" : 56,
                 "key.name" : "json",
                 "key.namelength" : 4,
-                "key.nameoffset" : 2155,
-                "key.offset" : 2151,
+                "key.nameoffset" : 2145,
+                "key.offset" : 2141,
                 "key.parsed_declaration" : "let json = UserMicroService.favoriteList(userID: userID)",
                 "key.parsed_scope.end" : 90,
                 "key.parsed_scope.start" : 90,
@@ -3586,8 +4262,8 @@
                 "key.length" : 24,
                 "key.name" : "list",
                 "key.namelength" : 4,
-                "key.nameoffset" : 2327,
-                "key.offset" : 2323,
+                "key.nameoffset" : 2317,
+                "key.offset" : 2313,
                 "key.parsed_declaration" : "var list: [Product] = []",
                 "key.parsed_scope.end" : 95,
                 "key.parsed_scope.start" : 95,
@@ -3603,7 +4279,7 @@
         ],
         "key.typename" : "User.Type",
         "key.typeusr" : "$S3App4UserCmD",
-        "key.usr" : "c:@M@App@objc(cs)User"
+        "key.usr" : "s:3App4UserC"
       }
     ]
   }
@@ -4135,21 +4811,82 @@
     ]
   }
 }, {
+  "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Requests\/CreateCartRequest.swift" : {
+    "key.diagnostic_stage" : "source.diagnostic.stage.swift.parse",
+    "key.length" : 159,
+    "key.offset" : 0,
+    "key.substructure" : [
+      {
+        "key.accessibility" : "source.lang.swift.accessibility.internal",
+        "key.annotated_decl" : "<Declaration>struct CreateCartRequest : <Type usr=\"s:5Vapor7ContentP\">Content<\/Type><\/Declaration>",
+        "key.bodylength" : 21,
+        "key.bodyoffset" : 136,
+        "key.elements" : [
+          {
+            "key.kind" : "source.lang.swift.structure.elem.typeref",
+            "key.length" : 7,
+            "key.offset" : 127
+          }
+        ],
+        "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Requests\/CreateCartRequest.swift",
+        "key.fully_annotated_decl" : "<decl.struct><syntaxtype.keyword>struct<\/syntaxtype.keyword> <decl.name>CreateCartRequest<\/decl.name> : <ref.protocol usr=\"s:5Vapor7ContentP\">Content<\/ref.protocol><\/decl.struct>",
+        "key.inheritedtypes" : [
+          {
+            "key.name" : "Content"
+          }
+        ],
+        "key.kind" : "source.lang.swift.decl.struct",
+        "key.length" : 57,
+        "key.name" : "CreateCartRequest",
+        "key.namelength" : 17,
+        "key.nameoffset" : 108,
+        "key.offset" : 101,
+        "key.parsed_declaration" : "struct CreateCartRequest: Content",
+        "key.parsed_scope.end" : 12,
+        "key.parsed_scope.start" : 10,
+        "key.substructure" : [
+          {
+            "key.accessibility" : "source.lang.swift.accessibility.internal",
+            "key.annotated_decl" : "<Declaration>var productID: <Type usr=\"s:Si\">Int<\/Type><\/Declaration>",
+            "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Requests\/CreateCartRequest.swift",
+            "key.fully_annotated_decl" : "<decl.var.instance><syntaxtype.keyword>var<\/syntaxtype.keyword> <decl.name>productID<\/decl.name>: <decl.var.type><ref.struct usr=\"s:Si\">Int<\/ref.struct><\/decl.var.type><\/decl.var.instance>",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.length" : 18,
+            "key.name" : "productID",
+            "key.namelength" : 9,
+            "key.nameoffset" : 142,
+            "key.offset" : 138,
+            "key.parsed_declaration" : "var productID: Int",
+            "key.parsed_scope.end" : 11,
+            "key.parsed_scope.start" : 11,
+            "key.setter_accessibility" : "source.lang.swift.accessibility.internal",
+            "key.typename" : "Int",
+            "key.typeusr" : "$SSiD",
+            "key.usr" : "s:3App17CreateCartRequestV9productIDSivp"
+          }
+        ],
+        "key.typename" : "CreateCartRequest.Type",
+        "key.typeusr" : "$S3App17CreateCartRequestVmD",
+        "key.usr" : "s:3App17CreateCartRequestV"
+      }
+    ]
+  }
+}, {
   "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Requests\/CreateUserRequest.swift" : {
     "key.diagnostic_stage" : "source.diagnostic.stage.swift.parse",
-    "key.length" : 594,
+    "key.length" : 576,
     "key.offset" : 0,
     "key.substructure" : [
       {
         "key.accessibility" : "source.lang.swift.accessibility.internal",
         "key.annotated_decl" : "<Declaration>struct CreateUserRequest : <Type usr=\"s:5Vapor7ContentP\">Content<\/Type><\/Declaration>",
         "key.bodylength" : 88,
-        "key.bodyoffset" : 168,
+        "key.bodyoffset" : 150,
         "key.elements" : [
           {
             "key.kind" : "source.lang.swift.structure.elem.typeref",
             "key.length" : 7,
-            "key.offset" : 159
+            "key.offset" : 141
           }
         ],
         "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Requests\/CreateUserRequest.swift",
@@ -4163,11 +4900,11 @@
         "key.length" : 124,
         "key.name" : "CreateUserRequest",
         "key.namelength" : 17,
-        "key.nameoffset" : 140,
-        "key.offset" : 133,
+        "key.nameoffset" : 122,
+        "key.offset" : 115,
         "key.parsed_declaration" : "struct CreateUserRequest: Content",
-        "key.parsed_scope.end" : 17,
-        "key.parsed_scope.start" : 12,
+        "key.parsed_scope.end" : 16,
+        "key.parsed_scope.start" : 11,
         "key.substructure" : [
           {
             "key.accessibility" : "source.lang.swift.accessibility.internal",
@@ -4178,11 +4915,11 @@
             "key.length" : 16,
             "key.name" : "name",
             "key.namelength" : 4,
-            "key.nameoffset" : 174,
-            "key.offset" : 170,
+            "key.nameoffset" : 156,
+            "key.offset" : 152,
             "key.parsed_declaration" : "var name: String",
-            "key.parsed_scope.end" : 13,
-            "key.parsed_scope.start" : 13,
+            "key.parsed_scope.end" : 12,
+            "key.parsed_scope.start" : 12,
             "key.setter_accessibility" : "source.lang.swift.accessibility.internal",
             "key.typename" : "String",
             "key.typeusr" : "$SSSD",
@@ -4197,11 +4934,11 @@
             "key.length" : 17,
             "key.name" : "email",
             "key.namelength" : 5,
-            "key.nameoffset" : 192,
-            "key.offset" : 188,
+            "key.nameoffset" : 174,
+            "key.offset" : 170,
             "key.parsed_declaration" : "var email: String",
-            "key.parsed_scope.end" : 14,
-            "key.parsed_scope.start" : 14,
+            "key.parsed_scope.end" : 13,
+            "key.parsed_scope.start" : 13,
             "key.setter_accessibility" : "source.lang.swift.accessibility.internal",
             "key.typename" : "String",
             "key.typeusr" : "$SSSD",
@@ -4216,11 +4953,11 @@
             "key.length" : 20,
             "key.name" : "password",
             "key.namelength" : 8,
-            "key.nameoffset" : 211,
-            "key.offset" : 207,
+            "key.nameoffset" : 193,
+            "key.offset" : 189,
             "key.parsed_declaration" : "var password: String",
-            "key.parsed_scope.end" : 15,
-            "key.parsed_scope.start" : 15,
+            "key.parsed_scope.end" : 14,
+            "key.parsed_scope.start" : 14,
             "key.setter_accessibility" : "source.lang.swift.accessibility.internal",
             "key.typename" : "String",
             "key.typeusr" : "$SSSD",
@@ -4235,11 +4972,11 @@
             "key.length" : 26,
             "key.name" : "verifyPassword",
             "key.namelength" : 14,
-            "key.nameoffset" : 233,
-            "key.offset" : 229,
+            "key.nameoffset" : 215,
+            "key.offset" : 211,
             "key.parsed_declaration" : "var verifyPassword: String",
-            "key.parsed_scope.end" : 16,
-            "key.parsed_scope.start" : 16,
+            "key.parsed_scope.end" : 15,
+            "key.parsed_scope.start" : 15,
             "key.setter_accessibility" : "source.lang.swift.accessibility.internal",
             "key.typename" : "String",
             "key.typeusr" : "$SSSD",
@@ -4253,32 +4990,32 @@
       {
         "key.annotated_decl" : "<Declaration>struct CreateUserRequest : <Type usr=\"s:5Vapor7ContentP\">Content<\/Type><\/Declaration>",
         "key.bodylength" : 304,
-        "key.bodyoffset" : 288,
+        "key.bodyoffset" : 270,
         "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Requests\/CreateUserRequest.swift",
         "key.fully_annotated_decl" : "<decl.struct><syntaxtype.keyword>struct<\/syntaxtype.keyword> <decl.name>CreateUserRequest<\/decl.name> : <ref.protocol usr=\"s:5Vapor7ContentP\">Content<\/ref.protocol><\/decl.struct>",
         "key.kind" : "source.lang.swift.decl.extension",
         "key.length" : 334,
         "key.name" : "CreateUserRequest",
         "key.namelength" : 17,
-        "key.nameoffset" : 269,
-        "key.offset" : 259,
+        "key.nameoffset" : 251,
+        "key.offset" : 241,
         "key.substructure" : [
           {
             "key.accessibility" : "source.lang.swift.accessibility.internal",
             "key.annotated_decl" : "<Declaration>func toParameters() -&gt; [<Type usr=\"s:SS\">String<\/Type> : Any]<\/Declaration>",
             "key.bodylength" : 262,
-            "key.bodyoffset" : 328,
+            "key.bodyoffset" : 310,
             "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Requests\/CreateUserRequest.swift",
             "key.fully_annotated_decl" : "<decl.function.method.instance><syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>toParameters<\/decl.name>() -&gt; <decl.function.returntype>[<ref.struct usr=\"s:SS\">String<\/ref.struct> : Any]<\/decl.function.returntype><\/decl.function.method.instance>",
             "key.kind" : "source.lang.swift.decl.function.method.instance",
             "key.length" : 301,
             "key.name" : "toParameters()",
             "key.namelength" : 14,
-            "key.nameoffset" : 295,
-            "key.offset" : 290,
+            "key.nameoffset" : 277,
+            "key.offset" : 272,
             "key.parsed_declaration" : "func toParameters() -> [String: Any]",
-            "key.parsed_scope.end" : 29,
-            "key.parsed_scope.start" : 20,
+            "key.parsed_scope.end" : 28,
+            "key.parsed_scope.start" : 19,
             "key.substructure" : [
               {
                 "key.annotated_decl" : "<Declaration>var parameters: [<Type usr=\"s:SS\">String<\/Type> : Any]<\/Declaration>",
@@ -4288,11 +5025,11 @@
                 "key.length" : 35,
                 "key.name" : "parameters",
                 "key.namelength" : 10,
-                "key.nameoffset" : 336,
-                "key.offset" : 332,
+                "key.nameoffset" : 318,
+                "key.offset" : 314,
                 "key.parsed_declaration" : "var parameters: [String: Any] = [:]",
-                "key.parsed_scope.end" : 22,
-                "key.parsed_scope.start" : 22,
+                "key.parsed_scope.end" : 21,
+                "key.parsed_scope.start" : 21,
                 "key.typename" : "[String : Any]",
                 "key.typeusr" : "$SSDySSypGD",
                 "key.usr" : "s:3App17CreateUserRequestV12toParametersSDySSypGyF10parametersL_AEvp"
@@ -4861,6 +5598,190 @@
     ]
   }
 }, {
+  "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Responses\/ProductDetailResponse.swift" : {
+    "key.diagnostic_stage" : "source.diagnostic.stage.swift.parse",
+    "key.length" : 826,
+    "key.offset" : 0,
+    "key.substructure" : [
+      {
+        "key.accessibility" : "source.lang.swift.accessibility.internal",
+        "key.annotated_decl" : "<Declaration>struct ProductDetailResponse : <Type usr=\"s:5Vapor7ContentP\">Content<\/Type><\/Declaration>",
+        "key.bodylength" : 680,
+        "key.bodyoffset" : 144,
+        "key.elements" : [
+          {
+            "key.kind" : "source.lang.swift.structure.elem.typeref",
+            "key.length" : 7,
+            "key.offset" : 135
+          }
+        ],
+        "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Responses\/ProductDetailResponse.swift",
+        "key.fully_annotated_decl" : "<decl.struct><syntaxtype.keyword>struct<\/syntaxtype.keyword> <decl.name>ProductDetailResponse<\/decl.name> : <ref.protocol usr=\"s:5Vapor7ContentP\">Content<\/ref.protocol><\/decl.struct>",
+        "key.inheritedtypes" : [
+          {
+            "key.name" : "Content"
+          }
+        ],
+        "key.kind" : "source.lang.swift.decl.struct",
+        "key.length" : 720,
+        "key.name" : "ProductDetailResponse",
+        "key.namelength" : 21,
+        "key.nameoffset" : 112,
+        "key.offset" : 105,
+        "key.parsed_declaration" : "struct ProductDetailResponse: Content",
+        "key.parsed_scope.end" : 39,
+        "key.parsed_scope.start" : 10,
+        "key.substructure" : [
+          {
+            "key.accessibility" : "source.lang.swift.accessibility.internal",
+            "key.annotated_decl" : "<Declaration>var id: <Type usr=\"s:Si\">Int<\/Type><\/Declaration>",
+            "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Responses\/ProductDetailResponse.swift",
+            "key.fully_annotated_decl" : "<decl.var.instance><syntaxtype.keyword>var<\/syntaxtype.keyword> <decl.name>id<\/decl.name>: <decl.var.type><ref.struct usr=\"s:Si\">Int<\/ref.struct><\/decl.var.type><\/decl.var.instance>",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.length" : 11,
+            "key.name" : "id",
+            "key.namelength" : 2,
+            "key.nameoffset" : 152,
+            "key.offset" : 148,
+            "key.parsed_declaration" : "var id: Int",
+            "key.parsed_scope.end" : 12,
+            "key.parsed_scope.start" : 12,
+            "key.setter_accessibility" : "source.lang.swift.accessibility.internal",
+            "key.typename" : "Int",
+            "key.typeusr" : "$SSiD",
+            "key.usr" : "s:3App21ProductDetailResponseV2idSivp"
+          },
+          {
+            "key.accessibility" : "source.lang.swift.accessibility.internal",
+            "key.annotated_decl" : "<Declaration>var name: <Type usr=\"s:SS\">String<\/Type><\/Declaration>",
+            "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Responses\/ProductDetailResponse.swift",
+            "key.fully_annotated_decl" : "<decl.var.instance><syntaxtype.keyword>var<\/syntaxtype.keyword> <decl.name>name<\/decl.name>: <decl.var.type><ref.struct usr=\"s:SS\">String<\/ref.struct><\/decl.var.type><\/decl.var.instance>",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.length" : 16,
+            "key.name" : "name",
+            "key.namelength" : 4,
+            "key.nameoffset" : 165,
+            "key.offset" : 161,
+            "key.parsed_declaration" : "var name: String",
+            "key.parsed_scope.end" : 13,
+            "key.parsed_scope.start" : 13,
+            "key.setter_accessibility" : "source.lang.swift.accessibility.internal",
+            "key.typename" : "String",
+            "key.typeusr" : "$SSSD",
+            "key.usr" : "s:3App21ProductDetailResponseV4nameSSvp"
+          },
+          {
+            "key.accessibility" : "source.lang.swift.accessibility.internal",
+            "key.annotated_decl" : "<Declaration>var consoleID: <Type usr=\"s:Si\">Int<\/Type><\/Declaration>",
+            "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Responses\/ProductDetailResponse.swift",
+            "key.fully_annotated_decl" : "<decl.var.instance><syntaxtype.keyword>var<\/syntaxtype.keyword> <decl.name>consoleID<\/decl.name>: <decl.var.type><ref.struct usr=\"s:Si\">Int<\/ref.struct><\/decl.var.type><\/decl.var.instance>",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.length" : 18,
+            "key.name" : "consoleID",
+            "key.namelength" : 9,
+            "key.nameoffset" : 183,
+            "key.offset" : 179,
+            "key.parsed_declaration" : "var consoleID: Int",
+            "key.parsed_scope.end" : 14,
+            "key.parsed_scope.start" : 14,
+            "key.setter_accessibility" : "source.lang.swift.accessibility.internal",
+            "key.typename" : "Int",
+            "key.typeusr" : "$SSiD",
+            "key.usr" : "s:3App21ProductDetailResponseV9consoleIDSivp"
+          },
+          {
+            "key.accessibility" : "source.lang.swift.accessibility.internal",
+            "key.annotated_decl" : "<Declaration>var isFavorite: <Type usr=\"s:Sb\">Bool<\/Type>?<\/Declaration>",
+            "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Responses\/ProductDetailResponse.swift",
+            "key.fully_annotated_decl" : "<decl.var.instance><syntaxtype.keyword>var<\/syntaxtype.keyword> <decl.name>isFavorite<\/decl.name>: <decl.var.type><ref.struct usr=\"s:Sb\">Bool<\/ref.struct>?<\/decl.var.type><\/decl.var.instance>",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.length" : 21,
+            "key.name" : "isFavorite",
+            "key.namelength" : 10,
+            "key.nameoffset" : 203,
+            "key.offset" : 199,
+            "key.parsed_declaration" : "var isFavorite: Bool?",
+            "key.parsed_scope.end" : 15,
+            "key.parsed_scope.start" : 15,
+            "key.setter_accessibility" : "source.lang.swift.accessibility.internal",
+            "key.typename" : "Bool?",
+            "key.typeusr" : "$SSbSgD",
+            "key.usr" : "s:3App21ProductDetailResponseV10isFavoriteSbSgvp"
+          },
+          {
+            "key.accessibility" : "source.lang.swift.accessibility.internal",
+            "key.annotated_decl" : "<Declaration>var isPurchased: <Type usr=\"s:Sb\">Bool<\/Type>?<\/Declaration>",
+            "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Responses\/ProductDetailResponse.swift",
+            "key.fully_annotated_decl" : "<decl.var.instance><syntaxtype.keyword>var<\/syntaxtype.keyword> <decl.name>isPurchased<\/decl.name>: <decl.var.type><ref.struct usr=\"s:Sb\">Bool<\/ref.struct>?<\/decl.var.type><\/decl.var.instance>",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.length" : 22,
+            "key.name" : "isPurchased",
+            "key.namelength" : 11,
+            "key.nameoffset" : 226,
+            "key.offset" : 222,
+            "key.parsed_declaration" : "var isPurchased: Bool?",
+            "key.parsed_scope.end" : 16,
+            "key.parsed_scope.start" : 16,
+            "key.setter_accessibility" : "source.lang.swift.accessibility.internal",
+            "key.typename" : "Bool?",
+            "key.typeusr" : "$SSbSgD",
+            "key.usr" : "s:3App21ProductDetailResponseV11isPurchasedSbSgvp"
+          },
+          {
+            "key.accessibility" : "source.lang.swift.accessibility.internal",
+            "key.annotated_decl" : "<Declaration>var recomendations: [<Type usr=\"s:3App15ProductResponseV\">ProductResponse<\/Type>]?<\/Declaration>",
+            "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Responses\/ProductDetailResponse.swift",
+            "key.fully_annotated_decl" : "<decl.var.instance><syntaxtype.keyword>var<\/syntaxtype.keyword> <decl.name>recomendations<\/decl.name>: <decl.var.type>[<ref.struct usr=\"s:3App15ProductResponseV\">ProductResponse<\/ref.struct>]?<\/decl.var.type><\/decl.var.instance>",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.length" : 38,
+            "key.name" : "recomendations",
+            "key.namelength" : 14,
+            "key.nameoffset" : 250,
+            "key.offset" : 246,
+            "key.parsed_declaration" : "var recomendations: [ProductResponse]?",
+            "key.parsed_scope.end" : 17,
+            "key.parsed_scope.start" : 17,
+            "key.setter_accessibility" : "source.lang.swift.accessibility.internal",
+            "key.typename" : "[ProductResponse]?",
+            "key.typeusr" : "$SSay3App15ProductResponseVGSgD",
+            "key.usr" : "s:3App21ProductDetailResponseV14recomendationsSayAA0bD0VGSgvp"
+          },
+          {
+            "key.accessibility" : "source.lang.swift.accessibility.internal",
+            "key.annotated_decl" : "<Declaration>init(product: <Type usr=\"s:3App7ProductC\">Product<\/Type>, auth: <Type usr=\"s:Sb\">Bool<\/Type> = default)<\/Declaration>",
+            "key.bodylength" : 490,
+            "key.bodyoffset" : 332,
+            "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Responses\/ProductDetailResponse.swift",
+            "key.fully_annotated_decl" : "<decl.function.constructor><syntaxtype.keyword>init<\/syntaxtype.keyword>(<decl.var.parameter><decl.var.parameter.argument_label>product<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.class usr=\"s:3App7ProductC\">Product<\/ref.class><\/decl.var.parameter.type><\/decl.var.parameter>, <decl.var.parameter><decl.var.parameter.argument_label>auth<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.struct usr=\"s:Sb\">Bool<\/ref.struct><\/decl.var.parameter.type> = <syntaxtype.keyword>default<\/syntaxtype.keyword><\/decl.var.parameter>)<\/decl.function.constructor>",
+            "key.kind" : "source.lang.swift.decl.function.method.instance",
+            "key.length" : 535,
+            "key.name" : "init(product:auth:)",
+            "key.namelength" : 42,
+            "key.nameoffset" : 288,
+            "key.offset" : 288,
+            "key.parsed_declaration" : "init(product: Product, auth: Bool = false)",
+            "key.parsed_scope.end" : 38,
+            "key.parsed_scope.start" : 19,
+            "key.related_decls" : [
+              {
+                "key.annotated_decl" : "<RelatedName usr=\"s:3App21ProductDetailResponseV4fromACs7Decoder_p_tKcfc\">init(from:)<\/RelatedName>"
+              }
+            ],
+            "key.substructure" : [
+
+            ],
+            "key.typename" : "(ProductDetailResponse.Type) -> (Product, Bool) -> ProductDetailResponse",
+            "key.typeusr" : "$S7product4auth3App21ProductDetailResponseVAC0D0C_SbtcD",
+            "key.usr" : "s:3App21ProductDetailResponseV7product4authAcA0B0C_Sbtcfc"
+          }
+        ],
+        "key.typename" : "ProductDetailResponse.Type",
+        "key.typeusr" : "$S3App21ProductDetailResponseVmD",
+        "key.usr" : "s:3App21ProductDetailResponseV"
+      }
+    ]
+  }
+}, {
   "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Responses\/ProductListResponse.swift" : {
     "key.diagnostic_stage" : "source.diagnostic.stage.swift.parse",
     "key.length" : 377,
@@ -4973,7 +5894,7 @@
 }, {
   "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Responses\/ProductResponse.swift" : {
     "key.diagnostic_stage" : "source.diagnostic.stage.swift.parse",
-    "key.length" : 1197,
+    "key.length" : 475,
     "key.offset" : 0,
     "key.substructure" : [
       {
@@ -5132,182 +6053,6 @@
         "key.typename" : "ProductResponse.Type",
         "key.typeusr" : "$S3App15ProductResponseVmD",
         "key.usr" : "s:3App15ProductResponseV"
-      },
-      {
-        "key.accessibility" : "source.lang.swift.accessibility.internal",
-        "key.annotated_decl" : "<Declaration>struct ProductDetailResponse : <Type usr=\"s:5Vapor7ContentP\">Content<\/Type><\/Declaration>",
-        "key.bodylength" : 680,
-        "key.bodyoffset" : 515,
-        "key.elements" : [
-          {
-            "key.kind" : "source.lang.swift.structure.elem.typeref",
-            "key.length" : 7,
-            "key.offset" : 506
-          }
-        ],
-        "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Responses\/ProductResponse.swift",
-        "key.fully_annotated_decl" : "<decl.struct><syntaxtype.keyword>struct<\/syntaxtype.keyword> <decl.name>ProductDetailResponse<\/decl.name> : <ref.protocol usr=\"s:5Vapor7ContentP\">Content<\/ref.protocol><\/decl.struct>",
-        "key.inheritedtypes" : [
-          {
-            "key.name" : "Content"
-          }
-        ],
-        "key.kind" : "source.lang.swift.decl.struct",
-        "key.length" : 720,
-        "key.name" : "ProductDetailResponse",
-        "key.namelength" : 21,
-        "key.nameoffset" : 483,
-        "key.offset" : 476,
-        "key.parsed_declaration" : "struct ProductDetailResponse: Content",
-        "key.parsed_scope.end" : 60,
-        "key.parsed_scope.start" : 31,
-        "key.substructure" : [
-          {
-            "key.accessibility" : "source.lang.swift.accessibility.internal",
-            "key.annotated_decl" : "<Declaration>var id: <Type usr=\"s:Si\">Int<\/Type><\/Declaration>",
-            "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Responses\/ProductResponse.swift",
-            "key.fully_annotated_decl" : "<decl.var.instance><syntaxtype.keyword>var<\/syntaxtype.keyword> <decl.name>id<\/decl.name>: <decl.var.type><ref.struct usr=\"s:Si\">Int<\/ref.struct><\/decl.var.type><\/decl.var.instance>",
-            "key.kind" : "source.lang.swift.decl.var.instance",
-            "key.length" : 11,
-            "key.name" : "id",
-            "key.namelength" : 2,
-            "key.nameoffset" : 523,
-            "key.offset" : 519,
-            "key.parsed_declaration" : "var id: Int",
-            "key.parsed_scope.end" : 33,
-            "key.parsed_scope.start" : 33,
-            "key.setter_accessibility" : "source.lang.swift.accessibility.internal",
-            "key.typename" : "Int",
-            "key.typeusr" : "$SSiD",
-            "key.usr" : "s:3App21ProductDetailResponseV2idSivp"
-          },
-          {
-            "key.accessibility" : "source.lang.swift.accessibility.internal",
-            "key.annotated_decl" : "<Declaration>var name: <Type usr=\"s:SS\">String<\/Type><\/Declaration>",
-            "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Responses\/ProductResponse.swift",
-            "key.fully_annotated_decl" : "<decl.var.instance><syntaxtype.keyword>var<\/syntaxtype.keyword> <decl.name>name<\/decl.name>: <decl.var.type><ref.struct usr=\"s:SS\">String<\/ref.struct><\/decl.var.type><\/decl.var.instance>",
-            "key.kind" : "source.lang.swift.decl.var.instance",
-            "key.length" : 16,
-            "key.name" : "name",
-            "key.namelength" : 4,
-            "key.nameoffset" : 536,
-            "key.offset" : 532,
-            "key.parsed_declaration" : "var name: String",
-            "key.parsed_scope.end" : 34,
-            "key.parsed_scope.start" : 34,
-            "key.setter_accessibility" : "source.lang.swift.accessibility.internal",
-            "key.typename" : "String",
-            "key.typeusr" : "$SSSD",
-            "key.usr" : "s:3App21ProductDetailResponseV4nameSSvp"
-          },
-          {
-            "key.accessibility" : "source.lang.swift.accessibility.internal",
-            "key.annotated_decl" : "<Declaration>var consoleID: <Type usr=\"s:Si\">Int<\/Type><\/Declaration>",
-            "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Responses\/ProductResponse.swift",
-            "key.fully_annotated_decl" : "<decl.var.instance><syntaxtype.keyword>var<\/syntaxtype.keyword> <decl.name>consoleID<\/decl.name>: <decl.var.type><ref.struct usr=\"s:Si\">Int<\/ref.struct><\/decl.var.type><\/decl.var.instance>",
-            "key.kind" : "source.lang.swift.decl.var.instance",
-            "key.length" : 18,
-            "key.name" : "consoleID",
-            "key.namelength" : 9,
-            "key.nameoffset" : 554,
-            "key.offset" : 550,
-            "key.parsed_declaration" : "var consoleID: Int",
-            "key.parsed_scope.end" : 35,
-            "key.parsed_scope.start" : 35,
-            "key.setter_accessibility" : "source.lang.swift.accessibility.internal",
-            "key.typename" : "Int",
-            "key.typeusr" : "$SSiD",
-            "key.usr" : "s:3App21ProductDetailResponseV9consoleIDSivp"
-          },
-          {
-            "key.accessibility" : "source.lang.swift.accessibility.internal",
-            "key.annotated_decl" : "<Declaration>var isFavorite: <Type usr=\"s:Sb\">Bool<\/Type>?<\/Declaration>",
-            "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Responses\/ProductResponse.swift",
-            "key.fully_annotated_decl" : "<decl.var.instance><syntaxtype.keyword>var<\/syntaxtype.keyword> <decl.name>isFavorite<\/decl.name>: <decl.var.type><ref.struct usr=\"s:Sb\">Bool<\/ref.struct>?<\/decl.var.type><\/decl.var.instance>",
-            "key.kind" : "source.lang.swift.decl.var.instance",
-            "key.length" : 21,
-            "key.name" : "isFavorite",
-            "key.namelength" : 10,
-            "key.nameoffset" : 574,
-            "key.offset" : 570,
-            "key.parsed_declaration" : "var isFavorite: Bool?",
-            "key.parsed_scope.end" : 36,
-            "key.parsed_scope.start" : 36,
-            "key.setter_accessibility" : "source.lang.swift.accessibility.internal",
-            "key.typename" : "Bool?",
-            "key.typeusr" : "$SSbSgD",
-            "key.usr" : "s:3App21ProductDetailResponseV10isFavoriteSbSgvp"
-          },
-          {
-            "key.accessibility" : "source.lang.swift.accessibility.internal",
-            "key.annotated_decl" : "<Declaration>var isPurchased: <Type usr=\"s:Sb\">Bool<\/Type>?<\/Declaration>",
-            "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Responses\/ProductResponse.swift",
-            "key.fully_annotated_decl" : "<decl.var.instance><syntaxtype.keyword>var<\/syntaxtype.keyword> <decl.name>isPurchased<\/decl.name>: <decl.var.type><ref.struct usr=\"s:Sb\">Bool<\/ref.struct>?<\/decl.var.type><\/decl.var.instance>",
-            "key.kind" : "source.lang.swift.decl.var.instance",
-            "key.length" : 22,
-            "key.name" : "isPurchased",
-            "key.namelength" : 11,
-            "key.nameoffset" : 597,
-            "key.offset" : 593,
-            "key.parsed_declaration" : "var isPurchased: Bool?",
-            "key.parsed_scope.end" : 37,
-            "key.parsed_scope.start" : 37,
-            "key.setter_accessibility" : "source.lang.swift.accessibility.internal",
-            "key.typename" : "Bool?",
-            "key.typeusr" : "$SSbSgD",
-            "key.usr" : "s:3App21ProductDetailResponseV11isPurchasedSbSgvp"
-          },
-          {
-            "key.accessibility" : "source.lang.swift.accessibility.internal",
-            "key.annotated_decl" : "<Declaration>var recomendations: [<Type usr=\"s:3App15ProductResponseV\">ProductResponse<\/Type>]?<\/Declaration>",
-            "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Responses\/ProductResponse.swift",
-            "key.fully_annotated_decl" : "<decl.var.instance><syntaxtype.keyword>var<\/syntaxtype.keyword> <decl.name>recomendations<\/decl.name>: <decl.var.type>[<ref.struct usr=\"s:3App15ProductResponseV\">ProductResponse<\/ref.struct>]?<\/decl.var.type><\/decl.var.instance>",
-            "key.kind" : "source.lang.swift.decl.var.instance",
-            "key.length" : 38,
-            "key.name" : "recomendations",
-            "key.namelength" : 14,
-            "key.nameoffset" : 621,
-            "key.offset" : 617,
-            "key.parsed_declaration" : "var recomendations: [ProductResponse]?",
-            "key.parsed_scope.end" : 38,
-            "key.parsed_scope.start" : 38,
-            "key.setter_accessibility" : "source.lang.swift.accessibility.internal",
-            "key.typename" : "[ProductResponse]?",
-            "key.typeusr" : "$SSay3App15ProductResponseVGSgD",
-            "key.usr" : "s:3App21ProductDetailResponseV14recomendationsSayAA0bD0VGSgvp"
-          },
-          {
-            "key.accessibility" : "source.lang.swift.accessibility.internal",
-            "key.annotated_decl" : "<Declaration>init(product: <Type usr=\"s:3App7ProductC\">Product<\/Type>, auth: <Type usr=\"s:Sb\">Bool<\/Type> = default)<\/Declaration>",
-            "key.bodylength" : 490,
-            "key.bodyoffset" : 703,
-            "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Responses\/ProductResponse.swift",
-            "key.fully_annotated_decl" : "<decl.function.constructor><syntaxtype.keyword>init<\/syntaxtype.keyword>(<decl.var.parameter><decl.var.parameter.argument_label>product<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.class usr=\"s:3App7ProductC\">Product<\/ref.class><\/decl.var.parameter.type><\/decl.var.parameter>, <decl.var.parameter><decl.var.parameter.argument_label>auth<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.struct usr=\"s:Sb\">Bool<\/ref.struct><\/decl.var.parameter.type> = <syntaxtype.keyword>default<\/syntaxtype.keyword><\/decl.var.parameter>)<\/decl.function.constructor>",
-            "key.kind" : "source.lang.swift.decl.function.method.instance",
-            "key.length" : 535,
-            "key.name" : "init(product:auth:)",
-            "key.namelength" : 42,
-            "key.nameoffset" : 659,
-            "key.offset" : 659,
-            "key.parsed_declaration" : "init(product: Product, auth: Bool = false)",
-            "key.parsed_scope.end" : 59,
-            "key.parsed_scope.start" : 40,
-            "key.related_decls" : [
-              {
-                "key.annotated_decl" : "<RelatedName usr=\"s:3App21ProductDetailResponseV4fromACs7Decoder_p_tKcfc\">init(from:)<\/RelatedName>"
-              }
-            ],
-            "key.substructure" : [
-
-            ],
-            "key.typename" : "(ProductDetailResponse.Type) -> (Product, Bool) -> ProductDetailResponse",
-            "key.typeusr" : "$S7product4auth3App21ProductDetailResponseVAC0D0C_SbtcD",
-            "key.usr" : "s:3App21ProductDetailResponseV7product4authAcA0B0C_Sbtcfc"
-          }
-        ],
-        "key.typename" : "ProductDetailResponse.Type",
-        "key.typeusr" : "$S3App21ProductDetailResponseVmD",
-        "key.usr" : "s:3App21ProductDetailResponseV"
       }
     ]
   }
@@ -5405,11 +6150,11 @@
           },
           {
             "key.accessibility" : "source.lang.swift.accessibility.internal",
-            "key.annotated_decl" : "<Declaration>init(user: <Type usr=\"c:@M@App@objc(cs)User\">User<\/Type>)<\/Declaration>",
+            "key.annotated_decl" : "<Declaration>init(user: <Type usr=\"s:3App4UserC\">User<\/Type>)<\/Declaration>",
             "key.bodylength" : 72,
             "key.bodyoffset" : 198,
             "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/Responses\/UserResponse.swift",
-            "key.fully_annotated_decl" : "<decl.function.constructor><syntaxtype.keyword>init<\/syntaxtype.keyword>(<decl.var.parameter><decl.var.parameter.argument_label>user<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.class usr=\"c:@M@App@objc(cs)User\">User<\/ref.class><\/decl.var.parameter.type><\/decl.var.parameter>)<\/decl.function.constructor>",
+            "key.fully_annotated_decl" : "<decl.function.constructor><syntaxtype.keyword>init<\/syntaxtype.keyword>(<decl.var.parameter><decl.var.parameter.argument_label>user<\/decl.var.parameter.argument_label>: <decl.var.parameter.type><ref.class usr=\"s:3App4UserC\">User<\/ref.class><\/decl.var.parameter.type><\/decl.var.parameter>)<\/decl.function.constructor>",
             "key.kind" : "source.lang.swift.decl.function.method.instance",
             "key.length" : 91,
             "key.name" : "init(user:)",
@@ -5751,7 +6496,7 @@
 }, {
   "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/routes.swift" : {
     "key.diagnostic_stage" : "source.diagnostic.stage.swift.parse",
-    "key.length" : 277,
+    "key.length" : 314,
     "key.offset" : 0,
     "key.substructure" : [
       {
@@ -5761,32 +6506,32 @@
           {
             "key.attribute" : "source.decl.attribute.public",
             "key.length" : 6,
-            "key.offset" : 73
+            "key.offset" : 59
           }
         ],
-        "key.bodylength" : 157,
-        "key.bodyoffset" : 118,
+        "key.bodylength" : 208,
+        "key.bodyoffset" : 104,
         "key.doc.column" : 13,
         "key.doc.comment" : "Register your application's routes here.",
         "key.doc.declaration" : "public func routes(_ router: Router) throws",
         "key.doc.file" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/routes.swift",
-        "key.doc.full_as_xml" : "<Function file=\"\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/routes.swift\" line=\"5\" column=\"13\"><Name>routes(_:)<\/Name><USR>s:3App6routesyy5Vapor6Router_pKF<\/USR><Declaration>public func routes(_ router: Router) throws<\/Declaration><CommentParts><Abstract><Para>Register your application’s routes here.<\/Para><\/Abstract><\/CommentParts><\/Function>",
-        "key.doc.line" : 5,
+        "key.doc.full_as_xml" : "<Function file=\"\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/routes.swift\" line=\"4\" column=\"13\"><Name>routes(_:)<\/Name><USR>s:3App6routesyy5Vapor6Router_pKF<\/USR><Declaration>public func routes(_ router: Router) throws<\/Declaration><CommentParts><Abstract><Para>Register your application’s routes here.<\/Para><\/Abstract><\/CommentParts><\/Function>",
+        "key.doc.line" : 4,
         "key.doc.name" : "routes(_:)",
         "key.doc.type" : "Function",
         "key.doclength" : 45,
-        "key.docoffset" : 28,
+        "key.docoffset" : 14,
         "key.filepath" : "\/Users\/salesawagner\/Documents\/Projects\/WAS\/was-commerce\/Sources\/App\/routes.swift",
         "key.fully_annotated_decl" : "<decl.function.free><syntaxtype.keyword>public<\/syntaxtype.keyword> <syntaxtype.keyword>func<\/syntaxtype.keyword> <decl.name>routes<\/decl.name>(<decl.var.parameter><decl.var.parameter.argument_label>_<\/decl.var.parameter.argument_label> <decl.var.parameter.name>router<\/decl.var.parameter.name>: <decl.var.parameter.type><ref.protocol usr=\"s:5Vapor6RouterP\">Router<\/ref.protocol><\/decl.var.parameter.type><\/decl.var.parameter>) <syntaxtype.keyword>throws<\/syntaxtype.keyword><\/decl.function.free>",
         "key.kind" : "source.lang.swift.decl.function.free",
-        "key.length" : 196,
+        "key.length" : 247,
         "key.name" : "routes(_:)",
         "key.namelength" : 24,
-        "key.nameoffset" : 85,
-        "key.offset" : 80,
+        "key.nameoffset" : 71,
+        "key.offset" : 66,
         "key.parsed_declaration" : "public func routes(_ router: Router) throws",
         "key.parsed_scope.end" : 9,
-        "key.parsed_scope.start" : 5,
+        "key.parsed_scope.start" : 4,
         "key.substructure" : [
 
         ],

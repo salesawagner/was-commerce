@@ -24,6 +24,10 @@
 		A709D2482152DAEF009887CD /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = A709D2472152DAEF009887CD /* Product.swift */; };
 		A709D24A2152DB1F009887CD /* Console.swift in Sources */ = {isa = PBXBuildFile; fileRef = A709D2492152DB1F009887CD /* Console.swift */; };
 		A72BCF29215430C500E2088A /* ProductDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72BCF28215430C500E2088A /* ProductDetailResponse.swift */; };
+		A72BCF2B2154318C00E2088A /* CartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72BCF2A2154318C00E2088A /* CartController.swift */; };
+		A72BCF2D2154323100E2088A /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72BCF2C2154323100E2088A /* Cart.swift */; };
+		A72BCF2F215433CF00E2088A /* BillingMicroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72BCF2E215433CF00E2088A /* BillingMicroService.swift */; };
+		A72BCF31215434B800E2088A /* CreateCartRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72BCF30215434B800E2088A /* CreateCartRequest.swift */; };
 		A7530436215021C6004B465A /* UserMicroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7530435215021C6004B465A /* UserMicroService.swift */; };
 		A753043B215022A7004B465A /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = A753043A215022A7004B465A /* Typealias.swift */; };
 		A77A6F242153364D00174E41 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A6F232153364D00174E41 /* Login.swift */; };
@@ -5323,6 +5327,10 @@
 		A709D2472152DAEF009887CD /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		A709D2492152DB1F009887CD /* Console.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Console.swift; sourceTree = "<group>"; };
 		A72BCF28215430C500E2088A /* ProductDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailResponse.swift; sourceTree = "<group>"; };
+		A72BCF2A2154318C00E2088A /* CartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartController.swift; sourceTree = "<group>"; };
+		A72BCF2C2154323100E2088A /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
+		A72BCF2E215433CF00E2088A /* BillingMicroService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillingMicroService.swift; sourceTree = "<group>"; };
+		A72BCF30215434B800E2088A /* CreateCartRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCartRequest.swift; sourceTree = "<group>"; };
 		A7530435215021C6004B465A /* UserMicroService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMicroService.swift; sourceTree = "<group>"; };
 		A753043A215022A7004B465A /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
 		A77A6F232153364D00174E41 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
@@ -6971,6 +6979,7 @@
 				A709D2472152DAEF009887CD /* Product.swift */,
 				A709D2492152DB1F009887CD /* Console.swift */,
 				OBJ_20 /* UserToken.swift */,
+				A72BCF2C2154323100E2088A /* Cart.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -6995,6 +7004,7 @@
 				A7BCC3D121516852002BCE56 /* UpdateUserRequest.swift */,
 				A7BCC3D521516DA5002BCE56 /* FavoriteProductRequest.swift */,
 				A7BCC3D3215168A5002BCE56 /* LoginRequest.swift */,
+				A72BCF30215434B800E2088A /* CreateCartRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -7004,6 +7014,7 @@
 			children = (
 				A7BCC3DF2151836A002BCE56 /* ProductMicroService.swift */,
 				A7530435215021C6004B465A /* UserMicroService.swift */,
+				A72BCF2E215433CF00E2088A /* BillingMicroService.swift */,
 			);
 			path = MicroServices;
 			sourceTree = "<group>";
@@ -9292,6 +9303,7 @@
 				A7BCC3E1215183D1002BCE56 /* ProductController.swift */,
 				OBJ_11 /* AuthController.swift */,
 				OBJ_18 /* UserController.swift */,
+				A72BCF2A2154318C00E2088A /* CartController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -12098,15 +12110,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				A72BCF2D2154323100E2088A /* Cart.swift in Sources */,
 				OBJ_930 /* AuthController.swift in Sources */,
+				A72BCF2F215433CF00E2088A /* BillingMicroService.swift in Sources */,
 				A7BCC3D4215168A5002BCE56 /* LoginRequest.swift in Sources */,
 				OBJ_933 /* CreateUserRequest.swift in Sources */,
 				OBJ_934 /* User.swift in Sources */,
 				OBJ_935 /* UserController.swift in Sources */,
 				A7BCC3E62151873B002BCE56 /* ProductListResponse.swift in Sources */,
+				A72BCF31215434B800E2088A /* CreateCartRequest.swift in Sources */,
 				A7BCC3DD21517C4C002BCE56 /* FavoriteListResponse.swift in Sources */,
 				A753043B215022A7004B465A /* Typealias.swift in Sources */,
 				OBJ_936 /* UserResponse.swift in Sources */,
+				A72BCF2B2154318C00E2088A /* CartController.swift in Sources */,
 				A72BCF29215430C500E2088A /* ProductDetailResponse.swift in Sources */,
 				OBJ_937 /* UserToken.swift in Sources */,
 				OBJ_938 /* app.swift in Sources */,
