@@ -8,52 +8,53 @@
 import Vapor
 
 struct ProductResponse: Content {
-	var id: Int
-	var name: String
-	var consoleID: Int
-	
-	init(id: Int, name: String, consoleID: Int) {
-		self.id = id
-		self.name = name
-		self.consoleID = consoleID
-	}
-}
-
-extension ProductResponse {
-	static func make(json: JSON) -> ProductResponse? {
-		
-		guard let id = json["id"] as? Int, let name = json["name"] as? String else {
-			return nil
-		}
-		
-		return ProductResponse(id: id, name: name, consoleID: 1)
-	}
-}
-
-struct ProductAuthResponse: Content {
 	
 	var id: Int
 	var name: String
 	var consoleID: Int
-	var isFavorite: Bool
-	var isPurchased: Bool
-	
-	init(id: Int, name: String, consoleID: Int, isFavorite: Bool = true, isPurchased: Bool = true) {
-		self.id = id
-		self.name = name
-		self.consoleID = consoleID
-		self.isFavorite = isFavorite
-		self.isPurchased = isPurchased
+	var isFavorite: Bool?
+	var isPurchased: Bool?
+
+	init(product: Product, auth: Bool = false) {
+
+		self.id = product.id
+		self.name = product.name
+		self.consoleID = product.console.id
+		
+		if auth {
+			self.isFavorite = product.isFavorite
+			self.isPurchased = product.isPurchased
+		}
 	}
 }
 
-extension ProductAuthResponse {
-	static func make(json: JSON) -> ProductAuthResponse? {
+struct ProductDetailResponse: Content {
+	
+	var id: Int
+	var name: String
+	var consoleID: Int
+	var isFavorite: Bool?
+	var isPurchased: Bool?
+	var recomendations: [ProductResponse]?
+	
+	init(product: Product, auth: Bool = false) {
 		
-		guard let id = json["id"] as? Int, let name = json["name"] as? String else {
-			return nil
+		self.id = product.id
+		self.name = product.name
+		self.consoleID = product.console.id
+		
+		if auth {
+			self.isFavorite = product.isFavorite
+			self.isPurchased = product.isPurchased
 		}
 		
-		return ProductAuthResponse(id: id, name: name, consoleID: 1)
+		if product.recomendations.count > 0 {
+			var recomendations: [ProductResponse] = []
+			for recomendation in product.recomendations {
+				let productResponse = ProductResponse(product: recomendation)
+				recomendations.append(productResponse)
+			}
+			self.recomendations = recomendations
+		}
 	}
 }
